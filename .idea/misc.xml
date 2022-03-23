@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/raul-/Downloads/ABC_connected/app/src/main/res/layout/activityelbiribiri.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/JanelaCalendario.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_daily_calendar.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_event_edit.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_forgot_password.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main_calendar.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_menu.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_in.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_week_view.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/calendar_cell.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/event_cell.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/hour_cell.xml" value="0.1956521739130435" />
       </map>
     </option>
   </component>

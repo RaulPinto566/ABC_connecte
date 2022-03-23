@@ -28,7 +28,7 @@ public class DailyCalendarActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daily_calendar);
+        setContentView(R.layout.JanelaCalendario);
         initWidgets();
     }
 
