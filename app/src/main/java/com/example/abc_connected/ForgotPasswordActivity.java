@@ -24,7 +24,7 @@ public class ForgotPasswordActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.JanelaRedefinirPassword);
+        setContentView(R.layout.janelaredefinirpassword);
 
 
         emailTextInput = findViewById(R.id.fpEmailTextInput);

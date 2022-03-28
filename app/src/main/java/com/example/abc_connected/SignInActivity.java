@@ -33,7 +33,7 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.JanelaPrincipalRegisto);
+        setContentView(R.layout.janelaprincipalregisto);
 
         emailTextInput = findViewById(R.id.signInEmailTextInput);
         passwordTextInput = findViewById(R.id.signInPasswordTextInput);
