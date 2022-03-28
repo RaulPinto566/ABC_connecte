@@ -28,22 +28,24 @@
         <activity android:name="com.example.abc_connected.calendario.EventEditActivity" />
         <activity android:name="com.example.abc_connected.calendario.WeekViewActivity" />
         <activity android:name="com.example.abc_connected.calendario.MainActivityCalendar" />
-        <activity android:name="com.example.abc_connected.Menu" />
-        <activity android:name="com.example.abc_connected.ForgotPasswordActivity" />
-        <activity android:name="com.example.abc_connected.SignInActivity" />
-        <activity android:name="com.example.abc_connected.SignUpActivity" />
-       
-
         <activity
-            android:name=".MainActivity"
+            android:name=".AdminActivity"
+            android:label="@string/title_activity_admin"></activity>
+        <activity
+            android:name=".UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/Theme.ABC_connected.NoActionBar" />
+        <activity android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
     </application>
 
 </manifest>
