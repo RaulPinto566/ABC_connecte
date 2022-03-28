@@ -3,19 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/JanelaCalendario.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_daily_calendar.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_event_edit.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_forgot_password.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main_calendar.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_menu.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_in.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_week_view.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/calendar_cell.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/event_cell.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/hour_cell.xml" value="0.1956521739130435" />
+        <entry key="app/src/main/res/layout/JanelaCalendario.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/JanelaPrincipalLogIn.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/JanelaPrincipalRegisto.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/JanelaRedefinirPassword.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_event_edit.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_main_calendar.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.3154815673828125" />
+        <entry key="app/src/main/res/layout/activity_week_view.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activitydistancia.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/activityelbiribiri.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/activityladodocampo.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activityzonadocampo.xml" value="0.12198490750962404" />
+        <entry key="app/src/main/res/layout/activityzonadocampo2.xml" value="0.8841749492444491" />
+        <entry key="app/src/main/res/layout/janelajogos.xml" value="0.2578125" />
       </map>
     </option>
   </component>
@@ -24,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.55" />
+      </ProjectState>
+    </option>
   </component>
 </project>

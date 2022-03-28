@@ -8,6 +8,22 @@
     tools:context="com.example.abc_connected.Menu">
 
     <Button
+        android:id="@+id/equipa"
+        android:layout_width="127dp"
+        android:layout_height="95dp"
+        android:text="Equipa"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/jogo"
+        android:layout_width="125dp"
+        android:layout_height="77dp"
+        android:text="Jogo"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <Button
         android:id="@+id/signOut"
         android:layout_width="128dp"
         android:layout_height="53dp"
@@ -20,9 +36,9 @@
 
     <Button
         android:id="@+id/calendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="127dp"
+        android:layout_height="79dp"
         android:text="Calendar"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="75dp" />
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="98dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
