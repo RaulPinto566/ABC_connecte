@@ -3,45 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/JanelaCalendario.xml" value="0.1" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/JanelaPrincipalLogIn.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activity_event_edit.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activity_main_calendar.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activity_menu.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activitydistancia.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activityelbiribiri.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activityladodocampo.xml" value="0.21" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activityzonadocampo.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/janelacalendario.xml" value="0.17028985507246377" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/drawable/ic_logout.xml" value="0.1" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_event_edit.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_main.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_main_calendar.xml" value="0.1" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_menu.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_week_view.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activitydistancia.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activityelbiribiri.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activityladodocampo.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activityzonadocampo.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/admin_activity_admin.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/admin_fragment_dashboard.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/admin_fragment_home.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/admin_fragment_notifications.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/calendar_cell.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/event_cell.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/hour_cell.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/janelacalendario.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/janelaprincipallogin.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/janelaprincipalregisto.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/janelaredefinirpassword.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/user_activity_user.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/user_app_bar_main.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/user_content_main.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/user_fragment_gallery.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/user_nav_header_main.xml" value="0.16847826086956522" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/menu/user.xml" value="0.2" />
         <entry key="app/src/main/res/layout/JanelaCalendario.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/JanelaPrincipalLogIn.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/JanelaPrincipalRegisto.xml" value="0.2578125" />
@@ -52,14 +13,18 @@
         <entry key="app/src/main/res/layout/activity_week_view.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activitydistancia.xml" value="0.55" />
         <entry key="app/src/main/res/layout/activityelbiribiri.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/activityestatisticas.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activityladodocampo.xml" value="0.2578125" />
-        <entry key="app/src/main/res/layout/activityzonadocampo.xml" value="0.12198490750962404" />
+        <entry key="app/src/main/res/layout/activityzonadocampo.xml" value="0.55" />
         <entry key="app/src/main/res/layout/activityzonadocampo2.xml" value="0.8841749492444491" />
+        <entry key="app/src/main/res/layout/admin_activity_admin.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/admin_fragment_dashboard.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/admin_fragment_home.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/janelajogos.xml" value="0.2578125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
