@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "838903505681",
+    "firebase_url": "https://abc-connected-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "abc-connected",
     "storage_bucket": "abc-connected.appspot.com"
   },
