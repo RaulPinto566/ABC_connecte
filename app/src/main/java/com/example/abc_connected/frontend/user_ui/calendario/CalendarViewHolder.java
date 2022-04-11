@@ -1,4 +1,4 @@
-package com.example.abc_connected.calendario;
+package com.example.abc_connected.frontend.user_ui.calendario;
 
 import android.view.View;
 import android.widget.TextView;
@@ -16,8 +16,8 @@ public class CalendarViewHolder extends RecyclerView.ViewHolder implements View.
     private final ArrayList<LocalDate> days;
     public final View parentView;
     public final TextView dayOfMonth;
-    private final com.example.abc_connected.calendario.CalendarAdapter.OnItemListener onItemListener;
-    public CalendarViewHolder(@NonNull View itemView, com.example.abc_connected.calendario.CalendarAdapter.OnItemListener onItemListener, ArrayList<LocalDate> days)
+    private final com.example.abc_connected.frontend.user_ui.calendario.CalendarAdapter.OnItemListener onItemListener;
+    public CalendarViewHolder(@NonNull View itemView, com.example.abc_connected.frontend.user_ui.calendario.CalendarAdapter.OnItemListener onItemListener, ArrayList<LocalDate> days)
     {
         super(itemView);
         parentView = itemView.findViewById(R.id.parentView);

@@ -1,4 +1,4 @@
-package com.example.abc_connected.admin_ui;
+package com.example.abc_connected.frontend.user_ui.admin_ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

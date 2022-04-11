@@ -1,7 +1,7 @@
-package com.example.abc_connected.calendario;
+package com.example.abc_connected.frontend.user_ui.calendario;
 
-import static com.example.abc_connected.calendario.CalendarUtils.daysInWeekArray;
-import static com.example.abc_connected.calendario.CalendarUtils.monthYearFromDate;
+import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.daysInWeekArray;
+import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.monthYearFromDate;
 
 import android.content.Intent;
 import android.os.Bundle;

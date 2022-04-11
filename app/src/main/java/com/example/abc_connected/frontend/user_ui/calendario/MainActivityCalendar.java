@@ -1,7 +1,7 @@
-package com.example.abc_connected.calendario;
+package com.example.abc_connected.frontend.user_ui.calendario;
 
-import static com.example.abc_connected.calendario.CalendarUtils.daysInMonthArray;
-import static com.example.abc_connected.calendario.CalendarUtils.monthYearFromDate;
+import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.daysInMonthArray;
+import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.monthYearFromDate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.example.abc_connected.R;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class MainActivityCalendar extends AppCompatActivity implements com.example.abc_connected.calendario.CalendarAdapter.OnItemListener
+public class MainActivityCalendar extends AppCompatActivity implements com.example.abc_connected.frontend.user_ui.calendario.CalendarAdapter.OnItemListener
 {
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
@@ -44,7 +44,7 @@ public class MainActivityCalendar extends AppCompatActivity implements com.examp
         monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
         ArrayList<LocalDate> daysInMonth = daysInMonthArray();
 
-        com.example.abc_connected.calendario.CalendarAdapter calendarAdapter = new com.example.abc_connected.calendario.CalendarAdapter(daysInMonth, this);
+        com.example.abc_connected.frontend.user_ui.calendario.CalendarAdapter calendarAdapter = new com.example.abc_connected.frontend.user_ui.calendario.CalendarAdapter(daysInMonth, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
         calendarRecyclerView.setLayoutManager(layoutManager);
         calendarRecyclerView.setAdapter(calendarAdapter);
@@ -74,7 +74,7 @@ public class MainActivityCalendar extends AppCompatActivity implements com.examp
 
     public void weeklyAction(View view)
     {
-        startActivity(new Intent(this, com.example.abc_connected.calendario.WeekViewActivity.class));
+        startActivity(new Intent(this, com.example.abc_connected.frontend.user_ui.calendario.WeekViewActivity.class));
     }
 }
 

@@ -1,4 +1,4 @@
-package com.example.abc_connected.admin_ui;
+package com.example.abc_connected.frontend.user_ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.abc_connected.R;
+import  com.example.abc_connected.R;
 
-public class HomeFragment extends Fragment {
+public class SlideshowFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.admin_fragment_home, container, false);
+        View root = inflater.inflate(R.layout.user_fragment_slideshow, container, false);
 
         return root;
     }

@@ -1,4 +1,4 @@
-package com.example.abc_connected.calendario;
+package com.example.abc_connected.frontend.user_ui.calendario;
 
 import android.os.Bundle;
 import android.view.View;
@@ -25,8 +25,8 @@ public class EventEditActivity extends AppCompatActivity
         setContentView(R.layout.activity_event_edit);
         initWidgets();
         time = LocalTime.now();
-        eventDateTV.setText("Date: " + com.example.abc_connected.calendario.CalendarUtils.formattedDate(com.example.abc_connected.calendario.CalendarUtils.selectedDate));
-        eventTimeTV.setText("Time: " + com.example.abc_connected.calendario.CalendarUtils.formattedTime(time));
+        eventDateTV.setText("Date: " + com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.formattedDate(com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.selectedDate));
+        eventTimeTV.setText("Time: " + com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.formattedTime(time));
     }
 
     private void initWidgets()
@@ -39,8 +39,8 @@ public class EventEditActivity extends AppCompatActivity
     public void saveEventAction(View view)
     {
         String eventName = eventNameET.getText().toString();
-        com.example.abc_connected.calendario.Event newEvent = new com.example.abc_connected.calendario.Event(eventName, com.example.abc_connected.calendario.CalendarUtils.selectedDate, time);
-        com.example.abc_connected.calendario.Event.eventsList.add(newEvent);
+        com.example.abc_connected.frontend.user_ui.calendario.Event newEvent = new com.example.abc_connected.frontend.user_ui.calendario.Event(eventName, com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.selectedDate, time);
+        com.example.abc_connected.frontend.user_ui.calendario.Event.eventsList.add(newEvent);
         finish();
     }
 }

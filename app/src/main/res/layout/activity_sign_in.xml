@@ -7,7 +7,7 @@
     android:layout_margin="10dp"
     android:orientation="vertical"
     android:background="#FFCD01"
-    tools:context="com.example.abc_connected.SignInActivity">
+    tools:context="com.example.abc_connected.frontend.user_ui.SignInActivity">
 
 
     <TextView
