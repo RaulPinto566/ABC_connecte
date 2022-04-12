@@ -38,7 +38,7 @@ public class ListaUtilizadores implements Serializable
 
     }
 
-    public boolean existe(String username) {
+    public boolean existeUtilizador(String username) {
         return lista.containsKey(username);
     }
 

@@ -3,6 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_forgot_password.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main_calendar.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_menu.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_profile.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_set_profile.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_in.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_specificchat.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_update_profile.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_week_view.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activityelbiribiri.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/activityestatisticas.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/admin_activity_admin.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/admin_fragment_home.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/admin_fragment_notifications.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/calendar_cell.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/chatviewlayout.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/direita.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/equerda2.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/esquerda.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/event_cell.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/hour_cell.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/janelacalendario.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/recieverchatlayout.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_activity_user.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_app_bar_main.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_fragment_gallery.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_fragment_home.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_fragment_slideshow.xml" value="0.2953125" />
+        <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_nav_header_main.xml" value="0.2953125" />
         <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/JanelaCalendario.xml" value="0.1" />
         <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/JanelaPrincipalLogIn.xml" value="0.17028985507246377" />
         <entry key="..\:/Users/raulj/AndroidStudioProjects/ABC_connecte/app/src/main/res/layout/activity_event_edit.xml" value="0.17028985507246377" />
