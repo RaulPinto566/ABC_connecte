@@ -1,4 +1,4 @@
-package com.example.abc_connected.user_ui;
+package com.example.abc_connected.frontend.user_ui.admin_ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,12 +10,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.abc_connected.R;
 
-public class GalleryFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.user_fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.admin_fragment_home, container, false);
 
         return root;
     }

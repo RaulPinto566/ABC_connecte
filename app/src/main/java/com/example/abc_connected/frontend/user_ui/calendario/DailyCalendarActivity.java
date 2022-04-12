@@ -1,6 +1,6 @@
-package com.example.abc_connected.calendario;
+package com.example.abc_connected.frontend.user_ui.calendario;
 
-import static com.example.abc_connected.calendario.CalendarUtils.selectedDate;
+import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.selectedDate;
 
 import android.content.Intent;
 import android.os.Bundle;

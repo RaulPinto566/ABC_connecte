@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFCD01"
-    tools:context="com.example.abc_connected.Menu">
+    tools:context="com.example.abc_connected.frontend.user_ui.Menu">
 
     <Button
         android:id="@+id/signOut"

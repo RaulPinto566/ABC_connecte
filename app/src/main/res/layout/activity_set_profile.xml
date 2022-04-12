@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".setProfile">
+    tools:context=".frontend.user_ui.setProfile">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="Save Your Profile"
-        android:fontFamily="@font/raleway"
+        android:fontFamily="raleway"
         android:layout_above="@+id/getuserimage"
         android:layout_marginBottom="30dp"
         android:textColor="#25d366"

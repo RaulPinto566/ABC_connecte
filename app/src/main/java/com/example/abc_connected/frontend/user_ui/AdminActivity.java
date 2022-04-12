@@ -1,4 +1,4 @@
-package com.example.abc_connected;
+package com.example.abc_connected.frontend.user_ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.abc_connected.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AdminActivity extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class AdminActivity extends AppCompatActivity {
     }
 
     public void logout(MenuItem item) {
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         preferences.clearData(this);
         finish();
     }
