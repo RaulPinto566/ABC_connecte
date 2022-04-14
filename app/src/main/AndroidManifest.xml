@@ -23,11 +23,11 @@
         android:theme="@style/Theme.ABC_connected">
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.example.abc_connected.calendario.DailyCalendarActivity"
+            android:name="com.example.abc_connected.frontend.user_ui.calendario.DailyCalendarActivity"
             android:exported="true" />
-        <activity android:name="com.example.abc_connected.calendario.EventEditActivity" />
-        <activity android:name="com.example.abc_connected.calendario.WeekViewActivity" />
-        <activity android:name="com.example.abc_connected.calendario.MainActivityCalendar" />
+        <activity android:name="com.example.abc_connected.frontend.user_ui.calendario.EventEditActivity" />
+        <activity android:name="com.example.abc_connected.frontend.user_ui.calendario.WeekViewActivity" />
+        <activity android:name="com.example.abc_connected.frontend.user_ui.calendario.MainActivityCalendar" />
         <activity android:name="com.example.abc_connected.Menu" />
         <activity android:name="com.example.abc_connected.ForgotPasswordActivity" />
         <activity android:name="com.example.abc_connected.SignInActivity" />
