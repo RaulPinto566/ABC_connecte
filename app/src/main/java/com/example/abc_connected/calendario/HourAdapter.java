@@ -1,4 +1,4 @@
-package com.example.abc_connected.frontend.user_ui.calendario;
+package com.example.abc_connected.calendario;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,9 +16,9 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HourAdapter extends ArrayAdapter<com.example.abc_connected.frontend.user_ui.calendario.HourEvent>
+public class HourAdapter extends ArrayAdapter<com.example.abc_connected.calendario.HourEvent>
 {
-    public HourAdapter(@NonNull Context context, List<com.example.abc_connected.frontend.user_ui.calendario.HourEvent> hourEvents)
+    public HourAdapter(@NonNull Context context, List<com.example.abc_connected.calendario.HourEvent> hourEvents)
     {
         super(context, 0, hourEvents);
     }
@@ -27,7 +27,7 @@ public class HourAdapter extends ArrayAdapter<com.example.abc_connected.frontend
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
-        com.example.abc_connected.frontend.user_ui.calendario.HourEvent event = getItem(position);
+        com.example.abc_connected.calendario.HourEvent event = getItem(position);
 
         if (convertView == null)
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.hour_cell, parent, false);

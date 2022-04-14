@@ -1,6 +1,6 @@
-package com.example.abc_connected.frontend.user_ui.calendario;
+package com.example.abc_connected.calendario;
 
-import static com.example.abc_connected.frontend.user_ui.calendario.CalendarUtils.selectedDate;
+import static com.example.abc_connected.calendario.CalendarUtils.selectedDate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -77,13 +77,13 @@ public class DailyCalendarActivity extends AppCompatActivity
 
     public void previousDayAction(View view)
     {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusDays(1);
+        selectedDate = selectedDate.minusDays(1);
         setDayView();
     }
 
     public void nextDayAction(View view)
     {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusDays(1);
+        selectedDate = selectedDate.plusDays(1);
         setDayView();
     }
 

@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     public FirebaseUser currentUser;
     Button signUpButton;
     Button signInButton;
-    private Sistema pap;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
 
     @Override

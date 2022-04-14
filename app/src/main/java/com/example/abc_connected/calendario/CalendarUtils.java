@@ -1,4 +1,4 @@
-package com.example.abc_connected.frontend.user_ui.calendario;
+package com.example.abc_connected.calendario;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
