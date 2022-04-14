@@ -37,7 +37,7 @@ public class ListaUtilizadores
 
     }
 
-    public boolean existe(String username) {
+    public boolean existeUtilizador(String username) {
         return lista.containsKey(username);
     }
 
