@@ -1,16 +1,10 @@
-package com.example.abc_connected;
-
-/*
-LISTA_EQUIPAS- hashmap(equipa,treinador) + sets() + gets()
-*/
-
-
+package com.example.abc_connected.Backend;
 
 import java.util.HashMap;
 
 public class ListaEquipas {
 
-    private HashMap<Equipa, Treinador> lista;
+    private HashMap<Treinador, Equipa> lista;
 
     public class EquipaNaoExistenteException extends Exception {
         public EquipaNaoExistenteException() { }

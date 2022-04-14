@@ -1,8 +1,6 @@
-package com.example.abc_connected;
+package com.example.abc_connected.Backend;
 
-import java.io.Serializable;
-
-public class Utilizador implements Serializable {
+public class Utilizador {
     private String username;
     private String password;
 

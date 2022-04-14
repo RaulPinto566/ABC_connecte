@@ -8,11 +8,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.abc_connected.Backend.Atleta;
+import com.example.abc_connected.Backend.Sistema;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     public Integer REQUEST_EXIT = 9;
@@ -20,91 +33,73 @@ public class MainActivity extends AppCompatActivity {
     public FirebaseUser currentUser;
     Button signUpButton;
     Button signInButton;
+    private Sistema pap;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mAuth = FirebaseAuth.getInstance();
-
         signUpButton = findViewById(R.id.welcomeSignUpButton);
         signInButton = findViewById(R.id.welcomeSignInButton);
-
         signInButton.setVisibility(INVISIBLE);
         signUpButton.setVisibility(INVISIBLE);
-
-        if (mAuth.getCurrentUser() != null) {
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        DatabaseReference root = db.getReference().child("Equipa");
+        ArrayList<String> map = new ArrayList<>();
+        map.add("trdrghj");
+        map.add("tghklkm");
+        CriarEquipa(root,map,"trein");
+       if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
-
                     currentUser = mAuth.getCurrentUser();
-
-
-                    if (currentUser != null && currentUser.isEmailVerified()) {
-
-
+                     if (currentUser != null && currentUser.isEmailVerified()) {
                         System.out.println("Email Verified : " + currentUser.isEmailVerified());
-
                         Intent MainActivity = new Intent(MainActivity.this, Menu.class);
                         startActivity(MainActivity);
                         MainActivity.this.finish();
-
-
                     }
                 }
             });
-
         } else {
-
             signInButton.setVisibility(VISIBLE);
             signUpButton.setVisibility(VISIBLE);
-
             System.out.println("user not available");
-
         }
-
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 Intent signUpIntent = new Intent(MainActivity.this, SignUpActivity.class);
 
                 startActivity(signUpIntent);
-
-
             }
         });
-
-
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 Intent signInIntent = new Intent(MainActivity.this, SignInActivity.class);
 
                 startActivity(signInIntent);
-
-
             }
         });
-
     }
-
-
+    public void CriarEquipa (DatabaseReference root, ArrayList<String> list, String treinador)
+    {
+        HashMap map = new HashMap();
+        map.put("Treinador",treinador);
+        map.put("Atletas", list);
+        root.push().setValue(map);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_EXIT) {
             if (resultCode == RESULT_OK) {
                 this.finish();
-
             }
         }
     }
-
 }

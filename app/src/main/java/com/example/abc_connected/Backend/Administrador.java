@@ -1,9 +1,6 @@
-package com.example.abc_connected;
+package com.example.abc_connected.Backend;
 
-import java.io.Serializable;
-
-
-public class Administrador extends Utilizador implements Serializable
+public class Administrador extends Utilizador
 {
     private String email, numero;
 

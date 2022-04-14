@@ -1,30 +1,24 @@
-package com.example.abc_connected;
+package com.example.abc_connected.Backend;
 
-import java.io.Serializable;
+public class Treinador extends Utilizador {
 
-public class Atleta extends Utilizador implements Serializable
-{
-
-    private String escalao, nome, email, numero, idade, genero, golo, posicao;
+    private String nome, email, numero, idade, genero, posicao,username,password;
 
     //construtor
-    public Atleta() { }
+    public Treinador() { }
 
-    public Atleta(String username , String password , String escalao, String nome, String email, String numero, String idade, String genero, String golo, String posicao) {
-        super(password,username);
-        this.escalao = escalao;
+    public Treinador(String username , String password , String nome, String email, String numero, String idade, String genero, String posicao) {
         this.nome = nome;
         this.email = email;
         this.numero = numero;
         this.idade = idade;
         this.genero = genero;
-        this.golo = golo;
         this.posicao = posicao;
+        this.username = username;
+        this.password = password;
     }
 
     //getters
-
-    public String getEscalao() { return escalao; }
 
     public String getNome() { return nome; }
 
@@ -36,13 +30,13 @@ public class Atleta extends Utilizador implements Serializable
 
     public String getGenero() { return genero; }
 
-    public String getGolo() { return golo; }
-
     public String getPosicao() { return posicao; }
 
-    //setters
+    public String getPassword() { return password; }
 
-    public void setEscalao(String escalao) { this.escalao = escalao; }
+    public String getUsername(){ return username; }
+
+    //setters
 
     public void setNome(String nome) { this.nome = nome; }
 
@@ -54,7 +48,9 @@ public class Atleta extends Utilizador implements Serializable
 
     public void setGenero(String genero) { this.genero = genero; }
 
-    public void setGolo(String golo) { this.golo = golo; }
-
     public void setPosicao(String posicao) { this.posicao = posicao; }
+
+    public void setUsername(String username) { this.username = username; }
+
+    public void setPassword(String password) { this.password = password; }
 }

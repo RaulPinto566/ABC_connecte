@@ -1,9 +1,8 @@
-package com.example.abc_connected;
+package com.example.abc_connected.Backend;
 
-import java.io.Serializable;
 import java.util.TreeMap;
 
-public class ListaUtilizadores implements Serializable
+public class ListaUtilizadores
 {
     private TreeMap<String, Utilizador> lista;
 

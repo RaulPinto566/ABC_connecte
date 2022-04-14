@@ -1,8 +1,6 @@
-package com.example.abc_connected;
+package com.example.abc_connected.Backend;
 
-import java.io.Serializable;
-
-public class Treinos implements Serializable {
+public class Treinos {
 
     private int hora, minutos, id_treino;
     private String local;

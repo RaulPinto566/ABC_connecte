@@ -97,7 +97,7 @@ public class Menu extends AppCompatActivity {
 
 
             }
-        });
+        });/*
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +107,6 @@ public class Menu extends AppCompatActivity {
                 startActivity(mainchat);
 
             }
-        });
+        });*/
     }
 }

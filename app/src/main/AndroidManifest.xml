@@ -32,11 +32,7 @@
         <activity android:name="com.example.abc_connected.ForgotPasswordActivity" />
         <activity android:name="com.example.abc_connected.SignInActivity" />
         <activity android:name="com.example.abc_connected.SignUpActivity" />
-        <activity android:name=".UpdateProfile" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".chatActivity" />
-        <activity android:name=".setProfile" />
-        <activity android:name=".specificchat"/>
+
 
         <activity
             android:name=".MainActivity"

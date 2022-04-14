@@ -15,4 +15,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="save_your_profile">Save Your Profile</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="enter_your_name_here">Enter Your Name Here</string>
+    <string name="todo">TODO</string>
 </resources>
