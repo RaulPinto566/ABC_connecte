@@ -9,6 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     tools:context="com.example.abc_connected.Criar_Equipa">
+
     <ListView
 
         android:id="@+id/window_list"
