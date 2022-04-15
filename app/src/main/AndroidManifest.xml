@@ -29,6 +29,7 @@
         <activity android:name="com.example.abc_connected.calendario.WeekViewActivity" />
         <activity android:name="com.example.abc_connected.calendario.MainActivityCalendar" />
         <activity android:name="com.example.abc_connected.Menu" />
+        <activity android:name="com.example.abc_connected.Criar_Equipa"/>
         <activity android:name="com.example.abc_connected.ForgotPasswordActivity" />
         <activity android:name="com.example.abc_connected.SignInActivity" />
         <activity android:name="com.example.abc_connected.SignUpActivity" />
