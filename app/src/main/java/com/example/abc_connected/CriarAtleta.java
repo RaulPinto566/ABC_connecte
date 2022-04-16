@@ -102,7 +102,7 @@ public class CriarAtleta extends AppCompatActivity {
                 String num = numero.getText().toString();
                 String esc = escalao.getText().toString();
 
-                CriarAtleta(root, username, password, name, emaill, num, idad, gen,posi,esc);
+                CriarAtleta(root,username,password,esc,name,emaill,num,idad,gen,posi);
 
 
                 if (email.getText().toString().contentEquals("")) {

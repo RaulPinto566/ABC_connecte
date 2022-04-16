@@ -25,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class SignInActivity extends AppCompatActivity {
     private static final String TAG = "SignInActivity";
     public FirebaseAuth mAuth;
+
     EditText emailTextInput;
     EditText passwordTextInput;
     Button signInButton;

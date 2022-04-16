@@ -88,7 +88,6 @@ public class CriarAdmin extends AppCompatActivity {
                 String idad = idade.getText().toString();
                 String gen = genero.getText().toString();
                 String num = numero.getText().toString();
-
                 CriarAdmin(root, username, password, name, emaill, num, idad, gen);
 
                 if (email.getText().toString().contentEquals("")) {

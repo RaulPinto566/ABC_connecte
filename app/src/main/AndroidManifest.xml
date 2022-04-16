@@ -33,6 +33,12 @@
             android:name=".Admin"
             android:exported="false" />
         <activity
+            android:name=".Atletas"
+            android:exported="false" />
+        <activity
+            android:name=".Treinadores"
+            android:exported="false" />
+        <activity
             android:name=".calendario.DailyCalendarActivity"
             android:exported="true" />
         <activity android:name=".calendario.EventEditActivity" />
@@ -41,7 +47,6 @@
         <activity android:name=".Menu" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignInActivity" />
-        <activity android:name=".SignUpActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

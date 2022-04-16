@@ -93,7 +93,6 @@ public class CriarTreinador extends AppCompatActivity {
                 String gen = genero.getText().toString();
                 String posi = posicao.getText().toString();
                 String num = numero.getText().toString();
-
                 CriarTreinador(root, username, password, name, emaill, num, idad, gen, posi);
                 if (email.getText().toString().contentEquals("")) {
                     errorView.setText("Email cannot be empty");
