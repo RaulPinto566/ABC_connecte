@@ -6,6 +6,7 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -29,6 +30,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    private ArrayList adpt;
+    private HashMap hash;
+    private ArrayAdapter adapter;
     public Integer REQUEST_EXIT = 9;
     public FirebaseAuth mAuth;
     public FirebaseUser currentUser;
@@ -42,17 +46,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mAuth = FirebaseAuth.getInstance();
         signUpButton = findViewById(R.id.welcomeSignUpButton);
         signInButton = findViewById(R.id.welcomeSignInButton);
         signInButton.setVisibility(INVISIBLE);
         signUpButton.setVisibility(INVISIBLE);
 
-        FirebaseDatabase db2 = FirebaseDatabase.getInstance();
-        DatabaseReference root2 = db2.getReference().child("Atletas");
+
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference().child("Atletas");
+
+        adpt = new ArrayList<>();
+        hash = new HashMap();
+
+        root.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    hash = (HashMap) dataSnapshot.getValue();
+                    adpt.add(hash.get("Email"));
+                }
+                adapter.notifyDataSetChanged();
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
+
         CriarAtleta(root,"","","Junior","Raul","","","","","");
        if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -61,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     currentUser = mAuth.getCurrentUser();
                      if (currentUser != null && currentUser.isEmailVerified()) {
 
-                         if (root2.push().setValue(map).equals(currentUser)){
+                         if (adapter.equals(currentUser.isEmailVerified())){
                              System.out.println("Email Verified : " + currentUser.isEmailVerified());
                              Intent MainActivity = new Intent(MainActivity.this, MainActivityCalendar.class);
                              startActivity(MainActivity);

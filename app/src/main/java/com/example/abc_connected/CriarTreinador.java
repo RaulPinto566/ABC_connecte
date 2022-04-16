@@ -76,25 +76,25 @@ public class CriarTreinador extends AppCompatActivity {
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference root = db.getReference().child("Treinador");
+        DatabaseReference root = db.getReference().child("Treinadores");
 
-        String username = user.getText().toString();
-        String password = pass.getText().toString();
-        String emaill = email.getText().toString();
-        String name = nome.getText().toString();
-        String idad = idade.getText().toString();
-        String gen = genero.getText().toString();
-        String posi = posicao.getText().toString();
-        String num = numero.getText().toString();
 
-        CriarTreinador(root, username, password, name, emaill, num, idad, gen, posi);
 
 
         criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String username = user.getText().toString();
+                String password = pass.getText().toString();
+                String emaill = email.getText().toString();
+                String name = nome.getText().toString();
+                String idad = idade.getText().toString();
+                String gen = genero.getText().toString();
+                String posi = posicao.getText().toString();
+                String num = numero.getText().toString();
 
+                CriarTreinador(root, username, password, name, emaill, num, idad, gen, posi);
                 if (email.getText().toString().contentEquals("")) {
                     errorView.setText("Email cannot be empty");
                 } else if (pass.getText().toString().contentEquals("")) {
