@@ -1,5 +1,9 @@
 package com.example.abc_connected;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,61 +15,105 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 
-public class SignUpActivity extends AppCompatActivity {
+public class CriarAtleta extends AppCompatActivity {
+
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+
+    public void CriarAtleta (DatabaseReference root , String username , String password , String escalao, String nome, String email, String numero, String idade, String genero, String posicao)
+    {
+        HashMap<String ,String> map = new HashMap<>();
+        map.put("Username", username);
+        map.put("Password", password);
+        map.put("Nome", nome);
+        map.put("Email", email);
+        map.put("Numero", numero);
+        map.put("Idade", idade);
+        map.put("Genero", genero);
+        map.put("Posicao",posicao);
+        map.put("Escalao",escalao);
+        root.push().setValue(map);
+    }
+
 
     private static final String TAG = "SignUpActivity";
     public FirebaseAuth mAuth;
-    Button signUpButton;
-    EditText signUpEmailTextInput;
-    EditText signUpPasswordTextInput;
-    CheckBox agreementCheckBox;
+    Button criar;
+    EditText user;
+    EditText email;
+    EditText pass;
+    EditText nome;
+    EditText idade;
+    EditText genero;
+    EditText posicao;
+    EditText numero;
+    EditText escalao;
     TextView errorView;
+    CheckBox agreementCheckBox;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_criaratleta);
+
+        email = findViewById(R.id.mail);
+        pass = findViewById(R.id.pass);
+        criar = findViewById(R.id.criar);
+        user = findViewById(R.id.user);
+        nome = findViewById(R.id.nome);
+        idade = findViewById(R.id.idade);
+        genero = findViewById(R.id.genero);
+        posicao = findViewById(R.id.pos);
+        numero = findViewById(R.id.numero);
+        escalao = findViewById(R.id.escalao);
+        errorView = findViewById(R.id.signInErrorView);
 
 
-        mAuth = FirebaseAuth.getInstance();
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        DatabaseReference root = db.getReference().child("Atleta");
 
-        signUpEmailTextInput = findViewById(R.id.signUpEmailTextInput);
-        signUpPasswordTextInput = findViewById(R.id.signUpPasswordTextInput);
-        signUpButton = findViewById(R.id.signUpButton);
-        agreementCheckBox = findViewById(R.id.agreementCheckbox);
-        errorView = findViewById(R.id.signUpErrorView);
+        String username = user.getText().toString();
+        String password = pass.getText().toString();
+        String emaill = email.getText().toString();
+        String name = nome.getText().toString();
+        String idad = idade.getText().toString();
+        String gen = genero.getText().toString();
+        String posi = posicao.getText().toString();
+        String num = numero.getText().toString();
+        String esc = escalao.getText().toString();
 
-        signUpButton.setOnClickListener(new View.OnClickListener() {
+        CriarAtleta(root, username, password, name, emaill, num, idad, gen,posi,esc);
+
+
+
+        criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
-
-                if (signUpEmailTextInput.getText().toString().contentEquals("")) {
+                if (email.getText().toString().contentEquals("")) {
                     errorView.setText("Email cannot be empty");
-                } else if (signUpPasswordTextInput.getText().toString().contentEquals("")) {
+                } else if (pass.getText().toString().contentEquals("")) {
                     errorView.setText("Password cannot be empty");
-                } else if (!agreementCheckBox.isChecked()) {
-                    errorView.setText("Please agree to terms and Condition");
-                } else {
-                    mAuth.createUserWithEmailAndPassword(signUpEmailTextInput.getText().toString(), signUpPasswordTextInput.getText().toString()).addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                }
+                else {
+                    mAuth.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString()).addOnCompleteListener(CriarAtleta.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
-                                Log.d(TAG, "createUserWithEmail:success" + signUpEmailTextInput.getText().toString());
+                                Log.d(TAG, "createUserWithEmail:success" + email.getText().toString());
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 try {
                                     if (user != null)
@@ -76,7 +124,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                         if (task.isSuccessful()) {
                                                             Log.d(TAG, "Email sent.");
                                                             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                                                                    SignUpActivity.this);
+                                                                    CriarAtleta.this);
                                                             // set title
                                                             alertDialogBuilder.setTitle("Please Verify Your EmailID");
                                                             // set dialog message
@@ -85,8 +133,8 @@ public class SignUpActivity extends AppCompatActivity {
                                                                     .setCancelable(false)
                                                                     .setPositiveButton("Sign In", new DialogInterface.OnClickListener() {
                                                                         public void onClick(DialogInterface dialog, int id) {
-                                                                            Intent signInIntent = new Intent(SignUpActivity.this, SignInActivity.class);
-                                                                            SignUpActivity.this.finish();
+                                                                            Intent signInIntent = new Intent(CriarAtleta.this, SignInActivity.class);
+                                                                            CriarAtleta.this.finish();
                                                                         }
                                                                     });
                                                             // create alert dialog
@@ -102,7 +150,7 @@ public class SignUpActivity extends AppCompatActivity {
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                                Toast.makeText(SignUpActivity.this, "Authentication failed.",
+                                Toast.makeText(CriarAtleta.this, "Authentication failed.",
                                         Toast.LENGTH_SHORT).show();
 
                                 if (task.getException() != null) {
@@ -112,7 +160,13 @@ public class SignUpActivity extends AppCompatActivity {
                         }
                     });
                 }
+
             }
         });
+
+
     }
+
+
+
 }

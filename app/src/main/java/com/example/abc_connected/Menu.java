@@ -35,7 +35,7 @@ public class Menu extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.signOut);
         calendarButton = findViewById(R.id.calendar);
-        chat=findViewById(R.id.chat);
+
 
 
         mAuth = FirebaseAuth.getInstance();

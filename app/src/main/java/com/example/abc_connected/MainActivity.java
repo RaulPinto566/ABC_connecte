@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.abc_connected.Backend.Atleta;
 import com.example.abc_connected.Backend.Sistema;
+import com.example.abc_connected.calendario.MainActivityCalendar;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     Button signUpButton;
     Button signInButton;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private FirebaseDatabase db2 = FirebaseDatabase.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         signInButton = findViewById(R.id.welcomeSignInButton);
         signInButton.setVisibility(INVISIBLE);
         signUpButton.setVisibility(INVISIBLE);
+
+        FirebaseDatabase db2 = FirebaseDatabase.getInstance();
+        DatabaseReference root2 = db2.getReference().child("Atletas");
+
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference().child("Equipa");
         ArrayList<String> map = new ArrayList<>();
@@ -56,10 +63,18 @@ public class MainActivity extends AppCompatActivity {
                 public void onSuccess(Void aVoid) {
                     currentUser = mAuth.getCurrentUser();
                      if (currentUser != null && currentUser.isEmailVerified()) {
-                        System.out.println("Email Verified : " + currentUser.isEmailVerified());
-                        Intent MainActivity = new Intent(MainActivity.this, Menu.class);
-                        startActivity(MainActivity);
-                        MainActivity.this.finish();
+
+                         if (root2.push().setValue(map).equals(currentUser)){
+                             System.out.println("Email Verified : " + currentUser.isEmailVerified());
+                             Intent MainActivity = new Intent(MainActivity.this, MainActivityCalendar.class);
+                             startActivity(MainActivity);
+                             MainActivity.this.finish();
+
+                         }else{  System.out.println("Email Verified : " + currentUser.isEmailVerified());
+                             Intent MainActivity = new Intent(MainActivity.this, Menu.class);
+                             startActivity(MainActivity);
+                             MainActivity.this.finish();}
+
                     }
                 }
             });
@@ -71,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent signUpIntent = new Intent(MainActivity.this, SignUpActivity.class);
+                Intent signUpIntent = new Intent(MainActivity.this, CriarAtleta.class);
 
                 startActivity(signUpIntent);
             }

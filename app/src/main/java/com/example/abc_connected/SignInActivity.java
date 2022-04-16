@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.abc_connected.calendario.MainActivityCalendar;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -31,7 +32,7 @@ public class SignInActivity extends AppCompatActivity {
     Button sendVerifyMailAgainButton;
     TextView errorView;
     private DatabaseReference reff;
-    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +50,7 @@ public class SignInActivity extends AppCompatActivity {
         sendVerifyMailAgainButton.setVisibility(View.INVISIBLE);
 
         mAuth = FirebaseAuth.getInstance();
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference root = db.getReference().child("Atletas");
+
 
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,22 +84,15 @@ public class SignInActivity extends AppCompatActivity {
 
 
                                                 System.out.println("Email Verified : " + user.isEmailVerified() + emailTextInput.getText().toString());
-                                                      if(emailTextInput.equals(root)){
+
+
 
                                                           Intent HomeActivity = new Intent(SignInActivity.this, MainActivity.class);
                                                           setResult(RESULT_OK, null);
                                                           reff.child(user.getUid()).setValue(user.getEmail());
                                                           startActivity(HomeActivity);
                                                           SignInActivity.this.finish();
-                                                      }else {
 
-                                                          Intent HomeActivity = new Intent(SignInActivity.this, MainActivity.class);
-                                                          setResult(RESULT_OK, null);
-                                                          reff.child(user.getUid()).setValue(user.getEmail());
-                                                          startActivity(HomeActivity);
-                                                          SignInActivity.this.finish();
-
-                                                      }
 
 
 
