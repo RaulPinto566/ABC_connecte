@@ -7,20 +7,28 @@
     android:background="#FFCD01">
 
     <Button
-        android:id="@+id/guardar7"
-        android:layout_width="167dp"
-        android:layout_height="72dp"
-        android:text="Abandonar"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="594dp" />
+        android:id="@+id/estatisticasButton"
+        android:layout_width="158dp"
+        android:layout_height="81dp"
+        android:text="Estatísticas"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="642dp" />
 
     <Button
-        android:id="@+id/guardar8"
-        android:layout_width="167dp"
-        android:layout_height="72dp"
+        android:id="@+id/periodoButton"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
         android:text="Período"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="594dp" />
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <Button
+        android:id="@+id/abandonarButton"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:text="Abandonar"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="561dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -31,52 +39,52 @@
         tools:layout_editor_absoluteY="3dp" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/defesaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Defesa"
-        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteX="241dp"
         tools:layout_editor_absoluteY="167dp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/ataqueButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Ataque"
-        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="167dp" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/remateButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Remate"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="287dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/balizaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Baliza\Realizada"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="472dp" />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="404dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/falhadoButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Falhado\Sofrida"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="472dp" />
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="404dp" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/faltaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
         android:text="Falta"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="287dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -101,7 +109,7 @@
         android:layout_height="wrap_content"
         android:text="ou"
         tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="502dp" />
+        tools:layout_editor_absoluteY="434dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -109,6 +117,6 @@
         android:layout_height="wrap_content"
         android:text="ou"
         tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="347dp" />
+        tools:layout_editor_absoluteY="320dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

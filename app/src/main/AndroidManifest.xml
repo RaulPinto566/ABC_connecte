@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.abc_connected">
 
-
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission
         android:name="android.permission.INTERNET"
         tools:ignore="ManifestOrder" />
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <dist:module dist:instant="true" />
 
@@ -21,32 +20,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ABC_connected">
-        tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.example.abc_connected.calendario.DailyCalendarActivity"
+            android:name=".CriarAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".CriarTreinador"
+            android:exported="false" />
+        <activity
+            android:name=".CriarAtleta"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".calendario.DailyCalendarActivity"
             android:exported="true" />
-        <activity android:name="com.example.abc_connected.calendario.EventEditActivity" />
-        <activity android:name="com.example.abc_connected.calendario.WeekViewActivity" />
-        <activity android:name="com.example.abc_connected.calendario.MainActivityCalendar" />
-        <activity android:name="com.example.abc_connected.Menu" />
-        <activity android:name="com.example.abc_connected.Criar_Equipa"/>
-        <activity android:name="com.example.abc_connected.ForgotPasswordActivity" />
-        <activity android:name="com.example.abc_connected.SignInActivity" />
-        <activity android:name="com.example.abc_connected.SignUpActivity" />
-
-
+        <activity android:name=".calendario.EventEditActivity" />
+        <activity android:name=".calendario.WeekViewActivity" />
+        <activity android:name=".calendario.MainActivityCalendar" />
+        <activity android:name=".Menu" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

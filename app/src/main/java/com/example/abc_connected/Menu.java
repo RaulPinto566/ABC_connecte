@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Menu extends AppCompatActivity {
 
-    Button logout, calendarButton,criar_equipa;
+    Button logout, calendarButton,chat;
     public FirebaseAuth mAuth;
     public FirebaseUser currentUser;
     private DatabaseReference reff;
@@ -35,7 +35,7 @@ public class Menu extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.signOut);
         calendarButton = findViewById(R.id.calendar);
-        criar_equipa = findViewById(R.id.criar_equipa);
+
 
 
         mAuth = FirebaseAuth.getInstance();
@@ -97,16 +97,16 @@ public class Menu extends AppCompatActivity {
 
 
             }
-        });
-        criar_equipa.setOnClickListener(new View.OnClickListener() {
+        });/*
+        chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent criar_equipa = new Intent(Menu.this, Criar_Equipa.class);
+                Intent mainchat = new Intent(Menu.this, chatActivity.class);
 
-                startActivity(criar_equipa);
+                startActivity(mainchat);
 
             }
-        });
+        });*/
     }
 }
