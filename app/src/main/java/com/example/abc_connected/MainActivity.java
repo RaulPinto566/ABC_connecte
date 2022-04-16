@@ -52,11 +52,8 @@ public class MainActivity extends AppCompatActivity {
         DatabaseReference root2 = db2.getReference().child("Atletas");
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference root = db.getReference().child("Equipa");
-        ArrayList<String> map = new ArrayList<>();
-        map.add("trdrghj");
-        map.add("tghklkm");
-        CriarEquipa(root,map,"trein");
+        DatabaseReference root = db.getReference().child("Atletas");
+        CriarAtleta(root,"","","Junior","Raul","","","","","");
        if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
@@ -100,12 +97,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void CriarAtleta (DatabaseReference root ,String username , String password , String escalao, String nome, String email, String numero, String idade, String genero, String posicao)
+    {
+        HashMap<String ,String> map = new HashMap<>();
+        map.put("Username",username);
+        map.put("Password", password);
+        map.put("Nome", nome);
+        map.put("Email", email);
+        map.put("Numero", numero);
+        map.put("Idade", idade);
+        map.put("Genero", genero);
+        map.put("Posicao",posicao);
+        map.put("Escalao",escalao);
+        root.push().setValue(map);
+    }
     public void CriarEquipa (DatabaseReference root, ArrayList<String> list, String treinador)
     {
         HashMap map = new HashMap();
         map.put("Treinador",treinador);
         map.put("Atletas", list);
-        root.push().setValue(map);
+        root.child("Pila1").setValue(map);
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
