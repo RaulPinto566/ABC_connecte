@@ -6,14 +6,12 @@ import static android.view.View.VISIBLE;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.abc_connected.Backend.Atleta;
-import com.example.abc_connected.Backend.Sistema;
-import com.example.abc_connected.calendario.MainActivityCalendar;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,17 +20,20 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
+    private ArrayList adpt;
+    private HashMap hash;
+    private ArrayList adpt2;
+    private HashMap hash2;
+    private ArrayAdapter adapter;
+
     public Integer REQUEST_EXIT = 9;
     public FirebaseAuth mAuth;
     public FirebaseUser currentUser;
-    Button signUpButton;
     Button signInButton;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private FirebaseDatabase db2 = FirebaseDatabase.getInstance();
@@ -42,52 +43,98 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mAuth = FirebaseAuth.getInstance();
-        signUpButton = findViewById(R.id.welcomeSignUpButton);
+
         signInButton = findViewById(R.id.welcomeSignInButton);
         signInButton.setVisibility(INVISIBLE);
-        signUpButton.setVisibility(INVISIBLE);
 
-        FirebaseDatabase db2 = FirebaseDatabase.getInstance();
-        DatabaseReference root2 = db2.getReference().child("Atletas");
+
+
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference().child("Atletas");
-        CriarAtleta(root,"","","Junior","Raul Pinto","","","","","");
+
+        FirebaseDatabase db2 = FirebaseDatabase.getInstance();
+        DatabaseReference root2 = db2.getReference().child("Treinadores");
+
+        adpt = new ArrayList<>();
+        hash = new HashMap();
+
+        adpt2 = new ArrayList<>();
+        hash2 = new HashMap();
+
+
+        root.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    hash = (HashMap) dataSnapshot.getValue();
+                    adpt.add(hash.get("Email"));
+                }
+                adapter.notifyDataSetChanged();
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
+
+        root2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    hash2 = (HashMap) dataSnapshot.getValue();
+                    adpt2.add(hash2.get("Email"));
+                }
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
        if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
                     currentUser = mAuth.getCurrentUser();
-                     if (currentUser != null && currentUser.isEmailVerified()) {
+                    if (currentUser != null && currentUser.isEmailVerified()) {
 
-                         if (root2.push().setValue(map).equals(currentUser)){
-                             System.out.println("Email Verified : " + currentUser.isEmailVerified());
-                             Intent MainActivity = new Intent(MainActivity.this, MainActivityCalendar.class);
-                             startActivity(MainActivity);
-                             MainActivity.this.finish();
+                        if (adpt.toString().trim().contains(currentUser.getEmail().trim())) {
+                            Intent MainActivity = new Intent(MainActivity.this, Atletas.class);
+                            startActivity(MainActivity);
+                            MainActivity.this.finish();
 
-                         }else{  System.out.println("Email Verified : " + currentUser.isEmailVerified());
-                             Intent MainActivity = new Intent(MainActivity.this, Menu.class);
-                             startActivity(MainActivity);
-                             MainActivity.this.finish();}
+                        } else {
+                            if (adpt2.toString().trim().contains(currentUser.getEmail().trim())) {
+                                Intent MainActivity = new Intent(MainActivity.this, Treinadores.class);
+                                startActivity(MainActivity);
+                                MainActivity.this.finish();
 
+                            } else {
+                                Intent MainActivity = new Intent(MainActivity.this, Admin.class);
+                                startActivity(MainActivity);
+                                MainActivity.this.finish();
+
+                            }
+
+                        }
                     }
                 }
             });
         } else {
             signInButton.setVisibility(VISIBLE);
-            signUpButton.setVisibility(VISIBLE);
             System.out.println("user not available");
         }
-        signUpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signUpIntent = new Intent(MainActivity.this, CriarAtleta.class);
 
-                startActivity(signUpIntent);
-            }
-        });
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

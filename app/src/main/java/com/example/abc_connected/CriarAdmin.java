@@ -72,23 +72,23 @@ public class CriarAdmin extends AppCompatActivity {
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference root = db.getReference().child("Admin");
+        DatabaseReference root = db.getReference().child("Admins");
 
-        String username = user.getText().toString();
-        String password = pass.getText().toString();
-        String emaill = email.getText().toString();
-        String name = nome.getText().toString();
-        String idad = idade.getText().toString();
-        String gen = genero.getText().toString();
-        String num = numero.getText().toString();
 
-        CriarAdmin(root, username, password, name, emaill, num, idad, gen);
 
 
         criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String username = user.getText().toString();
+                String password = pass.getText().toString();
+                String emaill = email.getText().toString();
+                String name = nome.getText().toString();
+                String idad = idade.getText().toString();
+                String gen = genero.getText().toString();
+                String num = numero.getText().toString();
+                CriarAdmin(root, username, password, name, emaill, num, idad, gen);
 
                 if (email.getText().toString().contentEquals("")) {
                     errorView.setText("Email cannot be empty");

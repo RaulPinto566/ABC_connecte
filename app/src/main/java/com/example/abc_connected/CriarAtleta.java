@@ -58,7 +58,7 @@ public class CriarAtleta extends AppCompatActivity {
     EditText numero;
     EditText escalao;
     TextView errorView;
-    CheckBox agreementCheckBox;
+
 
 
 
@@ -66,6 +66,8 @@ public class CriarAtleta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criaratleta);
+
+        mAuth = FirebaseAuth.getInstance();
 
         email = findViewById(R.id.mail);
         pass = findViewById(R.id.pass);
@@ -81,25 +83,26 @@ public class CriarAtleta extends AppCompatActivity {
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference root = db.getReference().child("Atleta");
+        DatabaseReference root = db.getReference().child("Atletas");
 
-        String username = user.getText().toString();
-        String password = pass.getText().toString();
-        String emaill = email.getText().toString();
-        String name = nome.getText().toString();
-        String idad = idade.getText().toString();
-        String gen = genero.getText().toString();
-        String posi = posicao.getText().toString();
-        String num = numero.getText().toString();
-        String esc = escalao.getText().toString();
-
-        CriarAtleta(root, username, password, name, emaill, num, idad, gen,posi,esc);
 
 
 
         criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String username = user.getText().toString();
+                String password = pass.getText().toString();
+                String emaill = email.getText().toString();
+                String name = nome.getText().toString();
+                String idad = idade.getText().toString();
+                String gen = genero.getText().toString();
+                String posi = posicao.getText().toString();
+                String num = numero.getText().toString();
+                String esc = escalao.getText().toString();
+
+                CriarAtleta(root,username,password,esc,name,emaill,num,idad,gen,posi);
 
 
                 if (email.getText().toString().contentEquals("")) {
