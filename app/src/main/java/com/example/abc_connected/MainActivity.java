@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         signUpButton.setVisibility(INVISIBLE);
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference().child("Atletas");
-        CriarAtleta(root,"","","Junior","Raul","","","","","");
+        CriarAtleta(root,"","","Junior","Raul Pinto","","","","","");
        if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
