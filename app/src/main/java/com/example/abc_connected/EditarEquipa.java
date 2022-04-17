@@ -1,20 +1,16 @@
 package com.example.abc_connected;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bumptech.glide.load.model.Model;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,18 +19,16 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
-import okhttp3.internal.cache.DiskLruCache;
-
-public class Criar_Equipa extends AppCompatActivity {
-    private ArrayList adpt,list;
+public class EditarEquipa extends AppCompatActivity {
+    private ArrayList adpt,list,lista;
+    private TextView nomeequipa;
+    private int soma;
+    private String data,nometreinador;
     private HashMap hash;
     private ListView listviewData;
     private ArrayAdapter adapter;
-    private TextView nomeequipa;
     private Button button_guardar;
-    private String data,nometreinador,nomequipa;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Atletas");
     private DatabaseReference raat = db.getReference().child("Equipas");
@@ -45,25 +39,12 @@ public class Criar_Equipa extends AppCompatActivity {
         listviewData = findViewById(R.id.window_list);
         button_guardar = findViewById(R.id.button_guardar);
         nomeequipa = findViewById(R.id.textinput);
+        nomeequipa.setVisibility(View.INVISIBLE);
         adpt = new ArrayList();
         list = new ArrayList();
+        lista = new ArrayList();
         hash = new HashMap();
         data = (String) FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        root.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    hash = (HashMap) dataSnapshot.getValue();
-                    adpt.add("Nome:"+hash.get("Nome")+"\n"+"Escalao:"+hash.get("Escalao"));
-                }
-                adapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
         reet.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -80,32 +61,44 @@ public class Criar_Equipa extends AppCompatActivity {
 
             }
         });
+        raat.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    hash = (HashMap) dataSnapshot.getValue();
+                    if(hash.get("Treinador").toString().equals(nometreinador)) {
+                        adpt.add((String)hash.get("Nome_Equipa"));
+                    }
+                }
+                adapter.notifyDataSetChanged();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
         listviewData.setAdapter(adapter);
         button_guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onOptionsItemSelected();
-                CriarEquipa(raat,list,nometreinador,nomequipa);
-                finish();
+                if(soma!=1){
+                    button_guardar.setError("Selecione apenas uma equipa.");
+                }
+                else{
+                    finish();
+                }
             }
         });
     }
     public void onOptionsItemSelected(){
-            for(int i=0;i<listviewData.getCount();i++){
-                if(listviewData.isItemChecked(i)) {
-                    String word[]=listviewData.getItemAtPosition(i).toString().split("[:\n]");
-                    list.add(word[1]);
-                }
+        soma=0;
+        for(int i=0;i<listviewData.getCount();i++){
+            if(listviewData.isItemChecked(i)) {
+                soma++;
             }
-            nomequipa = nomeequipa .getText().toString().trim();
-    }
-    public void CriarEquipa (DatabaseReference root, ArrayList list,String treinador,String nome_equipa)
-    {
-        HashMap map = new HashMap();
-        map.put("Nome_Equipa",nome_equipa);
-        map.put("Treinador",treinador);
-        map.put("Atletas", list);
-        root.push().setValue(map);
+        }
     }
 }
+

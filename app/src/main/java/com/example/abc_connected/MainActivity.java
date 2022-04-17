@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     hash2 = (HashMap) dataSnapshot.getValue();
                     adpt2.add(hash2.get("Email"));
                 }
-
-
             }
 
             @Override

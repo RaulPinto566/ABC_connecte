@@ -1,115 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFCD01">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp" />
+
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="calendario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="318dp" />
 
     <Button
         android:id="@+id/button25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Perfil"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="300dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="654dp" />
 
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="129dp"
         android:layout_height="101dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
         android:foreground="@drawable/estatisticas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.189" />
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="386dp" />
 
     <Button
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="299dp"
+        android:layout_marginTop="555dp"
         android:text="Logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="129dp"
-        android:layout_height="81dp"
-        app:srcCompat="@drawable/img"
         tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="29dp" />
+        tools:layout_editor_absoluteY="654dp" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="129dp"
         android:layout_height="101dp"
-        android:layout_marginBottom="244dp"
         android:foreground="@drawable/chat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.189" />
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="400dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="386dp" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="129dp"
         android:layout_height="101dp"
-        android:layout_marginBottom="424dp"
         android:foreground="@drawable/treinos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.189" />
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="129dp"
         android:layout_height="101dp"
-        android:layout_marginBottom="424dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.189"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
         app:srcCompat="@drawable/calendar"
-        tools:ignore="UnknownIdInLayout" />
+        tools:ignore="UnknownIdInLayout"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="206dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="390dp"
-        android:layout_height="116dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Bem vindo treinador,"
         android:textSize="48sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="16dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/EditarEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditarEquipa"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="500dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <Button
+        android:id="@+id/CriarEquipa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:text="CriarEquipa"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+</RelativeLayout>
