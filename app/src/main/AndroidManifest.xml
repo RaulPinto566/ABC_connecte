@@ -48,6 +48,11 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".EditarEquipa"/>
+        <activity android:name=".EditarEquipa1"/>
+        <activity android:name=".EditarEquipa2"/>
+        <activity android:name=".EditarEquipa3"/>
+        <activity android:name=".EditarEquipa4"/>
+        <activity android:name=".EditarEquipa5"/>
         <activity android:name=".Criar_Equipa"/>
         <activity
             android:name=".MainActivity"

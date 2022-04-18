@@ -28,14 +28,15 @@ import java.util.Map;
 import okhttp3.internal.cache.DiskLruCache;
 
 public class Criar_Equipa extends AppCompatActivity {
-    private ArrayList adpt,list;
+    private ArrayList adpt,nome,email,list;
     private HashMap hash;
     private ListView listviewData;
     private ArrayAdapter adapter;
     private TextView nomeequipa;
     private Button button_guardar;
-    private String data,nometreinador,nomequipa;
+    private String data,nometreinador,nomequipa,key;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference keyref;
     private DatabaseReference root = db.getReference().child("Atletas");
     private DatabaseReference raat = db.getReference().child("Equipas");
     private DatabaseReference reet = db.getReference().child("Treinadores");
@@ -48,12 +49,16 @@ public class Criar_Equipa extends AppCompatActivity {
         adpt = new ArrayList();
         list = new ArrayList();
         hash = new HashMap();
+        email = new ArrayList();
+        nome = new ArrayList();
         data = (String) FirebaseAuth.getInstance().getCurrentUser().getEmail();
         root.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     hash = (HashMap) dataSnapshot.getValue();
+                    email.add(hash.get("Email"));
+                    nome.add(hash.get("Nome"));
                     adpt.add("Nome:"+hash.get("Nome")+"\n"+"Escalao:"+hash.get("Escalao"));
                 }
                 adapter.notifyDataSetChanged();
@@ -86,26 +91,34 @@ public class Criar_Equipa extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 onOptionsItemSelected();
+                nomequipa = nomeequipa .getText().toString().trim();
                 CriarEquipa(raat,list,nometreinador,nomequipa);
                 finish();
             }
         });
     }
     public void onOptionsItemSelected(){
-            for(int i=0;i<listviewData.getCount();i++){
+        for(int i=0;i<listviewData.getCount();i++){
                 if(listviewData.isItemChecked(i)) {
                     String word[]=listviewData.getItemAtPosition(i).toString().split("[:\n]");
-                    list.add(word[1]);
+                    for(int j = 0;j<nome.size();j++)
+                    {
+                        if(word[1].equals(nome.get(j))){
+                            list.add(email.get(j));
+                        }
+                    }
                 }
             }
-            nomequipa = nomeequipa .getText().toString().trim();
     }
-    public void CriarEquipa (DatabaseReference root, ArrayList list,String treinador,String nome_equipa)
+    public void CriarEquipa (DatabaseReference root, ArrayList lista,String treinador,String nome_equipa)
     {
+        keyref = root.push();
+        key = keyref.getKey();
         HashMap map = new HashMap();
         map.put("Nome_Equipa",nome_equipa);
         map.put("Treinador",treinador);
-        map.put("Atletas", list);
-        root.push().setValue(map);
+        map.put("Atletas", lista);
+        map.put("Key",key);
+        keyref.setValue(map);
     }
 }

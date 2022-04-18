@@ -47,11 +47,6 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         signInButton = findViewById(R.id.welcomeSignInButton);
-        signInButton.setVisibility(INVISIBLE);
-
-
-
-
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference().child("Atletas");
 
