@@ -1,5 +1,6 @@
 package com.example.abc_connected;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -24,11 +25,12 @@ public class EditarEquipa extends AppCompatActivity {
     private ArrayList adpt,list,lista;
     private TextView nomeequipa;
     private int soma;
-    private String data,nometreinador;
+    public static final String nmqp="";
+    private String data,nometreinador,nome_equipa;
     private HashMap hash;
     private ListView listviewData;
     private ArrayAdapter adapter;
-    private Button button_guardar;
+    private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Atletas");
     private DatabaseReference raat = db.getReference().child("Equipas");
@@ -38,8 +40,10 @@ public class EditarEquipa extends AppCompatActivity {
         setContentView(R.layout.activity_criar_equipa);
         listviewData = findViewById(R.id.window_list);
         button_guardar = findViewById(R.id.button_guardar);
-        nomeequipa = findViewById(R.id.textinput);
-        nomeequipa.setVisibility(View.INVISIBLE);
+        adicionaratleta =findViewById(R.id.adicionaratleta);
+        retiraratleta = findViewById(R.id.retiraratleta);
+        trocartreinador = findViewById(R.id.trocartreinador);
+        trocarnomeequipa = findViewById(R.id.trocarnomeequipa);
         adpt = new ArrayList();
         list = new ArrayList();
         lista = new ArrayList();
@@ -87,6 +91,14 @@ public class EditarEquipa extends AppCompatActivity {
                     button_guardar.setError("Selecione apenas uma equipa.");
                 }
                 else{
+                    Intent intent = new Intent(EditarEquipa.this,EditarEquipa1.class);
+                    for(int i=0;i<listviewData.getCount();i++){
+                        if(listviewData.isItemChecked(i)) {
+                            nome_equipa = listviewData.getItemAtPosition(i).toString();
+                        }
+                    }
+                    intent.putExtra(nmqp,nome_equipa);
+                    startActivity(intent);
                     finish();
                 }
             }
