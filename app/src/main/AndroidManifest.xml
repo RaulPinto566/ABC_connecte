@@ -21,6 +21,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ABC_connected">
         <activity
+            android:name=".EditarAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".EditarTreinador"
+            android:exported="false" />
+        <activity
+            android:name=".EditarAtleta"
+            android:exported="false" />
+        <activity
             android:name=".CriarAdmin"
             android:exported="false" />
         <activity
