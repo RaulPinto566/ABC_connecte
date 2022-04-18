@@ -1,8 +1,12 @@
 package com.example.abc_connected;
 
+<<<<<<< HEAD
+import android.os.Bundle;
+=======
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+>>>>>>> origin/master
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +18,23 @@ import com.google.firebase.database.FirebaseDatabase;
 public class JogoJogadas extends AppCompatActivity {
 
     public FirebaseAuth mAuth;
+<<<<<<< HEAD
+    Button ataqueButton;
+    Button defesaButton;
+    Button remateButton;
+    Button faltaButton;
+    Button balizaButton;
+    Button falhadoButton;
+    Button abandonarButton;
+    Button periodoButton;
+    Button estatisticasButton;
+    private Sistema pap;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+
+    @Override
+
+    protected void onCreate(Bundle savedInstanceState){
+=======
     private Button ataqueButton,estatisticasButton,defesaButton,remateButton,faltaButton,balizaButton,falhadoButton,abandonarButton,periodoButton;
     private Boolean ataque=false,defesa=false,remate=false,falta=false,baliza=false,falhado=false;
     private String periodo="1";
@@ -21,6 +42,7 @@ public class JogoJogadas extends AppCompatActivity {
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+>>>>>>> origin/master
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jogadas);
         ataqueButton = findViewById(R.id.ataqueButton);
@@ -32,6 +54,15 @@ public class JogoJogadas extends AppCompatActivity {
         abandonarButton = findViewById(R.id.abandonarButton);
         periodoButton = findViewById(R.id.periodoButton);
         estatisticasButton = findViewById(R.id.estatisticasButton);
+<<<<<<< HEAD
+
+
+
+
+    }
+
+}
+=======
         ataqueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -157,3 +188,4 @@ public class JogoJogadas extends AppCompatActivity {
 
     }
 }
+>>>>>>> origin/master
