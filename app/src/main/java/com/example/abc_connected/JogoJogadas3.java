@@ -6,8 +6,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class JogoJogadas3 {
-    public class JogoJogadas1 extends AppCompatActivity {
+    public class JogoJogadas3 extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             Button distanci6,distancia7,distancia9,ladoesq,ladocentro,ladodireito,guardar,cancelar;
