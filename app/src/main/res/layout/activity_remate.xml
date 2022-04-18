@@ -155,7 +155,7 @@
         android:id="@+id/window_list5"
         android:layout_width="210dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="140dp"
         android:choiceMode="multipleChoice"
         android:ems="10"
