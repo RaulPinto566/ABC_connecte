@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCD01">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="Equipa"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="Jornada"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="Local"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="Competição"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="162dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="162dp"/>
+
+    <Button
+        android:id="@+id/guardarButton"
+        android:layout_width="130dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="530dp"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="132dp"
+        android:layout_height="38dp"
+        android:text="Equipa Adversária"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp" />
+
+    <ListView
+        android:id="@+id/window_list2"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:choiceMode="multipleChoice"
+        android:ems="10"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="162dp"
+        tools:ignore="MissingConstraints">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Criar Jogo"
+        android:textSize="48sp" />
+</RelativeLayout>

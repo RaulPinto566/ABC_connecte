@@ -27,7 +27,7 @@ public class EditarEquipa extends AppCompatActivity {
     private int soma;
     public static final String nmqp="";
     private String data,nometreinador,nome_equipa;
-    private HashMap hash;
+    private HashMap hash,has;
     private ListView listviewData;
     private ArrayAdapter adapter;
     private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
@@ -48,6 +48,7 @@ public class EditarEquipa extends AppCompatActivity {
         list = new ArrayList();
         lista = new ArrayList();
         hash = new HashMap();
+        has = new HashMap();
         data = (String) FirebaseAuth.getInstance().getCurrentUser().getEmail();
         reet.addValueEventListener(new ValueEventListener() {
             @Override
@@ -55,7 +56,7 @@ public class EditarEquipa extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     hash = (HashMap) dataSnapshot.getValue();
                     if(data.equals((String)hash.get("Email"))){
-                        nometreinador = (String)hash.get("Nome");
+                        nometreinador = (String)hash.get("Email");
                     }
                 }
             }
@@ -69,9 +70,9 @@ public class EditarEquipa extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    hash = (HashMap) dataSnapshot.getValue();
-                    if(hash.get("Treinador").toString().equals(nometreinador)) {
-                        adpt.add((String)hash.get("Nome_Equipa"));
+                    has = (HashMap) dataSnapshot.getValue();
+                    if(has.get("Treinador").toString().equals(nometreinador)) {
+                        adpt.add((String)has.get("Nome_Equipa"));
                     }
                 }
                 adapter.notifyDataSetChanged();

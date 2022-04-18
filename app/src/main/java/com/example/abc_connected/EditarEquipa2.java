@@ -104,7 +104,7 @@ public class EditarEquipa2 extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     h = (HashMap) dataSnapshot.getValue();
                     if(data.equals((String)h.get("Email"))){
-                        nometreinador = (String)h.get("Nome");
+                        nometreinador = (String)h.get("Email");
                     }
                 }
             }

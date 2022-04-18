@@ -46,10 +46,6 @@ public class EditarAtleta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_atleta);
-
-
-
-
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference();
 
