@@ -28,9 +28,9 @@
         android:id="@+id/button25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Perfil"
         android:layout_marginLeft="250dp"
         android:layout_marginTop="300dp"
+        android:text="Perfil"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="654dp" />
 
