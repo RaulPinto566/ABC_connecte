@@ -47,43 +47,42 @@
         android:layout_marginLeft="20dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/equipaadv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="162dp"
         android:layout_marginTop="130dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/localjogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="162dp"
         android:layout_marginTop="200dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+         />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/competicao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="270dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:layout_marginTop="270dp"
-        android:layout_marginLeft="162dp" />
+        />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/jornada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginLeft="162dp"
         android:layout_marginTop="340dp"
-        android:layout_marginLeft="162dp"/>
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/guardarButton"
@@ -97,18 +96,18 @@
         android:id="@+id/textView15"
         android:layout_width="132dp"
         android:layout_height="38dp"
-        android:text="Equipa Adversária"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="130dp"
-        android:layout_marginLeft="20dp" />
+        android:text="Equipa Adversária" />
 
     <ListView
         android:id="@+id/window_list2"
         android:layout_width="210dp"
         android:layout_height="100dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="410dp"
         android:choiceMode="multipleChoice"
         android:ems="10"
-        android:layout_marginTop="410dp"
-        android:layout_marginLeft="162dp"
         tools:ignore="MissingConstraints">
 
     </ListView>

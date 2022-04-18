@@ -61,6 +61,7 @@ public class EditarEquipa2 extends AppCompatActivity {
                     nome.add(hash.get("Nome"));
                     escalao.add(hash.get("Escalao"));
                 }
+                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -72,15 +73,14 @@ public class EditarEquipa2 extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot1) {
                 for(DataSnapshot dataSnapshot1 : snapshot1.getChildren()) {
-                    System.out.println(hash);
                     has = (HashMap) dataSnapshot1.getValue();
                     dat = (String)has.get("Key");
                     ls = (ArrayList) has.get("Atletas");
                     if (has.get("Nome_Equipa").toString().equals(nomequipa)) {
                         lst = (ArrayList)has.get("Atletas");
-                        for(int j = 0;j<email.size();j++) {
+                        for(int j = 0;j<nome.size();j++) {
                             for (int i = 0; i < (lst.size()); i++) {
-                                if (email.get(j).toString().equals(lst.get(i))) {
+                                if (nome.get(j).toString().equals(lst.get(i))) {
                                 }
                                 else
                                 {
