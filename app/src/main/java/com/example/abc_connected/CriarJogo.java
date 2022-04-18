@@ -1,10 +1,9 @@
 package com.example.abc_connected;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -27,15 +26,21 @@ public class CriarJogo extends AppCompatActivity {
     private ArrayList adpt,list;
     private HashMap hash;
     private ListView listviewData;
+    private EditText localjogo,equipaadv,competicao,jornada;
     private ArrayAdapter adapter;
     private TextView equipa;
-    private String nmequipa,nometreinador;
+    private String nometreinador,nmequipa,key;
+    private DatabaseReference keyref;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Jogo");
     private DatabaseReference raat = db.getReference().child("Equipas");
     protected void onCreate(Bundle savedinstance){
         super.onCreate(savedinstance);
         setContentView(R.layout.activity_criar_jogo);
+        localjogo = findViewById(R.id.localjogo);
+        equipaadv = findViewById(R.id.equipaadv);
+        competicao = findViewById(R.id.competicao);
+        jornada = findViewById(R.id.jornada);
         listviewData = findViewById(R.id.window_list2);
         adpt = new ArrayList<>();
         hash = new HashMap();
@@ -74,8 +79,8 @@ public class CriarJogo extends AppCompatActivity {
                             nmequipa = listviewData.getItemAtPosition(i).toString();
                         }
                     }
-                        /*CriarJogo(root;);
-                        finish();*/
+                    CriarJogo(root,nmequipa,equipaadv.getText().toString().trim(),localjogo.getText().toString().trim(),competicao.getText().toString().trim(),jornada.getText().toString().trim());
+                    finish();
                 }
             }
         });
@@ -88,15 +93,17 @@ public class CriarJogo extends AppCompatActivity {
             }
         }
     }
-    public void CriarJogo (DatabaseReference root, String id_jogo, String equipa, String equipa_adv, String local, String competicao,String n_jornada)
+    public void CriarJogo (DatabaseReference root, String equipa, String equipa_adv, String local, String competicao,String n_jornada)
     {
+        keyref = root.push();
+        key = keyref.getKey();
         HashMap map = new HashMap();
-        map.put("Id_jogo",id_jogo);
+        map.put("Id_jogo",key);
         map.put("Equipa", equipa);
         map.put("Equipa_Adv", equipa_adv);
         map.put("Local", local);
         map.put("Competicao", competicao);
         map.put("N_Jornada", n_jornada);
-        root.push().setValue(map);
+        keyref.setValue(map);
     }
 }
