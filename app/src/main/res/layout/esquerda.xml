@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,40 +11,40 @@
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:text="Guardar"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="594dp" />
+        android:layout_marginTop="594dp"
+        android:layout_marginLeft="10dp"/>
 
     <Button
         android:id="@+id/guardar6"
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:text="Cancelar"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="594dp" />
+        android:layout_marginTop="594dp"
+        android:layout_marginLeft="234dp" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="E"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="348dp" />
+        android:layout_marginTop="348dp"
+        android:layout_marginLeft="229dp" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="D"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="348dp" />
+        android:layout_marginTop="348dp"
+        android:layout_marginLeft="321dp" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="C"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="348dp" />
+        android:layout_marginTop="348dp"
+        android:layout_marginLeft="275dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -52,8 +52,8 @@
         android:layout_height="46dp"
         android:text="Golo"
         android:textSize="26sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="442dp" />
+        android:layout_marginTop="442dp"
+        android:layout_marginLeft="34dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -61,8 +61,8 @@
         android:layout_height="46dp"
         android:text="Assitência"
         android:textSize="26sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="538dp" />
+        android:layout_marginTop="538dp"
+        android:layout_marginLeft="34dp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -70,8 +70,8 @@
         android:layout_height="46dp"
         android:text="Distância"
         android:textSize="26sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="256dp" />
+        android:layout_marginTop="256dp"
+        android:layout_marginLeft="34dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -79,8 +79,8 @@
         android:layout_height="46dp"
         android:text="Lado"
         android:textSize="26sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="351dp" />
+        android:layout_marginTop="351dp"
+        android:layout_marginLeft="34dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -88,8 +88,8 @@
         android:layout_height="62dp"
         android:text="Jogo"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="200dp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -105,8 +105,8 @@
         android:layout_height="46dp"
         android:text="Atleta"
         android:textSize="26sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="167dp" />
+        android:layout_marginTop="167dp"
+        android:layout_marginLeft="34dp" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -118,39 +118,39 @@
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="6"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="253dp" />
+        android:layout_marginTop="253dp"
+        android:layout_marginLeft="229dp" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="9"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="253dp" />
+        android:layout_marginTop="253dp"
+        android:layout_marginLeft="321dp" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="46dp"
         android:layout_height="49dp"
         android:text="7"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="253dp" />
+        android:layout_marginTop="253dp"
+        android:layout_marginLeft="275dp" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="66dp"
         android:layout_height="50dp"
         android:text="Não"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="438dp" />
+        android:layout_marginTop="438dp"
+        android:layout_marginLeft="301dp" />
 
     <Button
         android:id="@+id/button17"
         android:layout_width="66dp"
         android:layout_height="50dp"
         android:text="Sim"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="438dp" />
+        android:layout_marginTop="438dp"
+        android:layout_marginLeft="229dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

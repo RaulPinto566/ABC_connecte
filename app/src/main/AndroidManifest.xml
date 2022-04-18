@@ -63,6 +63,8 @@
         <activity android:name=".EditarEquipa4"/>
         <activity android:name=".EditarEquipa5"/>
         <activity android:name=".Criar_Equipa"/>
+        <activity android:name=".CriarJogo"/>
+        <activity android:name=".JogoJogadas"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

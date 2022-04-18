@@ -115,5 +115,23 @@
         android:text="CriarEquipa"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="518dp" />
+    <Button
+        android:id="@+id/CriarJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="550dp"
+        android:text="CriarJogo"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="518dp" />
+    <Button
+        android:id="@+id/CriarJogada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="350dp"
+        android:text="CriarJogada"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="518dp" />
 
 </RelativeLayout>

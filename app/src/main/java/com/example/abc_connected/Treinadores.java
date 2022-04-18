@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Treinadores extends AppCompatActivity {
     public FirebaseAuth mAuth;
-    Button logout, call, up;
+    Button logout, call, up,EditarEquipa,CriarEquipa,CriarJogo,CriarJogada;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,7 +23,10 @@ public class Treinadores extends AppCompatActivity {
         logout = findViewById(R.id.button24);
         call = findViewById(R.id.button7);
         up = findViewById(R.id.button25);
-
+        EditarEquipa = findViewById(R.id.EditarEquipa);
+        CriarEquipa = findViewById(R.id.CriarEquipa);
+        CriarJogo = findViewById(R.id.CriarJogo);
+        CriarJogada = findViewById(R.id.CriarJogada);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,13 +36,40 @@ public class Treinadores extends AppCompatActivity {
                 startActivity(intent);
             };
         });
-
+        CriarJogada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activityCriarJogada = new Intent(Treinadores.this, JogoJogadas.class);
+                startActivity(activityCriarJogada);
+            }
+        });
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mainCalendarIntent = new Intent(Treinadores.this, MainActivityCalendar.class);
 
                 startActivity(mainCalendarIntent);
+            }
+        });
+        CriarJogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activityCriarJogo = new Intent(Treinadores.this,CriarJogo.class);
+                startActivity(activityCriarJogo);
+            }
+        });
+        CriarEquipa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activityCriarEquipa = new Intent(Treinadores.this,Criar_Equipa.class);
+                startActivity(activityCriarEquipa);
+            }
+        });
+        EditarEquipa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activityEditarEquipa = new Intent(Treinadores.this, EditarEquipa.class);
+                startActivity(activityEditarEquipa);
             }
         });
         up.setOnClickListener(new View.OnClickListener() {
