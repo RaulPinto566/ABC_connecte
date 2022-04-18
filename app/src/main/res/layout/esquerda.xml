@@ -62,10 +62,10 @@
         android:id="@+id/textView13"
         android:layout_width="138dp"
         android:layout_height="46dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="515dp"
         android:text="Assitência"
-        android:textSize="26sp"
-        android:layout_marginTop="538dp"
-        android:layout_marginLeft="34dp" />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/textView10"
@@ -106,10 +106,10 @@
         android:id="@+id/textView9"
         android:layout_width="138dp"
         android:layout_height="46dp"
-        android:text="Atleta"
-        android:textSize="26sp"
+        android:layout_marginLeft="34dp"
         android:layout_marginTop="167dp"
-        android:layout_marginLeft="34dp" />
+        android:text="Atleta"
+        android:textSize="26sp" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
@@ -159,5 +159,28 @@
         android:layout_marginTop="438dp"
         android:backgroundTint="@color/button_background_color"
         android:text="Sim" />
+
+    <ListView
+        android:id="@+id/window_list3"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:choiceMode="multipleChoice"
+        android:ems="10"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="167dp"
+        tools:ignore="MissingConstraints">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/window_list4"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:choiceMode="multipleChoice"
+        android:ems="10"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="515dp"
+        tools:ignore="MissingConstraints">
+    </ListView>
 
 </RelativeLayout>
