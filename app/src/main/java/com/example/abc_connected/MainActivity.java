@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private HashMap hash;
     private ArrayList adpt2;
     private HashMap hash2;
+    private ArrayList adpt3;
+    private HashMap hash3;
     private ArrayAdapter adapter;
 
     public Integer REQUEST_EXIT = 9;
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     Button signInButton;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private FirebaseDatabase db2 = FirebaseDatabase.getInstance();
+    private FirebaseDatabase db3 = FirebaseDatabase.getInstance();
 
 
     @Override
@@ -53,11 +56,17 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase db2 = FirebaseDatabase.getInstance();
         DatabaseReference root2 = db2.getReference().child("Treinadores");
 
+        FirebaseDatabase db3 = FirebaseDatabase.getInstance();
+        DatabaseReference root3 = db2.getReference().child("Admins");
+
         adpt = new ArrayList<>();
         hash = new HashMap();
 
         adpt2 = new ArrayList<>();
         hash2 = new HashMap();
+
+        adpt3 = new ArrayList<>();
+        hash3 = new HashMap();
 
 
         root.addValueEventListener(new ValueEventListener() {
@@ -94,7 +103,26 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-       if (mAuth.getCurrentUser() != null) {
+        root3.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    hash3 = (HashMap) dataSnapshot.getValue();
+                    adpt3.add(hash3.get("Email"));
+                }
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+        if (mAuth.getCurrentUser() != null) {
             mAuth.getCurrentUser().reload().addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
@@ -102,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                     if (currentUser != null && currentUser.isEmailVerified()) {
 
                         if (adpt.toString().trim().contains(currentUser.getEmail().trim())) {
+
                             Intent MainActivity = new Intent(MainActivity.this, Atletas.class);
                             startActivity(MainActivity);
                             MainActivity.this.finish();
@@ -113,12 +142,20 @@ public class MainActivity extends AppCompatActivity {
                                 MainActivity.this.finish();
 
                             } else {
-                                Intent MainActivity = new Intent(MainActivity.this, Admin.class);
-                                startActivity(MainActivity);
-                                MainActivity.this.finish();
+                                if (adpt3.toString().trim().contains(currentUser.getEmail().trim())) {
+                                    Intent MainActivity = new Intent(MainActivity.this, Admin.class);
+                                    startActivity(MainActivity);
+                                    MainActivity.this.finish();
+
+                                } else {
+                                    mAuth.signOut();
+                                    Intent intent=new Intent(new Intent(MainActivity.this, MainActivity.class));
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+
+                                }
 
                             }
-
                         }
                     }
                 }

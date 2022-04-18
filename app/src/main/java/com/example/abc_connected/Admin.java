@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Admin extends AppCompatActivity {
-    Button logout, adm, atl, trn;
+    Button logout, adm, atl, trn,up;
     public FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Admin extends AppCompatActivity {
         adm = findViewById(R.id.adminbtn);
         atl = findViewById(R.id.atletabtn);
         trn = findViewById(R.id.treinbtn);
+        up = findViewById(R.id.button8);
 
         adm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +57,13 @@ public class Admin extends AppCompatActivity {
                 startActivity(intent);
             };
         });
+        up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainCalendarIntent = new Intent(Admin.this, EditarAdmin.class);
 
+                startActivity(mainCalendarIntent);
+            }
+        });
     }
 }
