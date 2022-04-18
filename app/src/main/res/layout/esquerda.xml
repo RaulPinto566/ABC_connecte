@@ -10,41 +10,44 @@
         android:id="@+id/guardar5"
         android:layout_width="167dp"
         android:layout_height="72dp"
-        android:text="Guardar"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="594dp"
-        android:layout_marginLeft="10dp"/>
+        android:text="Guardar" />
 
     <Button
         android:id="@+id/guardar6"
         android:layout_width="167dp"
         android:layout_height="72dp"
-        android:text="Cancelar"
+        android:layout_marginLeft="234dp"
         android:layout_marginTop="594dp"
-        android:layout_marginLeft="234dp" />
+        android:text="Cancelar" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="E"
+        android:layout_marginLeft="229dp"
         android:layout_marginTop="348dp"
-        android:layout_marginLeft="229dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="E" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="D"
+        android:layout_marginLeft="321dp"
         android:layout_marginTop="348dp"
-        android:layout_marginLeft="321dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="D" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="C"
+        android:layout_marginLeft="275dp"
         android:layout_marginTop="348dp"
-        android:layout_marginLeft="275dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="C" />
 
     <TextView
         android:id="@+id/textView12"
@@ -117,40 +120,44 @@
         android:id="@+id/button6"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="6"
+        android:layout_marginLeft="229dp"
         android:layout_marginTop="253dp"
-        android:layout_marginLeft="229dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="6" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="9"
+        android:layout_marginLeft="321dp"
         android:layout_marginTop="253dp"
-        android:layout_marginLeft="321dp" />
+        android:text="9" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:text="7"
+        android:layout_marginLeft="275dp"
         android:layout_marginTop="253dp"
-        android:layout_marginLeft="275dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="7" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="66dp"
         android:layout_height="50dp"
-        android:text="Não"
+        android:layout_marginLeft="301dp"
         android:layout_marginTop="438dp"
-        android:layout_marginLeft="301dp" />
+        android:backgroundTint="@color/button_background_color"
+        android:text="Não" />
 
     <Button
         android:id="@+id/button17"
         android:layout_width="66dp"
         android:layout_height="50dp"
-        android:text="Sim"
+        android:layout_marginLeft="229dp"
         android:layout_marginTop="438dp"
-        android:layout_marginLeft="229dp"/>
+        android:backgroundTint="@color/button_background_color"
+        android:text="Sim" />
 
 </RelativeLayout>
