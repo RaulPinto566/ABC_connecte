@@ -124,6 +124,7 @@
         android:layout_marginTop="253dp"
         android:backgroundTint="@color/button_background_color"
         android:text="7" />
+
     <ListView
         android:id="@+id/window_list6"
         android:layout_width="210dp"
