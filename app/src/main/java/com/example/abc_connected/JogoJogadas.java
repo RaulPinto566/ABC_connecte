@@ -15,7 +15,7 @@ public class JogoJogadas extends AppCompatActivity {
 
     public FirebaseAuth mAuth;
     private Button ataqueButton,estatisticasButton,defesaButton,remateButton,faltaButton,balizaButton,falhadoButton,abandonarButton,periodoButton;
-    private Boolean ataque,defesa,remate,falta,baliza,falhado;
+    private Boolean ataque=false,defesa=false,remate=false,falta=false,baliza=false,falhado=false;
     private String periodo ="1";
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     @Override
