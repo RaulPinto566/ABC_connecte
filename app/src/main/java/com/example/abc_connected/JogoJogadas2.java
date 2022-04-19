@@ -97,8 +97,8 @@ public class JogoJogadas2 extends AppCompatActivity {
                 if(ladocentro.isSelected()){
                     ladocentro.setSelected(false);
                 }
-                if(ladocentro.isSelected()){
-                    ladocentro.setSelected(false);
+                if(ladoesq.isSelected()){
+                    ladoesq.setSelected(false);
                 }
                 lado = "direito";
             }
