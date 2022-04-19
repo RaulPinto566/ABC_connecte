@@ -53,7 +53,7 @@ public class CriarAdmin extends AppCompatActivity {
     EditText genero;
     EditText numero;
     TextView errorView;
-    CheckBox agreementCheckBox;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -76,7 +76,7 @@ public class EditarAdmin extends AppCompatActivity {
         criar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                System.out.println(zenabo[0]);
                 root.child("Admins").child(zenabo[0]).child("Genero").setValue(genero.getText().toString());
                 root.child("Admins").child(zenabo[0]).child("Idade").setValue(idade.getText().toString());
                 root.child("Admins").child(zenabo[0]).child("Nome").setValue(nome.getText().toString());

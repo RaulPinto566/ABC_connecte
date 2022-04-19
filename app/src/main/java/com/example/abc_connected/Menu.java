@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.abc_connected.calendario.MainActivityCalendar;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -91,7 +91,7 @@ public class Menu extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Intent mainCalendarIntent = new Intent(Menu.this, MainActivityCalendar.class);
+                Intent mainCalendarIntent = new Intent(Menu.this, Vizz.class);
 
                 startActivity(mainCalendarIntent);
 
