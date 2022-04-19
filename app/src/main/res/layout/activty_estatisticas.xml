@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffcd01">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/textestatis"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Estatísticas"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/rematescertos"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:text="Remates certos"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rematesfalhados"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="Remates falhados"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/cortesfeitos"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="250dp"
+        android:text="Cortes feitos"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/ataques"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:text="Ataques"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Defesas"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="350dp"
+        android:text="Defesas"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rematestotais"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:text="Remates totais"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/golostotal"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="450dp"
+        android:text="Golos total"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/esquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="500dp"
+        android:text="Esquerda"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/direita"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="500dp"
+        android:text="Direita"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/centro"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="500dp"
+        android:text="Centro"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/e6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="650dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/e7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="600dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/e9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="550dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/d6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="650dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/d7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="600dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/d9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="550dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/c6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="650dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/c7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="600dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/c9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="202dp"
+        android:layout_marginTop="550dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="150dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="200dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="250dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/atq"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="300dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dfs"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="350dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rmttt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="400dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/glstt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="450dp"
+        />
+
+    <Button
+        android:id="@+id/sair"
+        android:layout_width="60dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="530dp"
+        android:text="Sair" />
+
+    <TextView
+        android:id="@+id/m6"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="650dp"
+        android:text="6m"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/m7"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="600dp"
+        android:text="7m"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/m9"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="550dp"
+        android:text="9m"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>
