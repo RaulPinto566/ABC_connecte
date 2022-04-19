@@ -89,5 +89,14 @@ public class Plslastone {
         mep.put("",map);
         root.push().setValue(mep);
     }
+    public void CriarTreino (DatabaseReference root, String equipa,  String local, String data,String hora)
+    {
+        HashMap map = new HashMap();
+        map.put("Equipa", equipa);
+        map.put("Local", local);
+        map.put("Data", data);
+        map.put("Hora", hora);
+        root.push().setValue(map);
+    }
 
 }

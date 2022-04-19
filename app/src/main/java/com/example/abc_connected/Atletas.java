@@ -9,7 +9,6 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.abc_connected.calendario.MainActivityCalendar;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Atletas extends AppCompatActivity {
@@ -23,7 +22,7 @@ public class Atletas extends AppCompatActivity {
         setContentView(R.layout.activity_atleta);
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.button23);
-        call = findViewById(R.id.button2);
+        call = findViewById(R.id.button9);
         up = findViewById(R.id.button26);
 
         logout.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +37,7 @@ public class Atletas extends AppCompatActivity {
 call.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        Intent mainCalendarIntent = new Intent(Atletas.this, MainActivityCalendar.class);
+        Intent mainCalendarIntent = new Intent(Atletas.this, Vizz.class);
 
         startActivity(mainCalendarIntent);
     }
