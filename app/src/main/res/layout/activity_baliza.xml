@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ffcd01"
@@ -13,95 +13,95 @@
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:text="Guardar"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="594dp" />
+        android:layout_marginTop="594dp"
+        android:layout_marginLeft="10dp"/>
 
     <Button
         android:id="@+id/guardar2"
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:text="Cancelar"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="594dp" />
+        android:layout_marginTop="594dp"
+        android:layout_marginLeft="234dp"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="391dp"
         android:layout_height="340dp"
         app:srcCompat="@drawable/untitled_diagram_drawio1"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:layout_marginTop="176dp"
+        android:layout_marginLeft="10dp" />
 
     <Button
         android:id="@+id/centro_direito"
         android:layout_width="109dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="310dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="310dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/canto_inferior_direito"
         android:layout_width="108dp"
         android:layout_height="101dp"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="395dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="395dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/canto_superior_esquerdo"
         android:layout_width="113dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="225dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="225dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/centro_esquerdo"
         android:layout_width="113dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="310dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="310dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/canto_inferior_esquerdo"
         android:layout_width="114dp"
         android:layout_height="101dp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="395dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="395dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/centro_cima"
         android:layout_width="102dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="225dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="225dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/centro"
         android:layout_width="102dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="310dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="310dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/centro_baixo"
         android:layout_width="102dp"
         android:layout_height="101dp"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="395dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="395dp"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/canto_superior_direito"
         android:layout_width="109dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="225dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="225dp"
         tools:visibility="invisible" />
 
     <ImageView
@@ -118,7 +118,7 @@
         android:layout_height="wrap_content"
         android:text="Registo de Baliza"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="45dp" />
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="133dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
