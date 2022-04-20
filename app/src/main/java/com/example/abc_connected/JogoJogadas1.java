@@ -21,12 +21,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class JogoJogadas1 extends AppCompatActivity {
-    public static final String EXTRA_MESSA = "com.example.abc_connected.JogoJogadas4";
     private Button distanci6,distancia7,distancia9,ladoesq,ladocentro,ladodireito,golotrue,golofalse,guardar,cancelar;
-    private String distancia , lado,key,b,d,atleta_assistencia,atleta_marcador;
-    private HashMap hash ,has,ha,h,c;
-    private int soma,k;
-    private ArrayList adpt,nome,email,list,lst;
+    private String distancia , lado,v,b,d,atleta_assistencia,atleta_marcador;
+    private HashMap ha,h;
+    private int k,soma;
+    private ArrayList adpt,nome,email,lst;
     private ListView listviewData,listviewDat;
     private ArrayAdapter adapter;
     private Boolean golo;
@@ -37,15 +36,15 @@ public class JogoJogadas1 extends AppCompatActivity {
     private DatabaseReference ruut = db.getReference().child("Jogo");
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle bundle = getIntent().getExtras();
+        Intent intent = getIntent();
         adpt = new ArrayList();
         h = new HashMap();
         lst = new ArrayList();
         ha = new HashMap();
         email = new ArrayList();
         nome = new ArrayList();
-        key =  bundle.getString(JogoJogadas.EXTRA_MESSAG).trim();
-        b = bundle.getString(JogoJogadas.EXTRA_MESS).trim();
+        v =  intent.getStringExtra("Id_Jogada");
+        b = intent.getStringExtra("Id_Jogo");
         setContentView(R.layout.esquerda);
         listviewData = findViewById(R.id.window_list3);
         listviewDat = findViewById(R.id.window_list4);
@@ -97,7 +96,6 @@ public class JogoJogadas1 extends AppCompatActivity {
                             }
                             if(k!=0){
                                 adpt.add("Nome:"+nome.get(j));
-                                System.out.println(nome.get(j));
                             }
                         }
                     }
@@ -215,7 +213,7 @@ public class JogoJogadas1 extends AppCompatActivity {
                 CriarJogadas();
                 if(golo){
                     Intent intent = new Intent(JogoJogadas1.this, JogoJogadas4.class);
-                    intent.putExtra(EXTRA_MESSA,key);
+                    intent.putExtra("Id_Jogada",v);
                     startActivity(intent);
                 }
                 finish();
@@ -232,11 +230,12 @@ public class JogoJogadas1 extends AppCompatActivity {
 
     public void CriarJogadas (){
         onOptionsItemSelected();
-        root.child(key).child("Booleanos").child("Golo").setValue(golo);
-        root.child(key).child("Strings").child("Atleta_Marcador").setValue(atleta_marcador);
-        root.child(key).child("Strings").child("Atleta_Assistencia").setValue(atleta_assistencia);
-        root.child(key).child("Strings").child("Lado_Campo").setValue(lado);
-        root.child(key).child("Strings").child("Distancia").setValue(distancia);
+        root.child(v).child("Booleanos").child("Golo").setValue(golo);
+        root.child(v).child("Strings").child("Atleta_Marcador").setValue(atleta_marcador);
+        root.child(v).child("Strings").child("Atleta_Assitencia").setValue(atleta_assistencia);
+        root.child(v).child("Strings").child("Lado_Campo").setValue(lado);
+        root.child(v).child("Strings").child("Distancia").setValue(distancia);
+
     }
     public void onOptionsItemSelected(){
         soma=0;

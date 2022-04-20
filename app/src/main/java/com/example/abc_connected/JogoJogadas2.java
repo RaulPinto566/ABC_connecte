@@ -35,9 +35,9 @@ public class JogoJogadas2 extends AppCompatActivity {
     private DatabaseReference ruut = db.getReference().child("Jogo");
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Bundle bundle = getIntent().getExtras();
-        key =  bundle.getString(JogoJogadas.EXTRA_MESSAG).trim();
-        b = bundle.getString(JogoJogadas.EXTRA_MESS).trim();
+        Intent intent = getIntent();
+        key =  intent.getStringExtra("Id_Jogada");
+        b = intent.getStringExtra("Id_Jogo");
         adpt = new ArrayList();
         h = new HashMap();
         lst = new ArrayList();

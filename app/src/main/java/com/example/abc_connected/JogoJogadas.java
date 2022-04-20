@@ -13,8 +13,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class JogoJogadas extends AppCompatActivity {
-    public static final String EXTRA_MESSAG = "com.example.abc_connected.JogoJogadas1";
-    public static final String EXTRA_MESS = "com.example.abc_connected.JogoJogadas1";
     public FirebaseAuth mAuth;
     private Button ataqueButton,estatisticasButton,defesaButton,remateButton,faltaButton,balizaButton,falhadoButton,abandonarButton,periodoButton;
     private Boolean ataque=false,defesa=false,remate=false,falta=false,baliza=false,falhado=false;
@@ -47,7 +45,7 @@ public class JogoJogadas extends AppCompatActivity {
                     defesa = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         defesaButton.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +58,7 @@ public class JogoJogadas extends AppCompatActivity {
                     ataque = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         remateButton.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +71,7 @@ public class JogoJogadas extends AppCompatActivity {
                     falta = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         faltaButton.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +84,7 @@ public class JogoJogadas extends AppCompatActivity {
                     remate = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         balizaButton.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +97,7 @@ public class JogoJogadas extends AppCompatActivity {
                     falta = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         falhadoButton.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +110,7 @@ public class JogoJogadas extends AppCompatActivity {
                     baliza = false;
                 }
                 Abrir();
-                merdas();
+                atualizar();
             }
         });
         abandonarButton.setOnClickListener(new View.OnClickListener() {
@@ -130,13 +128,7 @@ public class JogoJogadas extends AppCompatActivity {
         estatisticasButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
-        });
-        estatisticasButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(JogoJogadas.this, Estatisticas.class);
+                Intent intent = new Intent(JogoJogadas.this, VerEstatísticas.class);
                 startActivity(intent);
             }
         });
@@ -145,22 +137,23 @@ public class JogoJogadas extends AppCompatActivity {
         if ((ataque && remate && baliza)||(defesa&&remate&&baliza)) {
             CriarJogadas();
             Intent intent = new Intent(JogoJogadas.this, JogoJogadas1.class);
-            intent.putExtra(EXTRA_MESSAG,key);
-            intent.putExtra(EXTRA_MESS,ky);
+            System.out.println(key);
+            intent.putExtra("Id_Jogada",key);
+            intent.putExtra("Id_Jogo",ky);
             startActivity(intent);
         } else {
             if ((ataque && remate && falhado)||(defesa&&remate&&falhado)) {
                 CriarJogadas();
                 Intent intent = new Intent(JogoJogadas.this, JogoJogadas2.class);
-                intent.putExtra(EXTRA_MESSAG,key);
-                intent.putExtra(EXTRA_MESS,ky);
+                intent.putExtra("Id_Jogada",key);
+                intent.putExtra("Id_Jogo",ky);
                 startActivity(intent);
             } else {
                 if ((defesa && falta)||(ataque&&falta&&baliza)||(ataque&&falta&&falhado)){
                     CriarJogadas();
                     Intent intent = new Intent(JogoJogadas.this, JogoJogadas3.class);
-                    intent.putExtra(EXTRA_MESSAG,key);
-                    intent.putExtra(EXTRA_MESS,ky);
+                    intent.putExtra("Id_Jogada",key);
+                    intent.putExtra("Id_Jogo",ky);
                     startActivity(intent);
                 }
             }
@@ -185,7 +178,7 @@ public class JogoJogadas extends AppCompatActivity {
         keyref.child("Booleanos").setValue(map);
         keyref.child("Strings").setValue(mep);
     }
-    public void merdas(){
+    public void atualizar(){
         if(remate){
             balizaButton.setText("Baliza");
             falhadoButton.setText("Falhado");

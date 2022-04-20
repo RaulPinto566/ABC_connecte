@@ -1,5 +1,6 @@
 package com.example.abc_connected;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -36,9 +37,9 @@ public class JogoJogadas3 extends AppCompatActivity {
       @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-          Bundle bundle = getIntent().getExtras();
-          key =  bundle.getString(JogoJogadas.EXTRA_MESSAG).trim();
-          b = bundle.getString(JogoJogadas.EXTRA_MESS).trim();
+          Intent intent = getIntent();
+          key =  intent.getStringExtra("Id_Jogada");
+          b = intent.getStringExtra("Id_Jogo");
             setContentView(R.layout.direita);
             distanci6 = findViewById(R.id.button6c);
             distancia7 = findViewById(R.id.button11c);

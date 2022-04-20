@@ -71,7 +71,7 @@
         <activity android:name=".JogoJogadas3"/>
         <activity android:name=".JogoJogadas4"/>
         <activity android:name=".ListaJogo"/>
-        <activity android:name=".Estatisticas"/>
+        <activity android:name=".VerEstatísticas"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
