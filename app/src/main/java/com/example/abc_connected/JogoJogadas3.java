@@ -7,7 +7,14 @@ import android.widget.Button;
 import android.widget.ListView;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,13 +23,22 @@ public class JogoJogadas3 extends AppCompatActivity {
 
       private Button distanci6,distancia7,distancia9,ladoesq,ladocentro,ladodireito,guardar,cancelar;
       private ListView window_list6;
+      private int soma;
       private ArrayAdapter adapter;
-      private ArrayList adpt,list,email,nome;
-      private HashMap hash;
-      private String distancia,lado;
+      private ArrayList adpt,list,email,nome,lst;
+      private HashMap hash,h,ha;
+      private String distancia,lado,b,key,d,atleta;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference reet = db.getReference().child("Atletas");
+    private DatabaseReference root = db.getReference().child("Jogadas");
+    private DatabaseReference raat = db.getReference().child("Equipas");
+    private DatabaseReference ruut = db.getReference().child("Jogo");
       @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+          Bundle bundle = getIntent().getExtras();
+          key =  bundle.getString(JogoJogadas.EXTRA_MESSAG).trim();
+          b = bundle.getString(JogoJogadas.EXTRA_MESS).trim();
             setContentView(R.layout.direita);
             distanci6 = findViewById(R.id.button6c);
             distancia7 = findViewById(R.id.button11c);
@@ -38,8 +54,53 @@ public class JogoJogadas3 extends AppCompatActivity {
             hash = new HashMap();
             email = new ArrayList();
             nome = new ArrayList();
-
-
+            h = new HashMap();
+            ha = new HashMap();
+            lst = new ArrayList();
+          ruut.child(b).addListenerForSingleValueEvent(new ValueEventListener() {
+              @Override
+              public void onDataChange(@NonNull DataSnapshot snapshot) {
+                  d = snapshot.child("Equipa").getValue(String.class);
+              }
+              @Override
+              public void onCancelled(@NonNull DatabaseError error) {
+              }
+          });
+          reet.addValueEventListener(new ValueEventListener() {
+              @Override
+              public void onDataChange(@NonNull DataSnapshot snapshot) {
+                  for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                      h = (HashMap) dataSnapshot.getValue();
+                      email.add(h.get("Email"));
+                      nome.add(h.get("Nome"));
+                  }
+              }
+              @Override
+              public void onCancelled(@NonNull DatabaseError error) {
+              }
+          });
+          raat.addValueEventListener(new ValueEventListener() {
+              @Override
+              public void onDataChange(@NonNull DataSnapshot snapshot) {
+                  for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                      ha = (HashMap) dataSnapshot.getValue();
+                      if(ha.get("Nome_Equipa").toString().equals(d)) {
+                          lst = ((ArrayList)ha.get("Atletas"));
+                          for(int j =0;j<email.size();j++) {
+                              for (int i = 0; i < lst.size(); i++) {
+                                  if(email.get(j).equals(lst.get(i))){
+                                      adpt.add("Nome:"+nome.get(j));
+                                  }
+                              }
+                              adapter.notifyDataSetChanged();
+                          }
+                      }
+                  }
+              }
+              @Override
+              public void onCancelled(@NonNull DatabaseError error) {
+              }
+          });
             adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
             window_list6.setAdapter(adapter);
 
@@ -130,7 +191,8 @@ public class JogoJogadas3 extends AppCompatActivity {
             guardar.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
+                    CriarJogadas();
+                    finish();
                 }
             });
             cancelar.setOnClickListener(new View.OnClickListener() {
@@ -140,4 +202,25 @@ public class JogoJogadas3 extends AppCompatActivity {
                 }
             });
         }
+    public void CriarJogadas (){
+        onOptionsItemSelected();
+        root.child(key).child("Strings").child("Atleta_Marcador").setValue(atleta);
+        root.child(key).child("Strings").child("Lado_Campo").setValue(lado);
+        root.child(key).child("Strings").child("Distancia").setValue(distancia);
+    }
+    public void onOptionsItemSelected(){
+        soma=0;
+        for(int i=0;i<window_list6.getCount();i++){
+            if(window_list6.isItemChecked(i)) {
+                soma++;
+                String word[]=window_list6.getItemAtPosition(i).toString().split("[:]");
+                for(int j = 0;j<nome.size();j++)
+                {
+                    if(word[1].equals(nome.get(j))){
+                        atleta = (String)email.get(j);
+                    }
+                }
+            }
+        }
+    }
 }

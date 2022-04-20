@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFCD01"
-    android:backgroundTint="#FFCD01">
-
+    android:backgroundTint="#FFCD01"
+    app:cornerRadius="0dp">
     <Button
         android:id="@+id/guardar"
         android:layout_width="167dp"
@@ -35,74 +35,74 @@
     <Button
         android:id="@+id/centro_direito"
         android:layout_width="109dp"
-        android:layout_height="85dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="257dp"
-        android:layout_marginTop="310dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="303dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_inferior_direito"
-        android:layout_width="108dp"
-        android:layout_height="101dp"
+        android:layout_width="109dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="257dp"
-        android:layout_marginTop="395dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="386dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_superior_esquerdo"
         android:layout_width="113dp"
-        android:layout_height="85dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="225dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_esquerdo"
         android:layout_width="113dp"
-        android:layout_height="85dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="310dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="303dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_inferior_esquerdo"
         android:layout_width="114dp"
-        android:layout_height="101dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="395dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="386dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_cima"
-        android:layout_width="102dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="225dp"
-        tools:visibility="invisible" />
+        android:layout_width="104dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro"
-        android:layout_width="102dp"
-        android:layout_height="85dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="310dp"
-        tools:visibility="invisible" />
+        android:layout_width="104dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="303dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_baixo"
         android:layout_width="102dp"
-        android:layout_height="101dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="155dp"
-        android:layout_marginTop="395dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="386dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_superior_direito"
         android:layout_width="109dp"
-        android:layout_height="85dp"
+        android:layout_height="95dp"
         android:layout_marginLeft="257dp"
-        android:layout_marginTop="225dp"
-        tools:visibility="invisible" />
+        android:layout_marginTop="220dp"
+        android:backgroundTint="@color/button_background_color" />
 
     <ImageView
         android:id="@+id/imageView5"

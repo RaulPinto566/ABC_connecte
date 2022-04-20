@@ -9,18 +9,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.abc_connected.Backend.Sistema;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class JogoJogadas extends AppCompatActivity {
+import java.util.HashMap;
 
+public class JogoJogadas extends AppCompatActivity {
+    public static final String EXTRA_MESSAG = "com.example.abc_connected.JogoJogadas1";
+    public static final String EXTRA_MESS = "com.example.abc_connected.JogoJogadas1";
     public FirebaseAuth mAuth;
     private Button ataqueButton,estatisticasButton,defesaButton,remateButton,faltaButton,balizaButton,falhadoButton,abandonarButton,periodoButton;
     private Boolean ataque=false,defesa=false,remate=false,falta=false,baliza=false,falhado=false;
-    private String periodo ="1";
+    private String periodo ="1",key,ky;
+    private DatabaseReference keyref;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("Jogadas");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Bundle bundle = getIntent().getExtras();
+        ky =  bundle.getString(ListaJogo.nmqp);
         setContentView(R.layout.activity_jogadas);
         ataqueButton = findViewById(R.id.ataqueButton);
         defesaButton = findViewById(R.id.defesaButton);
@@ -130,19 +138,47 @@ public class JogoJogadas extends AppCompatActivity {
     }
     public void Abrir(){
         if ((ataque && remate && baliza)||(defesa&&remate&&baliza)) {
+            CriarJogadas();
             Intent intent = new Intent(JogoJogadas.this, JogoJogadas1.class);
+            intent.putExtra(EXTRA_MESSAG,key);
+            intent.putExtra(EXTRA_MESS,ky);
             startActivity(intent);
         } else {
             if ((ataque && remate && falhado)||(defesa&&remate&&falhado)) {
+                CriarJogadas();
                 Intent intent = new Intent(JogoJogadas.this, JogoJogadas2.class);
+                intent.putExtra(EXTRA_MESSAG,key);
+                intent.putExtra(EXTRA_MESS,ky);
                 startActivity(intent);
             } else {
                 if ((defesa && falta)||(ataque&&falta&&baliza)||(ataque&&falta&&falhado)){
+                    CriarJogadas();
                     Intent intent = new Intent(JogoJogadas.this, JogoJogadas3.class);
+                    intent.putExtra(EXTRA_MESSAG,key);
+                    intent.putExtra(EXTRA_MESS,ky);
                     startActivity(intent);
                 }
             }
         }
+    }
+    public void CriarJogadas (){
+        keyref = root.push();
+        key = keyref.getKey();
+        HashMap map = new HashMap();
+        map.put("Ataque" ,ataque);
+        map.put("Defesa",defesa);
+        map.put("Falta",falta);
+        map.put("Falhado",falhado);
+        map.put("Sofrida",falhado);
+        map.put("Cometida",baliza);
+        map.put("Remate",remate);
+        map.put("Baliza",baliza);
+        HashMap mep = new HashMap();
+        mep.put("Periodo",periodo);
+        mep.put("Id_Jogada",key);
+        mep.put("Id_Jogo",ky);
+        keyref.child("Booleanos").setValue(map);
+        keyref.child("Strings").setValue(mep);
     }
     public void merdas(){
         if(remate){

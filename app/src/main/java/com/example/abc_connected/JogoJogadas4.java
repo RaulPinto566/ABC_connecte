@@ -6,65 +6,321 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class JogoJogadas4 extends AppCompatActivity {
+
+    private Button cantosuperiordireito,cantoinferioresquerdo,cantosuperioresquerdo,cantoinferiordireito,centrobaixo,centrocima,centro,centroesquerdo,centrodireito,guardar,cancelar;
+    private String dados,key;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("Jogadas");
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baliza);
-        Button distanci6,distancia7,distancia9,ladoesq,ladocentro,ladodireito,guardar,cancelar;
-        distanci6 = findViewById(R.id.button6c);
-        distancia7 = findViewById(R.id.button11c);
-        distancia9 = findViewById(R.id.button12c);
-        ladoesq = findViewById(R.id.button14c);
-        ladocentro = findViewById(R.id.button15c);
-        ladodireito = findViewById(R.id.button13c);
-        guardar = findViewById(R.id.guardar5c);
-        cancelar = findViewById(R.id.guardar6c);
-        distanci6.setOnClickListener(new View.OnClickListener() {
+        Bundle bundle = getIntent().getExtras();
+        key =  bundle.getString(JogoJogadas1.EXTRA_MESSA).trim();
+        cantosuperiordireito = findViewById(R.id.canto_superior_direito);
+        centrobaixo = findViewById(R.id.centro_baixo);
+        centrocima = findViewById(R.id.centro_cima);
+        cantoinferioresquerdo = findViewById(R.id.canto_inferior_esquerdo);
+        centro = findViewById(R.id.centro);
+        centroesquerdo = findViewById(R.id.centro_esquerdo);
+        cantosuperioresquerdo = findViewById(R.id.canto_superior_esquerdo);
+        cantoinferiordireito = findViewById(R.id.canto_inferior_direito);
+        centrodireito = findViewById(R.id.centro_direito);
+        guardar = findViewById(R.id.guardar);
+        cancelar = findViewById(R.id.guardar2);
+        cantoinferiordireito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                cantoinferiordireito.setSelected(!cantoinferiordireito.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "cantoinferiordireito";
             }
         });
-        distancia7.setOnClickListener(new View.OnClickListener() {
+        cantoinferioresquerdo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                cantoinferioresquerdo.setSelected(!cantoinferioresquerdo.isSelected());
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "cantoinferioresquerdo";
             }
         });
-        distancia9.setOnClickListener(new View.OnClickListener() {
+        cantosuperiordireito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                cantosuperiordireito.setSelected(!cantosuperiordireito.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "cantosuperiordireito";
             }
         });
-        ladoesq.setOnClickListener(new View.OnClickListener() {
+        cantosuperioresquerdo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                cantosuperioresquerdo.setSelected(!cantosuperioresquerdo.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "cantoinferioresquerdo";
             }
         });
-        ladocentro.setOnClickListener(new View.OnClickListener() {
+        centro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                centro.setSelected(!centro.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "centro";
             }
         });
-        ladodireito.setOnClickListener(new View.OnClickListener() {
+        centrobaixo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                centrobaixo.setSelected(!centrobaixo.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "centrobaixo";
+            }
+        });
+        centrocima.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                centrocima.setSelected(!centrocima.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "centrocima";
+            }
+        });
+        centrodireito.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                centrodireito.setSelected(!centrodireito.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centroesquerdo.isSelected()) {
+                    centroesquerdo.setSelected(false);
+                }
+                dados = "centrodireito";
+            }
+        });
+        centroesquerdo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                centroesquerdo.setSelected(!centroesquerdo.isSelected());
+                if (cantoinferioresquerdo.isSelected()) {
+                    cantoinferioresquerdo.setSelected(false);
+                }
+                if (cantosuperiordireito.isSelected()) {
+                    cantosuperiordireito.setSelected(false);
+                }
+                if (cantoinferiordireito.isSelected()) {
+                    cantoinferiordireito.setSelected(false);
+                }
+                if (cantosuperioresquerdo.isSelected()) {
+                    cantosuperioresquerdo.setSelected(false);
+                }
+                if (centro.isSelected()) {
+                    centro.setSelected(false);
+                }
+                if (centrobaixo.isSelected()) {
+                    centrobaixo.setSelected(false);
+                }
+                if (centrocima.isSelected()) {
+                    centrocima.setSelected(false);
+                }
+                if (centrodireito.isSelected()) {
+                    centrodireito.setSelected(false);
+                }
+                dados = "centroesquerdo";
             }
         });
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                root.child(key).child("Strings").child("Zona_Baliza").setValue(dados);
+                finish();
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                finish();
             }
         });
     }

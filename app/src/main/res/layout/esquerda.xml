@@ -131,7 +131,9 @@
         android:layout_height="49dp"
         android:layout_marginLeft="321dp"
         android:layout_marginTop="253dp"
-        android:text="9" />
+        android:text="9"
+        android:backgroundTint="@color/button_background_color"
+        />
 
     <Button
         android:id="@+id/button11e"
@@ -164,10 +166,10 @@
         android:id="@+id/window_list3"
         android:layout_width="210dp"
         android:layout_height="90dp"
-        android:choiceMode="multipleChoice"
-        android:ems="10"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="167dp"
+        android:choiceMode="multipleChoice"
+        android:ems="10"
         tools:ignore="MissingConstraints">
 
     </ListView>
@@ -176,11 +178,10 @@
         android:id="@+id/window_list4"
         android:layout_width="210dp"
         android:layout_height="90dp"
-        android:choiceMode="multipleChoice"
-        android:ems="10"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="505dp"
-        tools:ignore="MissingConstraints">
-    </ListView>
+        android:choiceMode="multipleChoice"
+        android:ems="10"
+        tools:ignore="MissingConstraints"></ListView>
 
 </RelativeLayout>
