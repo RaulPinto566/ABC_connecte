@@ -27,11 +27,97 @@ import java.util.HashMap;
 
 public class Vizz extends AppCompatActivity {
 
+    private ArrayList adpt,list,lista;
+    private TextView nomeequipa;
+    private int soma;
+    public static final String nmqp="";
+    private String data,nometreinador,nome_equipa;
+    private HashMap hash,has;
+    private ListView listviewData;
+    private ArrayAdapter adapter;
+    private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
+    private FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference root = db.getReference().child("treinos");
+    private DatabaseReference raat = db.getReference().child("treinos");
+    private DatabaseReference reet = db.getReference().child("Ateleta");
+
     protected void onCreate(Bundle savedinstance){
         super.onCreate(savedinstance);
         setContentView(R.layout.activity_vizz2);
+        listviewData = findViewById(R.id.window_list12);
+        button_guardar = findViewById(R.id.button_guarda22r);
+        adicionaratleta =findViewById(R.id.adicionaratleta);
+        retiraratleta = findViewById(R.id.retiraratleta);
+        trocartreinador = findViewById(R.id.trocartreinador);
+        trocarnomeequipa = findViewById(R.id.trocarnomeequipa);
+        adpt = new ArrayList();
+        list = new ArrayList();
+        lista = new ArrayList();
+        hash = new HashMap();
+        has = new HashMap();
+        data = (String) FirebaseAuth.getInstance().getCurrentUser().getEmail();
+        reet.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    hash = (HashMap) dataSnapshot.getValue();
+                    if(data.equals((String)hash.get("Nome"))){
+                        nometreinador = (String)hash.get("Nome");
+                    }
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        raat.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    has = (HashMap) dataSnapshot.getValue();
+
+                        adpt.add("Data" + has.get("Data") + "\n" + "Hora" + has.get("Hora") + "\n" + "Local" + has.get("Local") + "\n" + "Equipa" + has.get("Equipa"));
+
+                }
+                adapter.notifyDataSetChanged();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
+        listviewData.setAdapter(adapter);
+        button_guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onOptionsItemSelected();
+                if(soma!=1){
+                    button_guardar.setError("Selecione apenas uma equipa.");
+                }
+                else{
+
+                    for(int i=0;i<listviewData.getCount();i++){
+                        if(listviewData.isItemChecked(i)) {
+                            nome_equipa = listviewData.getItemAtPosition(i).toString();
+                        }
+                    }
+
+                }
+            }
+        });
+    }
+    public void onOptionsItemSelected(){
+        soma=0;
+        for(int i=0;i<listviewData.getCount();i++){
+            if(listviewData.isItemChecked(i)) {
+                soma++;
+            }
+        }
+    }
 
 
     }
-}
+
