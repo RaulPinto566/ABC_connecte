@@ -30,6 +30,7 @@ import okhttp3.internal.cache.DiskLruCache;
 public class EditarEquipa2 extends AppCompatActivity {
     private ArrayList adpt,list,lst,ls,email,nome,escalao;
     private String dat;
+    private int soma;
     private HashMap hash,has,ha,h;
     private ListView listviewData;
     private ArrayAdapter adapter;
@@ -61,7 +62,6 @@ public class EditarEquipa2 extends AppCompatActivity {
                     nome.add(hash.get("Nome"));
                     escalao.add(hash.get("Escalao"));
                 }
-                adapter.notifyDataSetChanged();
             }
 
             @Override
@@ -79,13 +79,14 @@ public class EditarEquipa2 extends AppCompatActivity {
                     if (has.get("Nome_Equipa").toString().equals(nomequipa)) {
                         lst = (ArrayList)has.get("Atletas");
                         for(int j = 0;j<nome.size();j++) {
+                            soma=0;
                             for (int i = 0; i < (lst.size()); i++) {
-                                if (nome.get(j).toString().equals(lst.get(i))) {
+                                if (email.get(j).toString().equals(lst.get(i))) {
+                                    soma++;
                                 }
-                                else
-                                {
-                                    adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
-                                }
+                            }
+                            if(soma == 0){
+                                adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
                             }
                         }
                     }
@@ -108,10 +109,8 @@ public class EditarEquipa2 extends AppCompatActivity {
                     }
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
         button_guardar.setOnClickListener(new View.OnClickListener() {

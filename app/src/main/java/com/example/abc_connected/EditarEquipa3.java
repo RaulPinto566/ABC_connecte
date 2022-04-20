@@ -80,7 +80,7 @@ public class EditarEquipa3 extends AppCompatActivity {
                         lst = (ArrayList)has.get("Atletas");
                         for(int j = 0;j<email.size();j++) {
                             for (int i = 0; i < (lst.size()); i++) {
-                                if (nome.get(j).toString().equals(lst.get(i))) {
+                                if (email.get(j).toString().equals(lst.get(i))) {
                                     adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
                                 }
                             }
