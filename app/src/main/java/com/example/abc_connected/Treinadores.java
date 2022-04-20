@@ -21,7 +21,6 @@ public class Treinadores extends AppCompatActivity {
         setContentView(R.layout.activity_treinador);
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.button24);
-        call = findViewById(R.id.button7);
         up = findViewById(R.id.button25);
         EditarEquipa = findViewById(R.id.EditarEquipa);
         CriarEquipa = findViewById(R.id.CriarEquipa);
@@ -36,14 +35,6 @@ public class Treinadores extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             };
-        });
-        call.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent mainCalendarIntent = new Intent(Treinadores.this, Vizz.class);
-
-                startActivity(mainCalendarIntent);
-            }
         });
         CriarListaJogo.setOnClickListener(new View.OnClickListener() {
             @Override

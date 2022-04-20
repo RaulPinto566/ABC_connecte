@@ -23,16 +23,6 @@
         tools:layout_editor_absoluteY="3dp" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="calendario"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="300dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="318dp" />
-
-    <Button
         android:id="@+id/button25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,16 +31,6 @@
         android:text="Perfil"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="654dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="129dp"
-        android:layout_height="101dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="400dp"
-        android:foreground="@drawable/estatisticas"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="386dp" />
 
     <Button
         android:id="@+id/button24"
@@ -61,37 +41,6 @@
         android:text="Logout"
         tools:layout_editor_absoluteX="277dp"
         tools:layout_editor_absoluteY="654dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="129dp"
-        android:layout_height="101dp"
-        android:foreground="@drawable/chat"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="400dp"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="129dp"
-        android:layout_height="101dp"
-        android:foreground="@drawable/treinos"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="150dp"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="206dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="129dp"
-        android:layout_height="101dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="150dp"
-        app:srcCompat="@drawable/calendar"
-        tools:ignore="UnknownIdInLayout"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="206dp" />
 
     <TextView
         android:id="@+id/textView3"

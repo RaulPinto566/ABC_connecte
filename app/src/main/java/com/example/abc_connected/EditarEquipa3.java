@@ -30,6 +30,7 @@ import okhttp3.internal.cache.DiskLruCache;
 public class EditarEquipa3 extends AppCompatActivity {
     private ArrayList adpt,list,lst,ls,email,nome,escalao;
     private String dat;
+    int soma;
     private HashMap hash,has,ha,h;
     private ListView listviewData;
     private ArrayAdapter adapter;
@@ -74,14 +75,18 @@ public class EditarEquipa3 extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot1 : snapshot1.getChildren()) {
                     System.out.println(hash);
                     has = (HashMap) dataSnapshot1.getValue();
-                    dat = (String)has.get("Key");
                     ls = (ArrayList) has.get("Atletas");
                     if (has.get("Nome_Equipa").toString().equals(nomequipa)) {
+                        dat = (String)has.get("Key");
                         lst = (ArrayList)has.get("Atletas");
                         for(int j = 0;j<email.size();j++) {
+                            soma=0;
                             for (int i = 0; i < (lst.size()); i++) {
+                                soma++;
                                 if (email.get(j).toString().equals(lst.get(i))) {
-                                    adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
+                                    if(soma==1){
+                                        adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
+                                    }
                                 }
                             }
                         }

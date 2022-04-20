@@ -24,7 +24,7 @@ public class JogoJogadas2 extends AppCompatActivity {
     private String distancia, lado,key,b,d,atleta;
     private Boolean corte;
     private HashMap hash ,has,ha,h,c;
-    private int soma;
+    private int soma,k;
     private ArrayList adpt,nome,email,list,lst;
     private ListView listviewData;
     private ArrayAdapter adapter;
@@ -86,15 +86,20 @@ public class JogoJogadas2 extends AppCompatActivity {
                     if(ha.get("Nome_Equipa").toString().equals(d)) {
                         lst = ((ArrayList)ha.get("Atletas"));
                         for(int j =0;j<email.size();j++) {
+                            k=0;
                             for (int i = 0; i < lst.size(); i++) {
                                 if(email.get(j).equals(lst.get(i))){
-                                    adpt.add("Nome:"+nome.get(j));
+                                    k++;
                                 }
                             }
-                            adapter.notifyDataSetChanged();
+                            if(k!=0){
+                                adpt.add("Nome:"+nome.get(j));
+                                System.out.println(nome.get(j));
+                            }
                         }
                     }
                 }
+                adapter.notifyDataSetChanged();
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

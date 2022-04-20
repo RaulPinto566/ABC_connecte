@@ -74,9 +74,9 @@ public class EditarEquipa2 extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot1) {
                 for(DataSnapshot dataSnapshot1 : snapshot1.getChildren()) {
                     has = (HashMap) dataSnapshot1.getValue();
-                    dat = (String)has.get("Key");
                     ls = (ArrayList) has.get("Atletas");
                     if (has.get("Nome_Equipa").toString().equals(nomequipa)) {
+                        dat = (String)has.get("Key");
                         lst = (ArrayList)has.get("Atletas");
                         for(int j = 0;j<nome.size();j++) {
                             soma=0;
