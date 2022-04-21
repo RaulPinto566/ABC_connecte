@@ -53,6 +53,7 @@
         <activity
             android:name=".Treinadores"
             android:exported="false" />
+        <activity android:name=".Menu" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".EditarEquipa" />
@@ -70,7 +71,8 @@
         <activity android:name=".JogoJogadas3"/>
         <activity android:name=".JogoJogadas4"/>
         <activity android:name=".ListaJogo"/>
-        <activity android:name=".VerEstatísticas"/>
+        <activity android:name=".Estatisticas"/>
+        <activity android:name=".Vizz2"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

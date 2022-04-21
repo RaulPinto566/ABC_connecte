@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Atletas extends AppCompatActivity {
 
     public FirebaseAuth mAuth;
-    Button logout, call,up;
+    Button logout, call,up, jo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class Atletas extends AppCompatActivity {
         logout = findViewById(R.id.button23);
         call = findViewById(R.id.button9);
         up = findViewById(R.id.button26);
+        jo = findViewById(R.id.button2);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,15 @@ call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mainCalendarIntent = new Intent(Atletas.this, EditarAtleta.class);
+
+                startActivity(mainCalendarIntent);
+            }
+        });
+
+        jo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainCalendarIntent = new Intent(Atletas.this, Vizz2.class);
 
                 startActivity(mainCalendarIntent);
             }

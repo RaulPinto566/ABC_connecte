@@ -1,6 +1,5 @@
 package com.example.abc_connected;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -9,13 +8,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.firebase.ui.database.FirebaseArray;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Vizz extends AppCompatActivity {
+public class Vizz2 extends AppCompatActivity {
 
     private ArrayList adpt,list,lista;
     private TextView nomeequipa;
@@ -37,8 +32,8 @@ public class Vizz extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private DatabaseReference root = db.getReference().child("treinos");
-    private DatabaseReference raat = db.getReference().child("treinos");
+    private DatabaseReference root = db.getReference().child("Jogo");
+    private DatabaseReference raat = db.getReference().child("Jogo");
     private DatabaseReference reet = db.getReference().child("Ateleta");
 
     protected void onCreate(Bundle savedinstance){
@@ -78,7 +73,7 @@ public class Vizz extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     has = (HashMap) dataSnapshot.getValue();
 
-                        adpt.add("Data: " + has.get("Data") + "\n" + "Hora: " + has.get("Hora") + "\n" + "Local: " + has.get("Local") + "\n" + "Equipa: " + has.get("Equipa"));
+                    adpt.add("Local: " + has.get("Local") + "\n" + "Equipa: " + has.get("Equipa"));
 
                 }
                 adapter.notifyDataSetChanged();
@@ -119,5 +114,4 @@ public class Vizz extends AppCompatActivity {
     }
 
 
-    }
-
+}
