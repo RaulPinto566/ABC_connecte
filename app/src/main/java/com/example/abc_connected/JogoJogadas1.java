@@ -210,13 +210,18 @@ public class JogoJogadas1 extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CriarJogadas();
-                if(golo){
-                    Intent intent = new Intent(JogoJogadas1.this, JogoJogadas4.class);
-                    intent.putExtra("Id_Jogada",v);
-                    startActivity(intent);
+                if((golo!=null)&&(atleta_assistencia!=null)&&(atleta_marcador!=null)&&(lado!=null)&&(distancia!=null)) {
+                    CriarJogadas();
+                    if (golo) {
+                        Intent intent = new Intent(JogoJogadas1.this, JogoJogadas4.class);
+                        intent.putExtra("Id_Jogada", v);
+                        startActivity(intent);
+                    }
+                    finish();
                 }
-                finish();
+                else{
+                    guardar.setError("Preencha todos os espaços.");
+                }
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
@@ -230,11 +235,11 @@ public class JogoJogadas1 extends AppCompatActivity {
 
     public void CriarJogadas (){
         onOptionsItemSelected();
-        root.child(v).child("Booleanos").child("Golo").setValue(golo);
-        root.child(v).child("Strings").child("Atleta_Marcador").setValue(atleta_marcador);
-        root.child(v).child("Strings").child("Atleta_Assitencia").setValue(atleta_assistencia);
-        root.child(v).child("Strings").child("Lado_Campo").setValue(lado);
-        root.child(v).child("Strings").child("Distancia").setValue(distancia);
+        root.child(v).child("Golo").setValue(golo);
+        root.child(v).child("Atleta_Marcador").setValue(atleta_marcador);
+        root.child(v).child("Atleta_Assitencia").setValue(atleta_assistencia);
+        root.child(v).child("Lado_Campo").setValue(lado);
+        root.child(v).child("Distancia").setValue(distancia);
 
     }
     public void onOptionsItemSelected(){

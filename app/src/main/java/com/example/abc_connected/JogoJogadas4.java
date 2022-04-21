@@ -314,8 +314,13 @@ public class JogoJogadas4 extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                root.child(key).child("Strings").child("Zona_Baliza").setValue(dados);
-                finish();
+                if(dados!=null){
+                    root.child(key).child("Zona_Baliza").setValue(dados);
+                    finish();
+                }
+                else{
+                    guardar.setError("Preencha todos os espaços.");
+                }
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {

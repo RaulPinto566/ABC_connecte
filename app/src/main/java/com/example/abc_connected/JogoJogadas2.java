@@ -208,8 +208,13 @@ public class JogoJogadas2 extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CriarJogadas();
-                finish();
+                if((corte!=null)&&(distancia!=null)&&(lado!=null)&&(atleta!=null)) {
+                    CriarJogadas();
+                    finish();
+                }
+                else{
+                    guardar.setError("Preencha todos os espaços.");
+                }
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
@@ -221,10 +226,10 @@ public class JogoJogadas2 extends AppCompatActivity {
     }
     public void CriarJogadas (){
         onOptionsItemSelected();
-        root.child(key).child("Booleanos").child("Corte").setValue(corte);
-        root.child(key).child("Strings").child("Atleta_Marcador").setValue(atleta);
-        root.child(key).child("Strings").child("Lado_Campo").setValue(lado);
-        root.child(key).child("Strings").child("Distancia").setValue(distancia);
+        root.child(key).child("Corte").setValue(corte);
+        root.child(key).child("Atleta_Marcador").setValue(atleta);
+        root.child(key).child("Lado_Campo").setValue(lado);
+        root.child(key).child("Distancia").setValue(distancia);
     }
     public void onOptionsItemSelected(){
         soma=0;

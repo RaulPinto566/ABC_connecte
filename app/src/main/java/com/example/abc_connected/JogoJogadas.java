@@ -129,6 +129,7 @@ public class JogoJogadas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(JogoJogadas.this, VerEstatísticas.class);
+                intent.putExtra("Id_Jogo",ky);
                 startActivity(intent);
             }
         });
@@ -162,21 +163,17 @@ public class JogoJogadas extends AppCompatActivity {
     public void CriarJogadas (){
         keyref = root.push();
         key = keyref.getKey();
-        HashMap map = new HashMap();
-        map.put("Ataque" ,ataque);
-        map.put("Defesa",defesa);
-        map.put("Falta",falta);
-        map.put("Falhado",falhado);
-        map.put("Sofrida",falhado);
-        map.put("Cometida",baliza);
-        map.put("Remate",remate);
-        map.put("Baliza",baliza);
-        HashMap mep = new HashMap();
-        mep.put("Periodo",periodo);
-        mep.put("Id_Jogada",key);
-        mep.put("Id_Jogo",ky);
-        keyref.child("Booleanos").setValue(map);
-        keyref.child("Strings").setValue(mep);
+        keyref.child("Ataque").setValue(ataque);
+        keyref.child("Defesa").setValue(defesa);
+        keyref.child("Falta").setValue(falta);
+        keyref.child("Falhado").setValue(falhado);
+        keyref.child("Sofrida").setValue(falhado);
+        keyref.child("Cometida").setValue(baliza);
+        keyref.child("Remate").setValue(remate);
+        keyref.child("Baliza").setValue(baliza);
+        keyref.child("Periodo").setValue(periodo);
+        keyref.child("Id_Jogada").setValue(key);
+        keyref.child("Id_Jogo").setValue(ky);
     }
     public void atualizar(){
         if(remate){

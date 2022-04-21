@@ -111,117 +111,127 @@
         android:text="Centro"
         android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/e6"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="142dp"
-        android:layout_marginTop="650dp" />
+        android:layout_marginTop="650dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/e7"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="142dp"
-        android:layout_marginTop="600dp" />
+        android:layout_marginTop="600dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/e9"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="142dp"
-        android:layout_marginTop="550dp" />
+        android:layout_marginTop="550dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/d6"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="262dp"
-        android:layout_marginTop="650dp" />
+        android:layout_marginTop="650dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/d7"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="262dp"
-        android:layout_marginTop="600dp" />
+        android:layout_marginTop="600dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/d9"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="262dp"
-        android:layout_marginTop="550dp" />
+        android:layout_marginTop="550dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/c6"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="202dp"
-        android:layout_marginTop="650dp" />
+        android:layout_marginTop="650dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/c7"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="202dp"
-        android:layout_marginTop="600dp" />
+        android:layout_marginTop="600dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/c9"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="202dp"
-        android:layout_marginTop="550dp" />
+        android:layout_marginTop="550dp"
+        android:textSize="18sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/rc"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
-        android:layout_marginTop="150dp" />
-    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="150dp"
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/rf"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="200dp"
-        />
-    <com.google.android.material.textfield.TextInputLayout
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/cf"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="250dp"
-        />
-    <com.google.android.material.textfield.TextInputLayout
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/atq"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="300dp"
-        />
-    <com.google.android.material.textfield.TextInputLayout
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/dfs"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="350dp"
-        />
-    <com.google.android.material.textfield.TextInputLayout
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/rmttt"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="400dp"
-        />
-    <com.google.android.material.textfield.TextInputLayout
+        android:textSize="18sp"/>
+    <TextView
         android:id="@+id/glstt"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="232dp"
         android:layout_marginTop="450dp"
-        />
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/sair3333"
