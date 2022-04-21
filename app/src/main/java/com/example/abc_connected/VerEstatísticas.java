@@ -67,32 +67,34 @@ public class VerEstatísticas extends AppCompatActivity {
                             Ataques++;
                             if ((Boolean) hash.get("Remate")) {
                                 total++;
-                                if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "9")) {
-                                    es9++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "7")) {
-                                    es7++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "6")) {
-                                    es6++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "9")) {
-                                    c99++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "7")) {
-                                    c77++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "6")) {
-                                    c66++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "9")) {
-                                    d99++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "7")) {
-                                    d77++;
-                                }
-                                if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "6")) {
-                                    d66++;
+                                if(hash.get("Lado_Campo")!=null) {
+                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "9")) {
+                                        es9++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "7")) {
+                                        es7++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "6")) {
+                                        es6++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "9")) {
+                                        c99++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "7")) {
+                                        c77++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "6")) {
+                                        c66++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "9")) {
+                                        d99++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "7")) {
+                                        d77++;
+                                    }
+                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "6")) {
+                                        d66++;
+                                    }
                                 }
                             }
                         }

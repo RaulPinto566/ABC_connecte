@@ -210,6 +210,7 @@ public class JogoJogadas1 extends AppCompatActivity {
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                onOptionsItemSelected();
                 if((golo!=null)&&(atleta_assistencia!=null)&&(atleta_marcador!=null)&&(lado!=null)&&(distancia!=null)) {
                     CriarJogadas();
                     if (golo) {
@@ -234,7 +235,6 @@ public class JogoJogadas1 extends AppCompatActivity {
     }
 
     public void CriarJogadas (){
-        onOptionsItemSelected();
         root.child(v).child("Golo").setValue(golo);
         root.child(v).child("Atleta_Marcador").setValue(atleta_marcador);
         root.child(v).child("Atleta_Assitencia").setValue(atleta_assistencia);
