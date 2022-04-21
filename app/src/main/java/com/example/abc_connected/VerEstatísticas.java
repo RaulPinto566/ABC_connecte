@@ -22,7 +22,8 @@ import java.util.HashMap;
 
 public class VerEstatísticas extends AppCompatActivity {
     private TextView rc, rf,cf, atq, dfs,rmttt,glstt,e9,e7,e6,c9,c7,c6,d9,d7,d6;
-    private int RematesCertos,RematesFalhados,CortesFeitos,Ataques,Defesas,RematesTotais,GolosTotais,total,es9,es7,es6,c99,c77,c66,d99,d77,d66;
+    private int RematesCertos,RematesFalhados,CortesFeitos,Ataques,Defesas,RematesTotais,GolosTotais;
+    private double es9,es7,es6,c99,c77,c66,d99,d77,d66,total,resultado;
     private String key;
     private Button sair;
     private HashMap hash;
@@ -144,15 +145,15 @@ public class VerEstatísticas extends AppCompatActivity {
             d6.setText(String.valueOf(0));
         }
         else {
-            e9.setText(String.valueOf((double) (Math.round((es9 / total) * 10) / 10)));
-            e7.setText(String.valueOf((double) (Math.round((es7 / total) * 10) / 10)));
-            e6.setText(String.valueOf((double) (Math.round((es6 / total) * 10) / 10)));
-            c9.setText(String.valueOf((double) (Math.round((c99 / total) * 10) / 10)));
-            c7.setText(String.valueOf((double) (Math.round((c77 / total) * 10) / 10)));
-            c6.setText(String.valueOf((double) (Math.round((c66 / total) * 10) / 10)));
-            d9.setText(String.valueOf((double) (Math.round((d99 / total) * 10) / 10)));
-            d7.setText(String.valueOf((double) (Math.round((d77 / total) * 10) / 10)));
-            d6.setText(String.valueOf((double) (Math.round((d66 / total) * 10) / 10)));
+            e9.setText(String.valueOf((double) (Math.round((es9/total) * 10) / 10)));
+            e7.setText(String.valueOf((double) (Math.round((es7/total) * 10) / 10)));
+            e6.setText(String.valueOf((double) (Math.round((es6/total) * 10) / 10)));
+            c9.setText(String.valueOf((double) (Math.round((c99/total) * 10) / 10)));
+            c7.setText(String.valueOf((double) (Math.round((c77/total) * 10) / 10)));
+            c6.setText(String.valueOf((double) (Math.round((c66/total) * 10) / 10)));
+            d9.setText(String.valueOf((double) (Math.round((d99/total) * 10) / 10)));
+            d7.setText(String.valueOf((double) (Math.round((d77/total) * 10) / 10)));
+            d6.setText(String.valueOf((double) (Math.round((d66/total) * 10) / 10)));
             rc.setText(String.valueOf(RematesCertos));
             rf.setText(String.valueOf(RematesFalhados));
             rmttt.setText(String.valueOf(RematesTotais));
