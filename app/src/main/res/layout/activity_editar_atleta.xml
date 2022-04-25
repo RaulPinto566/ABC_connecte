@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="nome"
+        android:hint="Nome"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="numero"
+        android:hint="Numero"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="idade"
+        android:hint="Idade"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="genero"
+        android:hint="Genero"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
         tools:targetApi="o" />
 
     <EditText
-        android:id="@+id/escalao"
+        android:id="@+id/Escalao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -135,4 +135,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.852" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="189dp"
+        android:layout_height="299dp"
+        app:srcCompat="@drawable/atleta"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="491dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
