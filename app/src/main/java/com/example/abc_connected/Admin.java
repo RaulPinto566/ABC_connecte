@@ -27,7 +27,9 @@ public class Admin extends AppCompatActivity {
         adm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mAuth.signOut();
                 Intent intent=new Intent(new Intent(Admin.this, CriarAdmin.class));
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -35,7 +37,9 @@ public class Admin extends AppCompatActivity {
         atl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mAuth.signOut();
                 Intent intent=new Intent(new Intent(Admin.this, CriarAtleta.class));
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -43,7 +47,9 @@ public class Admin extends AppCompatActivity {
         trn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mAuth.signOut();
                 Intent intent=new Intent(new Intent(Admin.this, CriarTreinador.class));
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

@@ -133,10 +133,12 @@ public class CriarAtleta extends AppCompatActivity {
                                                             alertDialogBuilder
                                                                     .setMessage("A verification Email Is Sent To Your Registered EmailID, please click on the link and Sign in again!")
                                                                     .setCancelable(false)
-                                                                    .setPositiveButton("Sign In", new DialogInterface.OnClickListener() {
+                                                                    .setPositiveButton("Voltar", new DialogInterface.OnClickListener() {
                                                                         public void onClick(DialogInterface dialog, int id) {
-                                                                            Intent signInIntent = new Intent(CriarAtleta.this, SignInActivity.class);
-                                                                            CriarAtleta.this.finish();
+                                                                            Intent mainCalendarIntent = new Intent(CriarAtleta.this, Admin.class);
+
+                                                                            startActivity(mainCalendarIntent);
+
                                                                         }
                                                                     });
                                                             // create alert dialog
