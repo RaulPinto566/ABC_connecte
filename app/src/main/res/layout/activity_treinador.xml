@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="150dp"
         android:text="criar treino" />
 
     <ImageView
@@ -26,8 +26,8 @@
         android:id="@+id/button25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
         android:text="Perfil"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="654dp" />
@@ -36,8 +36,8 @@
         android:id="@+id/button24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="299dp"
-        android:layout_marginTop="555dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="500dp"
         android:text="Logout"
         tools:layout_editor_absoluteX="277dp"
         tools:layout_editor_absoluteY="654dp" />
@@ -57,9 +57,9 @@
         android:id="@+id/EditarEquipa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EditarEquipa"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="250dp"
+        android:text="EditarEquipa"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="520dp" />
 
@@ -68,25 +68,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="350dp"
         android:text="CriarEquipa"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="518dp" />
+
     <Button
         android:id="@+id/CriarJogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="550dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="150dp"
         android:text="CriarJogo"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="518dp" />
+
     <Button
         android:id="@+id/CriarJogada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="250dp"
         android:text="CriarJogada"
         tools:layout_editor_absoluteX="234dp"
         tools:layout_editor_absoluteY="518dp" />
@@ -96,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="350dp"
         android:text="editar treino" />
 
 </RelativeLayout>
