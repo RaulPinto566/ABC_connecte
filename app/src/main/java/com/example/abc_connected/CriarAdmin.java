@@ -124,6 +124,7 @@ public class CriarAdmin extends AppCompatActivity {
                                                                             Intent mainCalendarIntent = new Intent(CriarAdmin.this, Admin.class);
 
                                                                             startActivity(mainCalendarIntent);
+
                                                                         }
                                                                     });
                                                             // create alert dialog

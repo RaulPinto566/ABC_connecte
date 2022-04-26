@@ -106,6 +106,7 @@ public class CriarAtleta extends AppCompatActivity {
 
                 if (email.getText().toString().contentEquals("")) {
                     errorView.setText("Email cannot be empty");
+
                 } else if (pass.getText().toString().contentEquals("")) {
                     errorView.setText("Password cannot be empty");
                 }

@@ -134,6 +134,7 @@ public class CriarTreinador extends AppCompatActivity {
                                                             AlertDialog alertDialog = alertDialogBuilder.create();
                                                             // show it
                                                             alertDialog.show();
+
                                                         }
                                                     }
                                                 });
