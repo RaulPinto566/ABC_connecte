@@ -7,16 +7,6 @@
     tools:context=".EditarAtleta"
     android:background="#FFCD01">
 
-    <TextView
-        android:id="@+id/signUpErrorView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="error_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957"
-        tools:layout_editor_absoluteX="0dp" />
-
     <EditText
         android:id="@+id/nome"
         android:layout_width="match_parent"
@@ -128,19 +118,26 @@
         android:id="@+id/criar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="Update"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
+        app:layout_constraintVertical_bias="0.881" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="189dp"
-        android:layout_height="299dp"
-        app:srcCompat="@drawable/atleta"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="491dp" />
+        android:layout_width="168dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/atleta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
