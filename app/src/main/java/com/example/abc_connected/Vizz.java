@@ -78,7 +78,7 @@ public class Vizz extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     has = (HashMap) dataSnapshot.getValue();
 
-                        adpt.add("Data: " + has.get("Data") + "\n" + "Hora: " + has.get("Hora") + "\n" + "Local: " + has.get("Local") + "\n" + "Equipa: " + has.get("Equipa"));
+                        adpt.add("Data: " + has.get("Data") + "  Hora: " + has.get("Hora") + "\n" + "Local: " + has.get("Local") + "  Equipa: " + has.get("Equipa"));
 
                 }
                 adapter.notifyDataSetChanged();

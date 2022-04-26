@@ -3,6 +3,7 @@ package com.example.abc_connected;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -124,6 +125,8 @@ public class EditarTreino1 extends AppCompatActivity {
                         root.child("treinos").child(ola[0]).child("Data").setValue(dataa.getText().toString());
                         root.child("treinos").child(ola[0]).child("Local").setValue(locall.getText().toString());
                         root.child("treinos").child(ola[0]).child("Hora").setValue(horaa.getText().toString());
+                        Intent mainCalendarIntent = new Intent(EditarTreino1.this, Treinadores.class);
+                        startActivity(mainCalendarIntent);
 
                     }
 

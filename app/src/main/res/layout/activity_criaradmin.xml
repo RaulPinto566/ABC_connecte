@@ -8,6 +8,31 @@
     android:background="#FFCD01">
 
     <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:text="Criar Admin"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
         android:id="@+id/signUpErrorView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,8 +52,8 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303"
-        tools:layout_editor_absoluteX="-16dp"
+        app:layout_constraintVertical_bias="0.467"
+        tools:layout_editor_absoluteX="0dp"
         tools:targetApi="o" />
 
     <EditText
@@ -41,7 +66,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
+        app:layout_constraintVertical_bias="0.556"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="o" />
 
@@ -55,7 +80,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
+        app:layout_constraintVertical_bias="0.648"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="o" />
 
@@ -69,7 +94,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552"
+        app:layout_constraintVertical_bias="0.736"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="o" />
 
@@ -83,8 +108,8 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintVertical_bias="0.383"
+        tools:layout_editor_absoluteX="0dp"
         tools:targetApi="o" />
 
     <EditText
@@ -100,7 +125,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
+        app:layout_constraintVertical_bias="0.295"
         tools:targetApi="o" />
 
     <EditText
@@ -116,7 +141,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.208"
         tools:targetApi="o" />
 
     <Button
@@ -129,5 +154,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.855" />
 </androidx.constraintlayout.widget.ConstraintLayout>

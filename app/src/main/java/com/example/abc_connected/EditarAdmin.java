@@ -3,6 +3,7 @@ package com.example.abc_connected;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -82,6 +83,8 @@ public class EditarAdmin extends AppCompatActivity {
                 root.child("Admins").child(zenabo[0]).child("Nome").setValue(nome.getText().toString());
                 root.child("Admins").child(zenabo[0]).child("Numero").setValue(numero.getText().toString());
                 root.child("Admins").child(zenabo[0]).child("Username").setValue(user.getText().toString());
+                Intent mainCalendarIntent = new Intent(EditarAdmin.this, Admin.class);
+                startActivity(mainCalendarIntent);
 
             }
         });

@@ -3,6 +3,7 @@ package com.example.abc_connected;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -86,6 +87,8 @@ public class EditarTreinador extends AppCompatActivity {
                 root.child("Treinadores").child(zenabo[0]).child("Numero").setValue(numero.getText().toString());
                 root.child("Treinadores").child(zenabo[0]).child("Posicao").setValue(posicao.getText().toString());
                 root.child("Treinadores").child(zenabo[0]).child("Username").setValue(user.getText().toString());
+                Intent mainCalendarIntent = new Intent(EditarTreinador.this, Treinadores.class);
+                startActivity(mainCalendarIntent);
 
             }
         });
