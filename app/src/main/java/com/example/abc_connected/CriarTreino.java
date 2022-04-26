@@ -129,6 +129,8 @@ public class CriarTreino extends AppCompatActivity {
                 System.out.println(nome_equipa);
 
                 CriarTreino(root,equi,lo,dat,hor);
+                Intent mainCalendarIntent = new Intent(CriarTreino.this, Treinadores.class);
+                startActivity(mainCalendarIntent);
             }
         });
 
