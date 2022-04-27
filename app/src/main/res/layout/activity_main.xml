@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:orientation="vertical"
-    android:background="@drawable/back"
+    android:background="@drawable/background_tablet"
     tools:context="com.example.abc_connected.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Bem Vindo!"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            tools:layout_marginTop="120dp" />
 
         <Button
             android:id="@+id/welcomeSignInButton"
-            android:layout_width="303dp"
-            android:layout_height="172dp"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="12dp"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/button"
-            android:text="Login"
+            android:text="Log In"
             android:textColor="@color/black"
+            android:textSize="24sp"
             app:backgroundTint="@null"
-            tools:text="Login" />
+            tools:layout_marginTop="530dp"/>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="291dp"
-            android:layout_height="302dp"
+            android:layout_width="250dp"
+            android:layout_height="350dp"
             android:layout_centerHorizontal="true"
-            app:srcCompat="@drawable/img" />
+            app:srcCompat="@drawable/img"
+            tools:layout_marginTop="175dp"/>
 
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>

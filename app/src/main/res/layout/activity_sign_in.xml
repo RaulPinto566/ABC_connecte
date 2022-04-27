@@ -1,114 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:orientation="vertical"
-    android:background="@drawable/back"
-    tools:context="com.example.abc_connected.frontend.user_ui.SignInActivity">
+    android:background="@drawable/background_tablet"
+    tools:context="com.example.abc_connected.SignInActivity">
 
 
     <TextView
-        android:id="@+id/Title"
-        android:layout_width="match_parent"
+        android:id="@+id/signInEmailTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFCD01"
-        android:text="ABC"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/signUpPageTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFCD01"
-        android:text="Login"
+        android:layout_marginHorizontal="455dp"
+        android:layout_marginVertical="180dp"
+        android:text="E-mail:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@android:color/black" />
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+    <EditText
+        android:id="@+id/signInEmailTextInput"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="450dp"
+        android:layout_marginVertical="230dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        tools:targetApi="o" />
 
-        <TextView
-            android:id="@+id/signInEmailTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="email"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    <TextView
+        android:id="@+id/SignInPasswordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="455dp"
+        android:layout_marginVertical="310dp"
+        android:text="Password:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/signInEmailTextInput"
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="email_hint"
-            android:inputType="textEmailAddress"
-            tools:targetApi="o" />
-
-        <TextView
-            android:id="@+id/SignInPasswordTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="password"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-        <EditText
-            android:id="@+id/signInPasswordTextInput"
-            android:layout_width="match_parent"
-            android:layout_height="123dp"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="password"
-            android:inputType="textPassword"
-            tools:targetApi="o" />
+    <EditText
+        android:id="@+id/signInPasswordTextInput"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="450dp"
+        android:layout_marginVertical="360dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        tools:targetApi="o" />
 
         <Button
             android:id="@+id/signInButton"
-            android:layout_width="match_parent"
-            android:layout_height="92dp"
-            android:text="Login"
-            tools:ignore="DuplicateSpeakableTextCheck"
-            tools:text="Login"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/button"
+            android:text="Log In"
+            android:textColor="@color/black"
+            android:textSize="24sp"
             app:backgroundTint="@null"
-            android:textColor="@color/black"/>
+            tools:layout_marginTop="560dp" />
 
-        <Button
-            android:id="@+id/forgotPasswordButton"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="esqueci me da password"
-            android:background="@drawable/button"
-            app:backgroundTint="@null"
-            android:textColor="@color/black"/>
-
-        <TextView
-            android:id="@+id/signInErrorView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="error_view" />
-
-        <Button
-            android:id="@+id/verifyEmailAgainButton"
-            android:layout_width="match_parent"
-            android:layout_height="106dp"
-            android:text="enviar outra vez a verificacao"
-            android:background="@drawable/button"
-            app:backgroundTint="@null"
-            android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Esqueceu-se da senha?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_marginTop="490dp" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img" />
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginHorizontal="1000dp"
+            android:layout_marginVertical="20dp"
+            app:srcCompat="@drawable/img"  />
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

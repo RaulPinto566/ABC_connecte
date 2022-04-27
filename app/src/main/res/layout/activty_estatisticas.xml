@@ -4,272 +4,312 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/back">
+    android:background="@drawable/background_tablet">
 
     <ImageView
         android:id="@+id/imageView11"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
         app:srcCompat="@drawable/img" />
 
     <TextView
         android:id="@+id/textestatis"
-        android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="30dp"
-        android:text="Estatísticas"
-        android:textSize="48sp" />
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="200dp"
+        android:layout_marginVertical="75dp"
+        android:text="Estatíscas"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/rematescertos"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="210dp"
         android:text="Remates certos"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/rematesfalhados"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="260dp"
         android:text="Remates falhados"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/cortesfeitos"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="310dp"
         android:text="Cortes feitos"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/ataques"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="360dp"
         android:text="Ataques"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp"  />
 
     <TextView
         android:id="@+id/Defesas"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="410dp"
         android:text="Defesas"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/rematestotais"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="460dp"
         android:text="Remates totais"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/golostotal"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="510dp"
         android:text="Golos total"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/esquerda"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="725dp"
+        android:layout_marginTop="190dp"
         android:text="Esquerda"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/direita"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="252dp"
-        android:layout_marginTop="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="910dp"
+        android:layout_marginTop="190dp"
         android:text="Direita"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/centro"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="192dp"
-        android:layout_marginTop="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="830dp"
+        android:layout_marginTop="190dp"
         android:text="Centro"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/e6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="142dp"
-        android:layout_marginTop="650dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="745dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button"
+        android:textSize="18sp"  />
 
     <TextView
         android:id="@+id/e7"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="142dp"
-        android:layout_marginTop="600dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="745dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/e9"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="142dp"
-        android:layout_marginTop="550dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="745dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/d6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="262dp"
-        android:layout_marginTop="650dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/d7"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="262dp"
-        android:layout_marginTop="600dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/d9"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="262dp"
-        android:layout_marginTop="550dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="915dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/c6"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="202dp"
-        android:layout_marginTop="650dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="840dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/c7"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="202dp"
-        android:layout_marginTop="600dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="840dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/c9"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="202dp"
-        android:layout_marginTop="550dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="840dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/rc"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="150dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/rf"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="200dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/cf"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="250dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/atq"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="300dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/dfs"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="350dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/rmttt"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="400dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/glstt"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="232dp"
-        android:layout_marginTop="450dp"
-        android:textSize="18sp"/>
+        android:layout_marginLeft="432dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/sair3333"
-        android:layout_width="60dp"
-        android:layout_height="76dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="530dp"
-        android:text="Sair"
+        android:layout_width="175dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/button"
+        android:text="Sair"
         android:textColor="@color/black"
-        app:backgroundTint="@null"/>
+        android:textSize="24sp"
+        app:backgroundTint="@null"
+        tools:layout_marginTop="635dp" />
 
     <TextView
         android:id="@+id/m6"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="650dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="692dp"
+        android:layout_marginTop="350dp"
         android:text="6m"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp"  />
 
     <TextView
         android:id="@+id/m7"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="600dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="692dp"
+        android:layout_marginTop="300dp"
         android:text="7m"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/m9"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="550dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="692dp"
+        android:layout_marginTop="250dp"
         android:text="9m"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
 
 

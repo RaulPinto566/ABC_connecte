@@ -4,28 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/back">
+    android:background="@drawable/background_tablet">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="85dp"
+        android:text="Escolher Equipa"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:layout_marginVertical="60dp" />
 
     <ImageView
         android:id="@+id/imageView8"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
         app:srcCompat="@drawable/img" />
 
 
     <Button
         android:id="@+id/sair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="305dp"
-        android:layout_marginTop="550dp"
-        android:layout_marginRight="20dp"
-        android:text="Sair"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/button"
+        android:text="Sair"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        tools:layout_marginTop="680dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -34,9 +46,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textnomeequip"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
-            android:hint=""
-            android:backgroundTint="#FFCD01"/>
+            android:layout_height="400dp"
+            android:layout_marginVertical="265dp"
+            android:background="@drawable/flag_transparent"
+            android:hint=""  />
     </com.google.android.material.textfield.TextInputLayout>
 </RelativeLayout>
