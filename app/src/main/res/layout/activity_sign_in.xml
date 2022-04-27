@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    android:background="#FFCD01"
+    android:background="@drawable/back"
     tools:context="com.example.abc_connected.frontend.user_ui.SignInActivity">
 
 
@@ -44,7 +44,7 @@
         <EditText
             android:id="@+id/signInEmailTextInput"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="105dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="email_hint"
@@ -61,7 +61,7 @@
         <EditText
             android:id="@+id/signInPasswordTextInput"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="123dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="password"
@@ -74,13 +74,19 @@
             android:layout_height="92dp"
             android:text="Login"
             tools:ignore="DuplicateSpeakableTextCheck"
-            tools:text="Login" />
+            tools:text="Login"
+            android:background="@drawable/button"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/forgotPasswordButton"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="esqueci_me_da_password" />
+            android:text="esqueci me da password"
+            android:background="@drawable/button"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/signInErrorView"
@@ -92,7 +98,10 @@
             android:id="@+id/verifyEmailAgainButton"
             android:layout_width="match_parent"
             android:layout_height="106dp"
-            android:text="enviar_outra_vez_a_verificacao" />
+            android:text="enviar outra vez a verificacao"
+            android:background="@drawable/button"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
 
         <ImageView
             android:id="@+id/imageView4"

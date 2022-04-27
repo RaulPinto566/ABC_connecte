@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    android:background="#FFCD01"
+    android:background="@drawable/back"
     tools:context="com.example.abc_connected.MainActivity">
 
     <RelativeLayout
@@ -15,17 +15,20 @@
 
         <Button
             android:id="@+id/welcomeSignInButton"
-            android:layout_width="135dp"
-            android:layout_height="108dp"
+            android:layout_width="303dp"
+            android:layout_height="172dp"
             android:layout_centerInParent="true"
             android:layout_marginTop="12dp"
+            android:background="@drawable/button"
             android:text="Login"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
             tools:text="Login" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="291dp"
+            android:layout_height="302dp"
             android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/img" />
 

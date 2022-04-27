@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CriarAtleta"
-    android:background="#FFCD01">
+    android:background="@drawable/back">
 
     <TextView
         android:id="@+id/signUpErrorView2"
@@ -138,6 +138,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Criar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

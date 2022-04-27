@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCD01">
+    android:background="@drawable/back">
 
     <Button
         android:id="@+id/estatisticasButton"
@@ -12,7 +12,10 @@
         android:layout_height="81dp"
         android:layout_marginLeft="127dp"
         android:layout_marginTop="542dp"
-        android:text="Estatísticas" />
+        android:text="Estatísticas"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/periodoButton"
@@ -20,7 +23,10 @@
         android:layout_height="48dp"
         android:layout_marginLeft="241dp"
         android:layout_marginTop="491dp"
-        android:text="Período" />
+        android:text="Período"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/abandonarButton"
@@ -28,7 +34,10 @@
         android:layout_height="48dp"
         android:layout_marginLeft="21dp"
         android:layout_marginTop="491dp"
-        android:text="Abandonar" />
+        android:text="Abandonar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -44,8 +53,10 @@
         android:layout_height="79dp"
         android:layout_marginLeft="241dp"
         android:layout_marginTop="167dp"
-        android:backgroundTint="@color/button_background_color"
-        android:text="Defesa" />
+        android:text="Defesa"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/ataqueButton"
@@ -53,8 +64,10 @@
         android:layout_height="79dp"
         android:layout_marginLeft="49dp"
         android:layout_marginTop="167dp"
-        android:backgroundTint="@color/button_background_color"
-        android:text="Ataque" />
+        android:text="Ataque"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/remateButton"
@@ -62,8 +75,10 @@
         android:layout_height="79dp"
         android:layout_marginLeft="49dp"
         android:layout_marginTop="287dp"
-        android:backgroundTint="@color/button_background_color"
-        android:text="Remate" />
+        android:text="Remate"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/balizaButton"
@@ -71,7 +86,9 @@
         android:layout_height="79dp"
         android:layout_marginLeft="49dp"
         android:layout_marginTop="404dp"
-        android:backgroundTint="@color/button_background_color"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
         android:text="Baliza\Realizada" />
 
     <Button
@@ -80,7 +97,9 @@
         android:layout_height="79dp"
         android:layout_marginLeft="241dp"
         android:layout_marginTop="404dp"
-        android:backgroundTint="@color/button_background_color"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
         android:text="Falhado\Sofrida" />
 
     <Button
@@ -89,7 +108,9 @@
         android:layout_height="79dp"
         android:layout_marginLeft="241dp"
         android:layout_marginTop="287dp"
-        android:backgroundTint="@color/button_background_color"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"
         android:text="Falta" />
 
     <TextView

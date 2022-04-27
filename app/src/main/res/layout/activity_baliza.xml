@@ -5,32 +5,38 @@
     android:id="@+id/ffcd01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCD01"
-    android:backgroundTint="#FFCD01"
+    android:background="@drawable/back"
     app:cornerRadius="0dp">
+
     <Button
         android:id="@+id/guardar"
         android:layout_width="167dp"
         android:layout_height="72dp"
-        android:text="Guardar"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="594dp"
-        android:layout_marginLeft="10dp"/>
+        android:text="Guardar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/guardar2"
         android:layout_width="167dp"
         android:layout_height="72dp"
-        android:text="Cancelar"
+        android:layout_marginLeft="234dp"
         android:layout_marginTop="594dp"
-        android:layout_marginLeft="234dp"/>
+        android:text="Cancelar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="391dp"
         android:layout_height="340dp"
-        app:srcCompat="@drawable/untitled_diagram_drawio1"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="176dp"
-        android:layout_marginLeft="10dp" />
+        app:srcCompat="@drawable/untitled_diagram_drawio1" />
 
     <Button
         android:id="@+id/centro_direito"

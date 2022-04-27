@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#FFCD01"
-    android:backgroundTint="#FFCD01">
+    android:background="@drawable/back">
 
     <ImageView
         android:id="@+id/imageView8"
@@ -19,10 +18,13 @@
         android:id="@+id/adicionaratleta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adicionar Atleta"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="250dp"
         android:layout_marginRight="250dp"
-        android:layout_marginLeft="20dp"/>
+        android:text="Adicionar Atleta"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/retiraratleta"
@@ -31,15 +33,22 @@
         android:layout_marginLeft="250dp"
         android:layout_marginTop="250dp"
         android:layout_marginRight="20dp"
-        android:text="Retirar Atleta" />
+        android:text="Retirar Atleta"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
+
     <Button
         android:id="@+id/trocartreinador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trocar o Treinador"
-        android:layout_marginTop="430dp"
         android:layout_marginLeft="250dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginTop="430dp"
+        android:layout_marginRight="20dp"
+        android:text="Trocar o Treinador"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/trocarnomeequipa"
@@ -47,14 +56,20 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="430dp"
-        android:text="Trocar Nome \nda Equipa" />
+        android:text="Trocar Nome \nda Equipa"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/sair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sair"
-        android:layout_marginTop="550dp"
         android:layout_marginLeft="305dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="20dp"
+        android:text="Sair"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 </RelativeLayout>

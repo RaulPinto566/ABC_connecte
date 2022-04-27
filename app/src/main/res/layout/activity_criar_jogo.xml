@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFCD01">
+    android:background="@drawable/back">
 
     <ImageView
         android:id="@+id/imageView10"
@@ -90,7 +90,10 @@
         android:layout_height="76dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="530dp"
-        android:text="Guardar" />
+        android:text="Guardar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/textView15"

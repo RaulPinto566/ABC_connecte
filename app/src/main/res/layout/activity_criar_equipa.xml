@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abc_connected.Criar_Equipa"
-    android:background="#FFCD01"
-    android:backgroundTint="#FFCD01">
+    android:background="@drawable/back">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -31,7 +30,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="25dp"
-        android:text="Guardar" />
+        android:text="Guardar"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:textColor="@color/black"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
