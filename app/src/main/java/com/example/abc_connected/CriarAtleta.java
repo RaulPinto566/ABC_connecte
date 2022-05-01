@@ -78,7 +78,7 @@ public class CriarAtleta extends AppCompatActivity {
         posicao = findViewById(R.id.pos);
         numero = findViewById(R.id.numero);
         escalao = findViewById(R.id.escalao);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView2);
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();

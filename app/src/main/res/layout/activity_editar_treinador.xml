@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".EditarTreinador"
 
-    android:background="@drawable/back">
+    android:background="@drawable/background_tablet">
 
     <EditText
         android:id="@+id/idade"

@@ -68,7 +68,7 @@ public class CriarAdmin extends AppCompatActivity {
         idade = findViewById(R.id.idade);
         genero = findViewById(R.id.genero);
         numero = findViewById(R.id.numero);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView2);
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();

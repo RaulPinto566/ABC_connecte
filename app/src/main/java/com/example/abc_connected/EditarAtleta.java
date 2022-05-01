@@ -59,7 +59,7 @@ public class EditarAtleta extends AppCompatActivity {
         numero = findViewById(R.id.numero);
         posicao = findViewById(R.id.pos);
         numero = findViewById(R.id.numero);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView2);
 
         mAuth = FirebaseAuth.getInstance();
 

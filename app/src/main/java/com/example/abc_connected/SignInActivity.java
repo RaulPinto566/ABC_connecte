@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,7 +30,6 @@ public class SignInActivity extends AppCompatActivity {
     EditText passwordTextInput;
     Button signInButton;
     Button forgotPasswordButton;
-    Button sendVerifyMailAgainButton;
     TextView errorView;
     private DatabaseReference reff;
 
@@ -43,12 +43,8 @@ public class SignInActivity extends AppCompatActivity {
         passwordTextInput = findViewById(R.id.signInPasswordTextInput);
         signInButton = findViewById(R.id.signInButton);
         forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
-        sendVerifyMailAgainButton = findViewById(R.id.verifyEmailAgainButton);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView3);
         reff = FirebaseDatabase.getInstance().getReference().child("Dados_pessoais");//referencia a uma child criada no firebase "member"
-
-        sendVerifyMailAgainButton.setVisibility(View.INVISIBLE);
-
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -98,7 +94,6 @@ public class SignInActivity extends AppCompatActivity {
 
                                             } else {
 
-                                                sendVerifyMailAgainButton.setVisibility(View.VISIBLE);
                                                 errorView.setText("Please Verify your EmailID and SignIn");
 
                                             }

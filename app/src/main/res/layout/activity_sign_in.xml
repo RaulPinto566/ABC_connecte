@@ -8,6 +8,30 @@
     android:background="@drawable/background_tablet"
     tools:context="com.example.abc_connected.SignInActivity">
 
+    <TextView
+        android:id="@+id/signUpErrorView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="651dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
+        android:layout_marginTop="560dp" />
 
     <TextView
         android:id="@+id/signInEmailTitle"
@@ -57,18 +81,6 @@
         android:inputType="textPassword"
         tools:targetApi="o" />
 
-        <Button
-            android:id="@+id/signInButton"
-            android:layout_width="150dp"
-            android:layout_height="75dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/button"
-            android:text="Log In"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            app:backgroundTint="@null"
-            tools:layout_marginTop="560dp" />
-
     <Button
         android:id="@+id/forgotPasswordButton"
         android:layout_width="wrap_content"
@@ -78,7 +90,7 @@
         android:text="Esqueceu-se da senha?"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_marginTop="490dp" />
+        android:layout_marginTop="490dp" />
 
         <ImageView
             android:id="@+id/imageView4"

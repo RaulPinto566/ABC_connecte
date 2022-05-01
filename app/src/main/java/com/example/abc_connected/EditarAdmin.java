@@ -48,7 +48,7 @@ public class EditarAdmin extends AppCompatActivity {
         genero = findViewById(R.id.genero);
         numero = findViewById(R.id.numero);
         numero = findViewById(R.id.numero);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView2);
 
         mAuth = FirebaseAuth.getInstance();
 

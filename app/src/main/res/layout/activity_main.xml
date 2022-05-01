@@ -30,7 +30,7 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             app:backgroundTint="@null"
-            tools:layout_marginTop="530dp"/>
+            android:layout_marginTop="530dp" />
 
         <ImageView
             android:id="@+id/imageView"

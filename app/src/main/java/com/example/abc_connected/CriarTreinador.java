@@ -72,7 +72,7 @@ public class CriarTreinador extends AppCompatActivity {
         genero = findViewById(R.id.genero);
         posicao = findViewById(R.id.pos);
         numero = findViewById(R.id.numero);
-        errorView = findViewById(R.id.signInErrorView);
+        errorView = findViewById(R.id.signUpErrorView2);
 
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
