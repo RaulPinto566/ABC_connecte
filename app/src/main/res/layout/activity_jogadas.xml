@@ -8,36 +8,40 @@
 
     <Button
         android:id="@+id/estatisticasButton"
-        android:layout_width="158dp"
-        android:layout_height="81dp"
-        android:layout_marginLeft="127dp"
-        android:layout_marginTop="542dp"
-        android:text="Estatísticas"
         android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:text="Estatísticas"
+        android:layout_width="190dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="642dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null"/>
 
     <Button
         android:id="@+id/periodoButton"
-        android:layout_width="156dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="241dp"
-        android:layout_marginTop="491dp"
-        android:text="Período"
+
         android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:text="Período"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="700dp"
+        android:layout_marginTop="540dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/abandonarButton"
-        android:layout_width="156dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="491dp"
-        android:text="Abandonar"
         android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:text="Abandonar"
+        android:layout_width="175dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="540dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -51,99 +55,107 @@
         android:id="@+id/defesaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="241dp"
+        android:layout_marginLeft="696dp"
         android:layout_marginTop="167dp"
+        android:background="@drawable/button_pressed"
         android:text="Defesa"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/ataqueButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="49dp"
+        android:layout_marginLeft="445dp"
         android:layout_marginTop="167dp"
+        android:background="@drawable/button_pressed"
         android:text="Ataque"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/remateButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="49dp"
+        android:layout_marginLeft="445dp"
         android:layout_marginTop="287dp"
+        android:background="@drawable/button_pressed"
         android:text="Remate"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/balizaButton"
+        android:background="@drawable/button_pressed"
+        android:text="Baliza\Realizada"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="49dp"
+        android:layout_marginLeft="445dp"
         android:layout_marginTop="404dp"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
-        android:textColor="@color/black"
-        android:text="Baliza\Realizada" />
+        android:textSize="15sp"/>
 
     <Button
         android:id="@+id/falhadoButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="241dp"
+        android:layout_marginLeft="696dp"
         android:layout_marginTop="404dp"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
+        android:background="@drawable/button_pressed"
+        android:text="Falhado\Sofrida"
         android:textColor="@color/black"
-        android:text="Falhado\Sofrida" />
+        android:textSize="15sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/faltaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="241dp"
+        android:layout_marginLeft="696dp"
         android:layout_marginTop="287dp"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
+        android:background="@drawable/button_pressed"
+        android:text="Falta"
         android:textColor="@color/black"
-        android:text="Falta" />
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="167dp"
-        android:layout_height="62dp"
-        android:layout_marginLeft="202dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="85dp"
         android:text="Jogo"
-        android:textSize="34sp" />
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ou"
+        android:layout_marginLeft="625dp"
         android:layout_marginTop="199dp"
-        android:layout_marginLeft="197dp" />
+        android:text="ou" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ou"
+        android:layout_marginLeft="625dp"
         android:layout_marginTop="434dp"
-        android:layout_marginLeft="197dp"/>
+        android:text="ou"/>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ou"
+        android:layout_marginLeft="625dp"
         android:layout_marginTop="320dp"
-        android:layout_marginLeft="197dp"/>
+        android:text="ou"  />
 
 </RelativeLayout>
