@@ -8,15 +8,15 @@
 
     <Button
         android:id="@+id/estatisticasButton"
-        android:background="@drawable/button"
-        android:text="Estatísticas"
         android:layout_width="190dp"
         android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="642dp"
+        android:background="@drawable/button"
+        android:text="Estatísticas"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@null"/>
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/periodoButton"

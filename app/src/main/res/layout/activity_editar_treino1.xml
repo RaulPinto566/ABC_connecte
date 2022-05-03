@@ -8,103 +8,122 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
+        app:srcCompat="@drawable/img"/>
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="132dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="410dp"
-        android:text="Equipa" />
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="420dp"
+        android:text="Equipa"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="132dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginLeft="300dp"
+        android:layout_marginLeft="430dp"
         android:layout_marginTop="340dp"
-        android:text="Hora" />
+        android:text="Hora"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="132dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="200dp"
-        android:text="Local" />
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="180dp"
+        android:text="Local"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="132dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="270dp"
-        android:text="Data" />
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="260dp"
+        android:text="Data"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/local1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="600dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/bg_edittext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="local" />
+        android:text="local"
+        android:textSize="26sp" />
 
     <EditText
         android:id="@+id/data1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="600dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_edittext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="data" />
+        android:text="data"
+        android:textSize="26sp" />
 
     <EditText
         android:id="@+id/hora1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
         android:layout_marginLeft="600dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/bg_edittext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="hora" />
+        android:text="hora"
+        android:textSize="26sp" />
 
     <Button
         android:id="@+id/criar221"
-        android:layout_width="130dp"
+        android:layout_width="155dp"
         android:layout_height="76dp"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginLeft="570dp"
+        android:layout_marginTop="615dp"
         android:background="@drawable/button"
         android:text="Guardar"
         android:textColor="@color/black"
+        android:textSize="22sp"
         app:backgroundTint="@null" />
 
     <ListView
         android:id="@+id/window_list22"
-        android:layout_width="210dp"
-        android:layout_height="100dp"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
         android:layout_marginLeft="600dp"
         android:layout_marginTop="410dp"
+        android:background="@drawable/bg_edittext"
         android:choiceMode="multipleChoice"
         android:ems="10"
+        android:textSize="26sp"
         tools:ignore="MissingConstraints">
 
     </ListView>
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="272dp"
-        android:layout_height="72dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="85dp"
         android:text="Editar Treino"
-        android:textSize="40sp" />
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold"/>
 </RelativeLayout>

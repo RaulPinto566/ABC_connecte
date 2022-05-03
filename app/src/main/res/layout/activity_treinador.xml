@@ -8,62 +8,58 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="73dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginVertical="100dp"
         android:text="Treinador"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="30dp"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="325dp"
-        android:layout_marginTop="280dp"
+        android:layout_width="175dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="710dp"
+        android:layout_marginVertical="410dp"
         android:background="@drawable/button"
         android:text="criar treino"
         android:textColor="@color/black"
+        android:textSize="24sp"
         app:backgroundTint="@null" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
+        app:srcCompat="@drawable/img" />
 
     <Button
         android:id="@+id/button25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="500dp"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="410dp"
+        android:layout_marginVertical="600dp"
         android:background="@drawable/button"
         android:text="Perfil"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="654dp" />
+        android:textSize="23sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/button24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="600dp"
-        android:layout_marginTop="500dp"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="710dp"
+        android:layout_marginVertical="600dp"
         android:background="@drawable/button"
         android:text="Logout"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="654dp" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
 
     <TextView
         android:id="@+id/textView3"
@@ -81,73 +77,78 @@
 
     <Button
         android:id="@+id/EditarEquipa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="600dp"
-        android:layout_marginTop="250dp"
+        android:layout_width="175dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="410dp"
+        android:layout_marginVertical="300dp"
         android:background="@drawable/button"
-        android:text="EditarEquipa"
+        android:text="Editar Equipa"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="520dp" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/CriarEquipa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="350dp"
+        android:layout_width="175dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="710dp"
+        android:layout_marginVertical="300dp"
         android:background="@drawable/button"
-        android:text="CriarEquipa"
+        android:text="Criar Equipa"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="518dp" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/CriarJogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="600dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="410dp"
+        android:layout_marginVertical="190dp"
         android:background="@drawable/button"
-        android:text="CriarJogo"
+        android:text="Criar Jogo"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="518dp" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/CriarJogada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="600dp"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="710dp"
+        android:layout_marginVertical="190dp"
         android:background="@drawable/button"
-        android:text="CriarJogada"
+        android:text="Criar Jogada"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="518dp" />
+        android:textSize="23sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/button999"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="600dp"
-        android:layout_marginTop="350dp"
+        android:layout_width="175dp"
+        android:layout_height="82dp"
+        android:layout_marginHorizontal="410dp"
+        android:layout_marginVertical="410dp"
         android:background="@drawable/button"
         android:text="editar treino"
         android:textColor="@color/black"
+        android:textSize="24sp"
         app:backgroundTint="@null" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="3500dp"
         app:srcCompat="@drawable/treinos" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="290dp"
+        app:srcCompat="@drawable/empresario" />
 
 </RelativeLayout>
