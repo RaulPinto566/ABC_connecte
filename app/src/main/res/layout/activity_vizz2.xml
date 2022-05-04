@@ -28,15 +28,4 @@
         android:layout_height="wrap_content"/>
 
 
-    <Button
-        android:id="@+id/button_guarda22r"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="290dp"
-        android:layout_marginTop="25dp"
-        android:text="Guardar"
-        android:background="@drawable/button"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"/>
-
 </RelativeLayout>

@@ -45,7 +45,7 @@ public class Vizz extends AppCompatActivity {
         super.onCreate(savedinstance);
         setContentView(R.layout.activity_vizz2);
         listviewData = findViewById(R.id.window_list12);
-        button_guardar = findViewById(R.id.button_guarda22r);
+
         adicionaratleta =findViewById(R.id.adicionaratleta);
         retiraratleta = findViewById(R.id.retiraratleta);
         trocartreinador = findViewById(R.id.trocartreinador);
@@ -90,24 +90,7 @@ public class Vizz extends AppCompatActivity {
         });
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
         listviewData.setAdapter(adapter);
-        button_guardar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onOptionsItemSelected();
-                if(soma!=1){
-                    button_guardar.setError("Selecione apenas uma equipa.");
-                }
-                else{
 
-                    for(int i=0;i<listviewData.getCount();i++){
-                        if(listviewData.isItemChecked(i)) {
-                            nome_equipa = listviewData.getItemAtPosition(i).toString();
-                        }
-                    }
-
-                }
-            }
-        });
     }
     public void onOptionsItemSelected(){
         soma=0;

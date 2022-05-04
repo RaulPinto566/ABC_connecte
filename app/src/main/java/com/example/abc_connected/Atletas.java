@@ -14,12 +14,13 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Atletas extends AppCompatActivity {
 
     public FirebaseAuth mAuth;
-    Button logout, call,up, jo;
+    Button logout, call,up, jo, alertas;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atleta);
+        alertas = findViewById(R.id.alertar11);
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.button23);
         call = findViewById(R.id.button9);
@@ -44,6 +45,14 @@ call.setOnClickListener(new View.OnClickListener() {
     }
 });
 
+        alertas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainCalendarIntent = new Intent(Atletas.this, VizzAlerta.class);
+
+                startActivity(mainCalendarIntent);
+            }
+        });
         up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

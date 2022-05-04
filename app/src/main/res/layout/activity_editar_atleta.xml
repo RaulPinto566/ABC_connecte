@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,137 +7,113 @@
     tools:context=".EditarAtleta"
     android:background="@drawable/background_tablet">
 
-    <EditText
-        android:id="@+id/nome"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Nome"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="75dp"
+        android:text=" Editar \n Atleta"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/numero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Numero"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/idade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Idade"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/genero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Genero"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/pos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="Posicao"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="posição"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/Escalao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/escalao220"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="600dp"
         android:autofillHints=""
+        android:background="@drawable/bg_edittext"
         android:ems="10"
-        android:hint="Escalao"
+        android:hint="Escalão"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718"
-        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintVertical_bias="0.2"
         tools:targetApi="o" />
 
     <EditText
         android:id="@+id/user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Username"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <Button
         android:id="@+id/criar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="1050dp"
+        android:layout_marginVertical="590dp"
         android:background="@drawable/button"
         android:text="Update"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
+
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="292dp"
-        android:layout_height="193dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973"
-        app:srcCompat="@drawable/atleta" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/imageView21"
+        android:layout_width="278dp"
+        android:layout_height="420dp"
+        android:layout_marginHorizontal="25dp"
+        app:srcCompat="@drawable/atleta"
+        tools:layout_marginTop="200dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
+        app:srcCompat="@drawable/img" />
+</RelativeLayout>

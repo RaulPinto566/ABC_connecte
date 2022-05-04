@@ -34,36 +34,6 @@
         <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_fragment_home.xml" value="0.2953125" />
         <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_fragment_slideshow.xml" value="0.2953125" />
         <entry key="..\:/Users/Catia/StudioProjects/ABC_connecte/app/src/main/res/layout/user_nav_header_main.xml" value="0.2953125" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/bg_edittext.xml" value="0.2115" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/bg_edittext_focused.xml" value="0.2115" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/bg_edittext_normal.xml" value="0.2115" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/button.xml" value="0.19" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/button_pressed.xml" value="0.19" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/drawable/lists.xml" value="0.1885" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_admin.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_atleta.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_baliza.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criar_equipa.xml" value="0.15" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criar_jogo.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criar_treino.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criaradmin.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criaratleta.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_criartreinador.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_editar_admin.xml" value="0.1" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_editar_atleta.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_editar_equipa.xml" value="0.13" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_editar_equipa1.xml" value="0.13" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_editar_treino1.xml" value="0.13" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_forgot_password.xml" value="0.15" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_jogadas.xml" value="0.13" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_main.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_remate.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_sign_in.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_treinador.xml" value="0.15" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activity_vizz2.xml" value="0.18" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/activty_estatisticas.xml" value="0.15" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/direita.xml" value="0.10208333333333333" />
-        <entry key="..\:/Users/JP/StudioProjects/ABC_connecte/app/src/main/res/layout/esquerda.xml" value="0.14" />
         <entry key="..\:/Users/raul-/Downloads/ABC_connected/app/src/main/res/layout/activity_admin.xml" value="0.26811594202898553" />
         <entry key="..\:/Users/raul-/Downloads/ABC_connected/app/src/main/res/layout/activity_atleta.xml" value="0.26811594202898553" />
         <entry key="..\:/Users/raul-/Downloads/ABC_connected/app/src/main/res/layout/activity_baliza.xml" value="0.2210144927536232" />
@@ -114,17 +84,19 @@
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/drawable/button.xml" value="0.117" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/drawable/ic_logout.xml" value="0.1" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_admin.xml" value="0.5" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_apagar_alrt.xml" value="0.2418478260869565" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_atleta.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_baliza.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_chat.xml" value="0.2" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criar_alerta.xml" value="0.2418478260869565" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criar_equipa.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criar_jogo.xml" value="0.2545289855072464" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criar_treino.xml" value="0.2545289855072464" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criaradmin.xml" value="0.2" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criaratleta.xml" value="0.14" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criartreinador.xml" value="0.14" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_editar_admin.xml" value="0.3625" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criar_treino.xml" value="0.5" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criaradmin.xml" value="0.123629227750202" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criaratleta.xml" value="0.123629227750202" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_criartreinador.xml" value="0.25" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_editar_admin.xml" value="0.33" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_editar_atleta.xml" value="0.25" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_editar_equipa.xml" value="0.3625" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_editar_equipa1.xml" value="0.3625" />
@@ -141,7 +113,7 @@
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_specificchat.xml" value="0.2" />
-        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_treinador.xml" value="0.25" />
+        <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_treinador.xml" value="0.22" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_update_profile.xml" value="0.2" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_vizz2.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/volin/ABC_connecte/app/src/main/res/layout/activity_week_view.xml" value="0.16847826086956522" />

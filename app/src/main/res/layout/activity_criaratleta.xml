@@ -211,18 +211,18 @@
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:layout_marginHorizontal="1050dp"
+        android:layout_marginTop="680dp"
         android:background="@drawable/button"
         android:text="criar"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:backgroundTint="@null"
-        android:layout_marginTop="680dp" />
+        app:backgroundTint="@null" />
 
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="278dp"
         android:layout_height="420dp"
+        android:layout_marginHorizontal="25dp"
         app:srcCompat="@drawable/atleta"
-        tools:layout_marginTop="200dp"
-        android:layout_marginHorizontal="25dp"/>
+        tools:layout_marginTop="200dp" />
 </RelativeLayout>

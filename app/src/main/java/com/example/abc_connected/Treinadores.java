@@ -13,14 +13,16 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Treinadores extends AppCompatActivity {
     public FirebaseAuth mAuth;
-    Button logout, call, up,EditarEquipa,CriarEquipa, treino, edittreino,CriarListaJogo,CriarJogo;
+    Button logout, alertar,apagar, up,EditarEquipa,CriarEquipa, treino, edittreino,CriarListaJogo,CriarJogo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_treinador);
+        alertar = findViewById( R.id.button900);
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.button24);
+        apagar = findViewById(R.id.button901);
         up = findViewById(R.id.button25);
         CriarJogo = findViewById(R.id.CriarJogo);
         EditarEquipa = findViewById(R.id.EditarEquipa);
@@ -36,6 +38,14 @@ public class Treinadores extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             };
+        });
+
+        alertar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent activityCriarListaJogo = new Intent(Treinadores.this,Criar_Alerta.class);
+                startActivity(activityCriarListaJogo);
+            }
         });
         CriarListaJogo.setOnClickListener(new View.OnClickListener() {
             @Override

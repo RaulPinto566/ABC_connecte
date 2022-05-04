@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ABC_connected">
         <activity
+            android:name=".Criar_Alerta"
+            android:exported="false" />
+        <activity
             android:name=".EditarTreino1"
             android:exported="false" />
         <activity
@@ -63,15 +66,16 @@
         <activity android:name=".EditarEquipa5" />
         <activity android:name=".Criar_Equipa" />
         <activity android:name=".Vizz" />
-        <activity android:name=".CriarJogo"/>
-        <activity android:name=".JogoJogadas"/>
-        <activity android:name=".JogoJogadas1"/>
-        <activity android:name=".JogoJogadas2"/>
-        <activity android:name=".JogoJogadas3"/>
-        <activity android:name=".JogoJogadas4"/>
-        <activity android:name=".ListaJogo"/>
-        <activity android:name=".Estatisticas"/>
-        <activity android:name=".Vizz2"/>
+        <activity android:name=".CriarJogo" />
+        <activity android:name=".JogoJogadas" />
+        <activity android:name=".JogoJogadas1" />
+        <activity android:name=".JogoJogadas2" />
+        <activity android:name=".JogoJogadas3" />
+        <activity android:name=".JogoJogadas4" />
+        <activity android:name=".ListaJogo" />
+        <activity android:name=".Estatisticas" />
+        <activity android:name=".Vizz2" />
+        <activity android:name=".VizzAlerta" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

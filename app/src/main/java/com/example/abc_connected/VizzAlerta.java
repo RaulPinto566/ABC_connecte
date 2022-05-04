@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Vizz2 extends AppCompatActivity {
+public class VizzAlerta extends AppCompatActivity {
 
     private ArrayList adpt,list,lista;
     private TextView nomeequipa;
@@ -32,8 +32,8 @@ public class Vizz2 extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private DatabaseReference root = db.getReference().child("Jogo");
-    private DatabaseReference raat = db.getReference().child("Jogo");
+    private DatabaseReference root = db.getReference().child("treinos");
+    private DatabaseReference raat = db.getReference().child("Alerta");
     private DatabaseReference reet = db.getReference().child("Ateleta");
 
     protected void onCreate(Bundle savedinstance){
@@ -73,7 +73,7 @@ public class Vizz2 extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     has = (HashMap) dataSnapshot.getValue();
 
-                    adpt.add("Local: " + has.get("Local") + "\n" + "Equipa: " + has.get("Equipa"));
+                    adpt.add("Alerta: " + has.get("Alerta"));
 
                 }
                 adapter.notifyDataSetChanged();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,108 +8,93 @@
 
     android:background="@drawable/background_tablet">
 
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="260dp"
+        android:text=" Editar \nAdmin"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Username"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/idade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Idade"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Nome"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/numero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Numero"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="425dp"
-        android:layout_height="411dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.992"
-        app:srcCompat="@drawable/empresario" />
 
     <EditText
         android:id="@+id/genero"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
+        android:layout_width="10000dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/bg_edittext"
         android:hint="Genero"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513"
-        tools:layout_editor_absoluteX="0dp"
-        tools:targetApi="o" />
+        android:inputType="textEmailAddress" />
 
     <Button
         android:id="@+id/criar"
-        android:layout_width="138dp"
-        android:layout_height="56dp"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:layout_marginHorizontal="1050dp"
+        android:layout_marginVertical="540dp"
         android:background="@drawable/button"
         android:text="Update"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
+        android:textSize="24sp"
+        app:backgroundTint="@null" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="288dp"
+        android:layout_height="432dp"
+        android:layout_marginVertical="100dp"
+        app:srcCompat="@drawable/empresario" />
+
+</RelativeLayout>

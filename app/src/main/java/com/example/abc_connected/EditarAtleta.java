@@ -32,7 +32,7 @@ public class EditarAtleta extends AppCompatActivity {
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     Button criar;
     EditText user;
-    EditText nome;
+
     EditText idade;
     EditText genero;
     EditText numero;
@@ -50,10 +50,10 @@ public class EditarAtleta extends AppCompatActivity {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference root = db.getReference();
 
-        escalao = findViewById(R.id.escalao);
+        escalao = findViewById(R.id.escalao220);
         criar = findViewById(R.id.criar);
         user = findViewById(R.id.user);
-        nome = findViewById(R.id.nome);
+
         idade = findViewById(R.id.idade);
         genero = findViewById(R.id.genero);
         numero = findViewById(R.id.numero);
@@ -92,7 +92,7 @@ public class EditarAtleta extends AppCompatActivity {
                 root.child("Atletas").child(zenabo[0]).child("Escalao").setValue(escalao.getText().toString());
                 root.child("Atletas").child(zenabo[0]).child("Genero").setValue(genero.getText().toString());
                 root.child("Atletas").child(zenabo[0]).child("Idade").setValue(idade.getText().toString());
-                root.child("Atletas").child(zenabo[0]).child("Nome").setValue(nome.getText().toString());
+
                 root.child("Atletas").child(zenabo[0]).child("Numero").setValue(numero.getText().toString());
                 root.child("Atletas").child(zenabo[0]).child("Posicao").setValue(posicao.getText().toString());
                 root.child("Atletas").child(zenabo[0]).child("Username").setValue(user.getText().toString());
