@@ -18,19 +18,19 @@
             android:textColor="@color/black"
             android:textSize="35dp"
             android:textStyle="bold"
-            tools:layout_marginTop="120dp" />
+            tools:layout_marginVertical="120dp" />
 
         <Button
             android:id="@+id/welcomeSignInButton"
             android:layout_width="140dp"
             android:layout_height="75dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginVertical="530dp"
             android:background="@drawable/button"
             android:text="Log In"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:backgroundTint="@null"
-            android:layout_marginTop="530dp" />
+            app:backgroundTint="@null" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -38,6 +38,6 @@
             android:layout_height="350dp"
             android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/img"
-            tools:layout_marginTop="175dp"/>
+            tools:layout_marginVertical="175dp" />
 
 </RelativeLayout>

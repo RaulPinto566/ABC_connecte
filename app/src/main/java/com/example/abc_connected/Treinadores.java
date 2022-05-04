@@ -22,7 +22,7 @@ public class Treinadores extends AppCompatActivity {
         alertar = findViewById( R.id.button900);
         mAuth = FirebaseAuth.getInstance();
         logout = findViewById(R.id.button24);
-        apagar = findViewById(R.id.button901);
+
         up = findViewById(R.id.button25);
         CriarJogo = findViewById(R.id.CriarJogo);
         EditarEquipa = findViewById(R.id.EditarEquipa);
