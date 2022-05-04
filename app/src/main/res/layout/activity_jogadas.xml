@@ -33,12 +33,12 @@
 
     <Button
         android:id="@+id/abandonarButton"
-        android:background="@drawable/button"
-        android:text="Abandonar"
         android:layout_width="175dp"
         android:layout_height="75dp"
         android:layout_marginLeft="400dp"
         android:layout_marginTop="540dp"
+        android:background="@drawable/button"
+        android:text="Abandonar"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:backgroundTint="@null" />

@@ -127,147 +127,154 @@
 
     <TextView
         android:id="@+id/e6"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="745dp"
         android:layout_marginTop="350dp"
         android:background="@drawable/button"
-        android:textSize="18sp"  />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/e7"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="745dp"
         android:layout_marginTop="300dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/e9"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="745dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/d6"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="915dp"
         android:layout_marginTop="350dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/d7"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="915dp"
         android:layout_marginTop="300dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/d9"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="915dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/c6"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="840dp"
         android:layout_marginTop="350dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/c7"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="840dp"
         android:layout_marginTop="300dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/c9"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="840dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/rc"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="200dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/rf"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="250dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/cf"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="300dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/atq"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="350dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/dfs"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="400dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/rmttt"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="450dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/glstt"
-        android:layout_width="40dp"
+        android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginLeft="432dp"
         android:layout_marginTop="500dp"
         android:background="@drawable/button"
-        android:textSize="18sp" />
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/sair3333"
@@ -279,7 +286,7 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         app:backgroundTint="@null"
-        tools:layout_marginTop="635dp" />
+        tools:layout_marginVertical="635dp" />
 
     <TextView
         android:id="@+id/m6"

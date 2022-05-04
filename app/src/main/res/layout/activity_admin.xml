@@ -11,21 +11,23 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="73dp"
-        android:text="Admin"
+        android:text="Administrador"
         android:textSize="48sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.10"/>
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
@@ -33,21 +35,26 @@
 
     <Button
         android:id="@+id/signOut2"
-        android:layout_width="128dp"
-        android:layout_height="53dp"
+        android:layout_width="164dp"
+        android:layout_height="85dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button"
-        app:backgroundTint="@null"
         android:textColor="@color/black"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         android:text="logout"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/atletabtn"
-        android:layout_width="164dp"
-        android:layout_height="85dp"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
         android:background="@drawable/button"
         android:text="Criar Atleta"
         android:textSize="24sp"
@@ -58,12 +65,12 @@
         app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <Button
         android:id="@+id/treinbtn"
-        android:layout_width="191dp"
-        android:layout_height="85dp"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
         android:background="@drawable/button"
         android:text="Criar Treinador"
         android:textColor="@color/black"
@@ -74,12 +81,12 @@
         app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/alert"
-        android:layout_width="191dp"
-        android:layout_height="85dp"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
         android:background="@drawable/button"
         android:text="Criar Alerta"
         android:textColor="@color/black"
@@ -90,12 +97,12 @@
         app:layout_constraintHorizontal_bias="0.651"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/adminbtn"
-        android:layout_width="161dp"
-        android:layout_height="84dp"
+        android:layout_width="190dp"
+        android:layout_height="80dp"
         android:background="@drawable/button"
         android:text="Criar Admin"
         android:textSize="24sp"
@@ -106,20 +113,21 @@
         app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="85dp"
         android:background="@drawable/button"
-        android:text="Prefil"
+        android:text="Perfil"
         android:textColor="@color/black"
+        android:textSize="24sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.85" />
 </androidx.constraintlayout.widget.ConstraintLayout>
