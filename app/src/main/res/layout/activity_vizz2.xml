@@ -8,13 +8,15 @@
     tools:context="com.example.abc_connected.Criar_Equipa"
     android:background="@drawable/background_tablet">
 
+
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="130dp"
-        android:layout_height="125dp"
-        app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="3dp" />
+        android:id="@+id/imageView18"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="1000dp"
+        android:layout_marginVertical="15dp"
+        app:srcCompat="@drawable/img" />
+
 
     <ListView
 
