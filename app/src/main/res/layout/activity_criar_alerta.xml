@@ -8,12 +8,12 @@
     android:background="@drawable/background_tablet">
 
 
-
     <EditText
         android:id="@+id/alr"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="370dp"
         android:autofillHints=""
         android:background="@drawable/bg_edittext"
         android:ems="10"
@@ -25,7 +25,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2"
-        android:layout_marginTop="370dp"
         tools:targetApi="o" />
 
 

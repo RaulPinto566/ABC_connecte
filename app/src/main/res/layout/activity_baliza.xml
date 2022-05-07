@@ -24,7 +24,7 @@
         android:id="@+id/guardar2"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginHorizontal="750dp"
+        android:layout_marginHorizontal="735dp"
         android:layout_marginVertical="594dp"
         android:background="@drawable/button"
         android:text="Cancelar"
@@ -46,74 +46,78 @@
 
     <Button
         android:id="@+id/centro_direito"
-        android:layout_width="109dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="257dp"
-        android:layout_marginTop="303dp"
+        android:layout_marginHorizontal="692dp"
+        android:layout_marginVertical="315dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_inferior_direito"
-        android:layout_width="109dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="257dp"
-        android:layout_marginTop="386dp"
+        android:layout_marginHorizontal="692dp"
+        android:layout_marginVertical="401dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_superior_esquerdo"
-        android:layout_width="113dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginHorizontal="478dp"
+        android:layout_marginVertical="228dp"
+        android:layout_marginStart="478dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="478dp"
+        android:layout_marginBottom="478dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_esquerdo"
-        android:layout_width="113dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="303dp"
+        android:layout_marginHorizontal="478dp"
+        android:layout_marginVertical="315dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_inferior_esquerdo"
-        android:layout_width="114dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="386dp"
+        android:layout_marginLeft="478dp"
+        android:layout_marginTop="401dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_cima"
-        android:layout_width="104dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginHorizontal="590dp"
+        android:layout_marginVertical="228dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro"
-        android:layout_width="104dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginTop="303dp"
+        android:layout_marginHorizontal="590dp"
+        android:layout_marginVertical="315dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/centro_baixo"
-        android:layout_width="102dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="155dp"
-        android:layout_marginTop="386dp"
+        android:layout_marginHorizontal="590dp"
+        android:layout_marginVertical="401dp"
         android:backgroundTint="@color/button_background_color" />
 
     <Button
         android:id="@+id/canto_superior_direito"
-        android:layout_width="109dp"
+        android:layout_width="110dp"
         android:layout_height="95dp"
-        android:layout_marginLeft="257dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginHorizontal="692dp"
+        android:layout_marginVertical="228dp"
         android:backgroundTint="@color/button_background_color" />
 
     <ImageView

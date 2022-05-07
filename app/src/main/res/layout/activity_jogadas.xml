@@ -11,7 +11,7 @@
         android:layout_width="190dp"
         android:layout_height="75dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="642dp"
+        android:layout_marginVertical="642dp"
         android:background="@drawable/button"
         android:text="Estatísticas"
         android:textColor="@color/black"
@@ -21,12 +21,12 @@
     <Button
         android:id="@+id/periodoButton"
 
-        android:background="@drawable/button"
-        android:text="Período"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginLeft="700dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginHorizontal="700dp"
+        android:layout_marginVertical="540dp"
+        android:background="@drawable/button"
+        android:text="Período"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:backgroundTint="@null" />
@@ -35,8 +35,8 @@
         android:id="@+id/abandonarButton"
         android:layout_width="175dp"
         android:layout_height="75dp"
-        android:layout_marginLeft="400dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginHorizontal="400dp"
+        android:layout_marginVertical="540dp"
         android:background="@drawable/button"
         android:text="Abandonar"
         android:textColor="@color/black"
@@ -55,8 +55,8 @@
         android:id="@+id/defesaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="696dp"
-        android:layout_marginTop="167dp"
+        android:layout_marginHorizontal="696dp"
+        android:layout_marginVertical="167dp"
         android:background="@drawable/button_pressed"
         android:text="Defesa"
         android:textColor="@color/black"
@@ -67,8 +67,8 @@
         android:id="@+id/ataqueButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="445dp"
-        android:layout_marginTop="167dp"
+        android:layout_marginHorizontal="445dp"
+        android:layout_marginVertical="167dp"
         android:background="@drawable/button_pressed"
         android:text="Ataque"
         android:textColor="@color/black"
@@ -79,8 +79,8 @@
         android:id="@+id/remateButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="445dp"
-        android:layout_marginTop="287dp"
+        android:layout_marginHorizontal="445dp"
+        android:layout_marginVertical="287dp"
         android:background="@drawable/button_pressed"
         android:text="Remate"
         android:textColor="@color/black"
@@ -89,22 +89,22 @@
 
     <Button
         android:id="@+id/balizaButton"
+        android:layout_width="128dp"
+        android:layout_height="79dp"
+        android:layout_marginHorizontal="445dp"
+        android:layout_marginVertical="404dp"
         android:background="@drawable/button_pressed"
         android:text="Baliza\Realizada"
         android:textColor="@color/black"
-        app:backgroundTint="@null"
-        android:layout_width="128dp"
-        android:layout_height="79dp"
-        android:layout_marginLeft="445dp"
-        android:layout_marginTop="404dp"
-        android:textSize="15sp"/>
+        android:textSize="15sp"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/falhadoButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="696dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginHorizontal="696dp"
+        android:layout_marginVertical="404dp"
         android:background="@drawable/button_pressed"
         android:text="Falhado\Sofrida"
         android:textColor="@color/black"
@@ -115,8 +115,8 @@
         android:id="@+id/faltaButton"
         android:layout_width="128dp"
         android:layout_height="79dp"
-        android:layout_marginLeft="696dp"
-        android:layout_marginTop="287dp"
+        android:layout_marginHorizontal="696dp"
+        android:layout_marginVertical="287dp"
         android:background="@drawable/button_pressed"
         android:text="Falta"
         android:textColor="@color/black"
@@ -138,24 +138,24 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="625dp"
-        android:layout_marginTop="199dp"
+        android:layout_marginHorizontal="625dp"
+        android:layout_marginVertical="199dp"
         android:text="ou" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="625dp"
-        android:layout_marginTop="434dp"
-        android:text="ou"/>
+        android:layout_marginHorizontal="625dp"
+        android:layout_marginVertical="434dp"
+        android:text="ou" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="625dp"
-        android:layout_marginTop="320dp"
-        android:text="ou"  />
+        android:layout_marginHorizontal="625dp"
+        android:layout_marginVertical="320dp"
+        android:text="ou" />
 
 </RelativeLayout>

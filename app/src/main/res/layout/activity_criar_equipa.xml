@@ -20,8 +20,8 @@
 
         android:id="@+id/window_list"
         android:layout_width="1000dp"
-        android:layout_height="587dp"
-        android:layout_marginTop="170dp"
+        android:layout_height="650dp"
+        android:layout_marginVertical="170dp"
         android:choiceMode="multipleChoice" />
 
     <Button
@@ -44,7 +44,7 @@
             android:id="@+id/textinput"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="115dp"
+            android:layout_marginVertical="115dp"
             android:background="@drawable/lists"
             android:hint="Nome Equipa" />
     </com.google.android.material.textfield.TextInputLayout>
