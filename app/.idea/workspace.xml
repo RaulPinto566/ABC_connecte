@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f848b837-3c85-418d-ab44-d27cba945372" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Atletas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Atletas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Atleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Atleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Equipa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Equipa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Estatisticas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Estatisticas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Jogadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Jogadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Jogos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Jogos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaAtletas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaAtletas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaEquipas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaEquipas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaJogadas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaJogadas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaJogos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaJogos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaTreinadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaTreinadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaTreinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaTreinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaUtilizadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/ListaUtilizadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Sistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Treinador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Treinador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Treinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Treinos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Backend/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarAtleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarAtleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarTreinador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/CriarTreinador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Criar_Equipa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Criar_Equipa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/EditarEquipa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/EditarEquipa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/ForgotPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/ForgotPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Plslastone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Plslastone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/SignInActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/SignInActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Treinadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/Treinadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/CalendarViewHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/DailyCalendarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/DailyCalendarActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/EventAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/EventAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/EventEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/EventEditActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/HourAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/HourAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/HourEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/HourEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/MainActivityCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/MainActivityCalendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/WeekViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/abc_connected/calendario/WeekViewActivity.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28NgOnJztcl1rEIvzsuDDWO9KXf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f848b837-3c85-418d-ab44-d27cba945372" name="Default Changelist" comment="" />
+      <created>1651062428593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651062428593</updated>
+    </task>
+    <servers />
+  </component>
+</project>
