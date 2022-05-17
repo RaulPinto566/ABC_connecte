@@ -10,25 +10,31 @@
         android:id="@+id/guardar5e"
         android:layout_width="167dp"
         android:layout_height="72dp"
-        android:layout_marginHorizontal="400dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="713dp"
+        android:layout_marginBottom="113dp"
         android:background="@drawable/button"
         android:text="Guardar"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:backgroundTint="@null"
-        tools:layout_marginTop="615dp" />
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/guardar6e"
         android:layout_width="170dp"
         android:layout_height="72dp"
-        android:layout_marginHorizontal="650dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="460dp"
+        android:layout_marginBottom="113dp"
         android:background="@drawable/button"
         android:text="Cancelar"
         android:textColor="@color/black"
         android:textSize="23sp"
-        app:backgroundTint="@null"
-        tools:layout_marginTop="615dp" />
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/button14e"

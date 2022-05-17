@@ -1,6 +1,7 @@
 package com.example.abc_connected;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ import java.util.HashMap;
 
 public class JogoJogadas extends AppCompatActivity {
     public FirebaseAuth mAuth;
+
     private Button ataqueButton,estatisticasButton,defesaButton,remateButton,faltaButton,balizaButton,falhadoButton,abandonarButton,periodoButton;
     private Boolean ataque=false,defesa=false,remate=false,falta=false,baliza=false,falhado=false;
     private String periodo ="1",key,ky;
@@ -38,6 +40,7 @@ public class JogoJogadas extends AppCompatActivity {
         ataqueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 ataqueButton.setSelected(!ataqueButton.isSelected());
                 ataque = ataqueButton.isSelected();
                 if (defesaButton.isSelected()) {
