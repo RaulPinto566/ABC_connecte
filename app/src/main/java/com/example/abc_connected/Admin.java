@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Admin extends AppCompatActivity {
-    Button logout, adm, atl, trn,up, alrt;
+    Button logout, adm, atl, trn,up, alrt, apagar;
     public FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,21 @@ public class Admin extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         alrt = findViewById(R.id.alert);
+        apagar = findViewById(R.id.button3);
         logout = findViewById(R.id.signOut2);
         adm = findViewById(R.id.adminbtn);
         atl = findViewById(R.id.atletabtn);
         trn = findViewById(R.id.treinbtn);
         up = findViewById(R.id.button8);
+
+        apagar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(new Intent(Admin.this, Apagar.class));
+                startActivity(intent);
+            }
+        });
 
         adm.setOnClickListener(new View.OnClickListener() {
             @Override

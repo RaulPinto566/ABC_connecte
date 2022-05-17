@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ABC_connected">
         <activity
+            android:name=".Apagar"
+            android:exported="false" />
+        <activity
             android:name=".Criar_Alerta"
             android:exported="false" />
         <activity
@@ -73,7 +76,7 @@
         <activity android:name=".JogoJogadas3" />
         <activity android:name=".JogoJogadas4" />
         <activity android:name=".ListaJogo" />
-        <activity android:name=".VerEstatísticas" />ola
+        <activity android:name=".VerEstatísticas" />
         <activity android:name=".Vizz2" />
         <activity android:name=".VizzAlerta" />
         <activity

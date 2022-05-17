@@ -1,14 +1,14 @@
 package com.example.abc_connected;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -20,14 +20,13 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class VizzAlerta extends AppCompatActivity {
-
+public class Apagar extends AppCompatActivity {
     private ArrayList adpt,list,lista;
     private TextView nomeequipa;
     private int soma;
     public static final String nmqp="";
-    private String data,nometreinador,nome_equipa;
-    private HashMap hash,has;
+    private String data,nome_equipa, nometreinador, alerta;
+    private HashMap hash,has, haslh;
     private ListView listviewData;
     private ArrayAdapter adapter;
     private Button button_guardar,adicionaratleta,retiraratleta,trocartreinador,trocarnomeequipa;
@@ -35,47 +34,26 @@ public class VizzAlerta extends AppCompatActivity {
     private DatabaseReference root = db.getReference().child("treinos");
     private DatabaseReference raat = db.getReference().child("Alerta");
     private DatabaseReference reet = db.getReference().child("Ateleta");
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_apagar);
+        listviewData = findViewById(R.id.window_list666);
+button_guardar = findViewById(R.id.button_guardar545);
 
-    protected void onCreate(Bundle savedinstance){
-        super.onCreate(savedinstance);
-        setContentView(R.layout.activity_vizz2);
-
-        listviewData = findViewById(R.id.window_list12);
-        nomeequipa = findViewById(R.id.textView21);
-        nomeequipa.setText("Alertas");
-        adicionaratleta =findViewById(R.id.adicionaratleta);
-        retiraratleta = findViewById(R.id.retiraratleta);
-        trocartreinador = findViewById(R.id.trocartreinador);
-        trocarnomeequipa = findViewById(R.id.trocarnomeequipa);
         adpt = new ArrayList();
-        list = new ArrayList();
-        lista = new ArrayList();
-        hash = new HashMap();
         has = new HashMap();
-        data = (String) FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        reet.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    hash = (HashMap) dataSnapshot.getValue();
-                    if(data.equals((String)hash.get("Nome"))){
-                        nometreinador = (String)hash.get("Nome");
-                    }
-                }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-        });
         raat.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     has = (HashMap) dataSnapshot.getValue();
 
-                    adpt.add("Alerta: " + has.get("Alerta"));
+                    adpt.add("Alerta:" + has.get("Alerta"));
+
+
 
                 }
                 adapter.notifyDataSetChanged();
@@ -85,18 +63,55 @@ public class VizzAlerta extends AppCompatActivity {
 
             }
         });
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,adpt);
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
         listviewData.setAdapter(adapter);
+
+
+        button_guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onOptionsItemSelected();
+                System.out.println(alerta);
+                raat.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                            haslh = (HashMap) dataSnapshot.getValue();
+
+                            if (alerta.equals(haslh.get("Alerta"))){
+                                dataSnapshot.getRef().removeValue();
+                                finish();
+
+                            }
+                        }
+
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+
+            }
+        });
+
+
 
     }
     public void onOptionsItemSelected(){
         soma=0;
         for(int i=0;i<listviewData.getCount();i++){
             if(listviewData.isItemChecked(i)) {
-                soma++;
+                String word[] = listviewData.getItemAtPosition(i).toString().split("[:]");
+                  alerta = word[1];
+
+                }
             }
         }
     }
 
 
-}
+
+
+

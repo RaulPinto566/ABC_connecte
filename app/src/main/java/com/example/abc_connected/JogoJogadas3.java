@@ -200,11 +200,12 @@ public class JogoJogadas3 extends AppCompatActivity {
                     onOptionsItemSelected();
                     if((atleta!=null)&&(lado!=null)&&(distancia!=null)){
                         CriarJogadas();
-                        finish();
                     }
+
                     else{
                         guardar.setError("Preencha todos os espaços.");
                     }
+                    finish();
                 }
             });
             cancelar.setOnClickListener(new View.OnClickListener() {

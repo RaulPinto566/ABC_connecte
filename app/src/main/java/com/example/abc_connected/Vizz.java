@@ -45,7 +45,8 @@ public class Vizz extends AppCompatActivity {
         super.onCreate(savedinstance);
         setContentView(R.layout.activity_vizz2);
         listviewData = findViewById(R.id.window_list12);
-
+        nomeequipa = findViewById(R.id.textView21);
+        nomeequipa.setText("Treinos");
         adicionaratleta =findViewById(R.id.adicionaratleta);
         retiraratleta = findViewById(R.id.retiraratleta);
         trocartreinador = findViewById(R.id.trocartreinador);
@@ -88,7 +89,7 @@ public class Vizz extends AppCompatActivity {
 
             }
         });
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,adpt);
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,adpt);
         listviewData.setAdapter(adapter);
 
     }

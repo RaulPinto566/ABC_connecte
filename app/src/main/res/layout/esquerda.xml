@@ -216,6 +216,7 @@
         android:choiceMode="multipleChoice"
         android:ems="10"
         android:textColor="@color/black"
+        android:background="@drawable/bg_edittext"
         android:textSize="21sp"
         tools:ignore="MissingConstraints">
 
@@ -229,6 +230,7 @@
         android:layout_marginTop="305dp"
         android:choiceMode="multipleChoice"
         android:ems="10"
+        android:background="@drawable/bg_edittext"
         android:textColor="@color/black"
         android:textSize="21sp"
         tools:ignore="MissingConstraints"></ListView>

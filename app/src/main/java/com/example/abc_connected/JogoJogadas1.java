@@ -217,8 +217,9 @@ public class JogoJogadas1 extends AppCompatActivity {
                         Intent intent = new Intent(JogoJogadas1.this, JogoJogadas4.class);
                         intent.putExtra("Id_Jogada", v);
                         startActivity(intent);
+                        finish();
                     }
-                    finish();
+
                 }
                 else{
                     guardar.setError("Preencha todos os espaços.");

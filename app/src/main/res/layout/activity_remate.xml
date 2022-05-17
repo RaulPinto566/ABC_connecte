@@ -34,7 +34,11 @@
         android:id="@+id/guardar5d"
         android:layout_width="175dp"
         android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="400dp"
+        android:layout_marginEnd="705dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/button"
         android:text="Guardar"
         android:textColor="@color/black"
@@ -46,7 +50,11 @@
         android:id="@+id/guardar6d"
         android:layout_width="175dp"
         android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="650dp"
+        android:layout_marginEnd="455dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/button"
         android:text="Cancelar"
         android:textColor="@color/black"
@@ -198,6 +206,7 @@
         android:layout_marginTop="100dp"
         android:choiceMode="multipleChoice"
         android:ems="10"
+        android:background="@drawable/bg_edittext"
         tools:ignore="MissingConstraints">
 
     </ListView>

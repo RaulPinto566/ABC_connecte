@@ -19,15 +19,33 @@
 
 
     <ListView
-
         android:id="@+id/window_list12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="175dp" />
+        android:layout_marginHorizontal="100dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="300dp"
+        android:choiceMode="none" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:text=""
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.10" />
 
 
 </RelativeLayout>

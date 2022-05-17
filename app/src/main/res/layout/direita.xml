@@ -167,6 +167,7 @@
         android:layout_width="210dp"
         android:layout_height="140dp"
         android:layout_marginLeft="680dp"
+        android:background="@drawable/bg_edittext"
         android:layout_marginTop="160dp"
         android:choiceMode="multipleChoice"
         android:ems="10"

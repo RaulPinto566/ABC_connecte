@@ -63,65 +63,72 @@ public class VerEstatísticas extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     hash = (HashMap) dataSnapshot.getValue();
-                    if ((null != hash.get("Ataque")) && (hash.get("Id_Jogo").equals(key))) {
-                        if ((Boolean) hash.get("Ataque")) {
-                            Ataques++;
-                            if ((Boolean) hash.get("Remate")) {
-                                total++;
-                                if(hash.get("Lado_Campo")!=null) {
-                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "9")) {
-                                        es9++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "7")) {
-                                        es7++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")) == "6")) {
-                                        es6++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "9")) {
-                                        c99++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "7")) {
-                                        c77++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")) == "6")) {
-                                        c66++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "9")) {
-                                        d99++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "7")) {
-                                        d77++;
-                                    }
-                                    if ((((String) hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")) == "6")) {
-                                        d66++;
+                    if ((hash.get("Ataque") != null) || (hash.get("Defesa")!=null)) {
+                        if ((null != hash.get("Ataque")) && (hash.get("Id_Jogo").equals(key))) {
+                            if ((Boolean) hash.get("Ataque")) {
+                                Ataques++;
+
+                                if ((Boolean) hash.get("Remate")) {
+                                    total++;
+                                    System.out.println(hash.get("Lado_Campo"));
+                                    if (hash.get("Lado_Campo") != null) {
+
+                                        if (((hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("9") )) {
+                                            es9++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("7"))) {
+
+                                            es7++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("6"))) {
+                                            es6++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")).equals("9"))) {
+                                            c99++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")).equals("7"))) {
+                                            c77++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")).equals("6"))) {
+                                            c66++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")).equals("9"))) {
+                                            d99++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")).equals("7"))) {
+                                            d77++;
+                                        }
+                                        if ((( hash.get("Lado_Campo")).equals("direito")) && ((hash.get("Distancia")).equals("6"))) {
+                                            d66++;
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                    if ((hash.get("Defesa") != null) && (hash.get("Remate") != null) && (hash.get("Falhado") != null)) {
-                        if ((Boolean) hash.get("Defesa")) {
-                            if ((Boolean) hash.get("Remate")) {
-                                if ((Boolean) hash.get("Falhado")) {
-                                    CortesFeitos++;
+
+                        if ((hash.get("Defesa") != null) && (hash.get("Remate") != null) && (hash.get("Falhado") != null)) {
+                            if ((Boolean) hash.get("Defesa")) {
+                                if ((Boolean) hash.get("Remate")) {
+                                    if ((Boolean) hash.get("Falhado")) {
+                                        CortesFeitos++;
+                                    }
                                 }
+                                Defesas++;
                             }
-                            Defesas++;
-                        }
-                        if ((hash.get("Golo") != null)) {
-                            if ((Boolean) hash.get("Golo")) {
-                                GolosTotais++;
-                            }
-                        }
-                        if ((hash.get("Remate") != null) && (hash.get("Golo") != null)) {
-                            if ((Boolean) hash.get("Remate")) {
+                            if ((hash.get("Golo") != null)) {
                                 if ((Boolean) hash.get("Golo")) {
-                                    RematesCertos++;
-                                } else {
-                                    RematesFalhados++;
+                                    GolosTotais++;
                                 }
-                                RematesTotais++;
+                            }
+                            if ((hash.get("Remate") != null) && (hash.get("Golo") != null)) {
+                                if ((Boolean) hash.get("Remate")) {
+                                    if ((Boolean) hash.get("Golo")) {
+                                        RematesCertos++;
+                                    } else {
+                                        RematesFalhados++;
+                                    }
+                                    RematesTotais++;
+                                }
                             }
                         }
                     }
@@ -145,6 +152,7 @@ public class VerEstatísticas extends AppCompatActivity {
             d6.setText(String.valueOf(0));
         }
         else {
+
             e9.setText(String.valueOf((double) (Math.round((es9/total) * 10) / 10)));
             e7.setText(String.valueOf((double) (Math.round((es7/total) * 10) / 10)));
             e6.setText(String.valueOf((double) (Math.round((es6/total) * 10) / 10)));

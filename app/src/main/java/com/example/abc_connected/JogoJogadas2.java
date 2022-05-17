@@ -211,11 +211,11 @@ public class JogoJogadas2 extends AppCompatActivity {
                 onOptionsItemSelected();
                 if((corte!=null)&&(distancia!=null)&&(lado!=null)&&(atleta!=null)) {
                     CriarJogadas();
-                    finish();
+
                 }
                 else{
                     guardar.setError("Preencha todos os espaços.");
-                }
+                }finish();
             }
         });
         cancelar.setOnClickListener(new View.OnClickListener() {
