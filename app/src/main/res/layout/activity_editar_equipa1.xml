@@ -31,13 +31,15 @@
         android:id="@+id/sair"
         android:layout_width="140dp"
         android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
         android:background="@drawable/button"
         android:text="Sair"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:backgroundTint="@null"
-        tools:layout_marginTop="680dp"/>
+        tools:layout_marginTop="680dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -49,6 +51,6 @@
             android:layout_height="400dp"
             android:layout_marginVertical="265dp"
             android:background="@drawable/flag_transparent"
-            android:hint=""  />
+            android:hint="" />
     </com.google.android.material.textfield.TextInputLayout>
 </RelativeLayout>
