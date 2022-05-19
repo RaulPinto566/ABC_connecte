@@ -17,10 +17,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class VerEstatísticas extends AppCompatActivity {
+    private DecimalFormat def = new DecimalFormat("##.##");
     private TextView rc, rf,cf, atq, dfs,rmttt,glstt,e9,e7,e6,c9,c7,c6,d9,d7,d6;
     private int RematesCertos,RematesFalhados,CortesFeitos,Ataques,Defesas,RematesTotais,GolosTotais;
     private double es9,es7,es6,c99,c77,c66,d99,d77,d66,total,resultado;
@@ -64,23 +66,26 @@ public class VerEstatísticas extends AppCompatActivity {
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     hash = (HashMap) dataSnapshot.getValue();
                     if ((hash.get("Ataque") != null) || (hash.get("Defesa")!=null)) {
-                        if ((null != hash.get("Ataque")) && (hash.get("Id_Jogo").equals(key))) {
+                        if ( (hash.get("Id_Jogo").equals(key))) {
                             if ((Boolean) hash.get("Ataque")) {
                                 Ataques++;
 
                                 if ((Boolean) hash.get("Remate")) {
                                     total++;
                                     System.out.println(hash.get("Lado_Campo"));
-                                    if (hash.get("Lado_Campo") != null) {
-
-                                        if (((hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("9") )) {
+                                    if (hash.get("Lado_Campo") == null) {
+                                        System.out.println(hash.get("Lado_Campo") + "ola");
+                                    }
+                                    else {
+                                        System.out.println(hash.get("Lado_Campo") + "ola2");
+                                        if (((hash.get("Lado_Campo")).equals("esquerda")) && ((hash.get("Distancia")).equals("9") )) {
                                             es9++;
                                         }
-                                        if ((( hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("7"))) {
+                                        if ((( hash.get("Lado_Campo")).equals("esquerda")) && ((hash.get("Distancia")).equals("7"))) {
 
                                             es7++;
                                         }
-                                        if ((( hash.get("Lado_Campo")).equals("esquerdo")) && ((hash.get("Distancia")).equals("6"))) {
+                                        if ((( hash.get("Lado_Campo")).equals("esquerda")) && ((hash.get("Distancia")).equals("6"))) {
                                             es6++;
                                         }
                                         if ((( hash.get("Lado_Campo")).equals("centro")) && ((hash.get("Distancia")).equals("9"))) {
@@ -152,16 +157,16 @@ public class VerEstatísticas extends AppCompatActivity {
             d6.setText(String.valueOf(0));
         }
         else {
-
-            e9.setText(String.valueOf((double) (Math.round((es9/total) * 10) / 10)));
-            e7.setText(String.valueOf((double) (Math.round((es7/total) * 10) / 10)));
-            e6.setText(String.valueOf((double) (Math.round((es6/total) * 10) / 10)));
-            c9.setText(String.valueOf((double) (Math.round((c99/total) * 10) / 10)));
-            c7.setText(String.valueOf((double) (Math.round((c77/total) * 10) / 10)));
-            c6.setText(String.valueOf((double) (Math.round((c66/total) * 10) / 10)));
-            d9.setText(String.valueOf((double) (Math.round((d99/total) * 10) / 10)));
-            d7.setText(String.valueOf((double) (Math.round((d77/total) * 10) / 10)));
-            d6.setText(String.valueOf((double) (Math.round((d66/total) * 10) / 10)));
+System.out.println(es9/total);
+            e9.setText(String.valueOf(def.format(es9/total)));
+            e7.setText(String.valueOf(def.format(es7/total)));
+            e6.setText(String.valueOf(def.format(es6/total)));
+            c9.setText(String.valueOf(def.format(c99/total)));
+            c7.setText(String.valueOf(def.format(c77/total)));
+            c6.setText(String.valueOf(def.format(c66/total)));
+            d9.setText(String.valueOf(def.format(d99/total)));
+            d7.setText(String.valueOf(def.format(d77/total)));
+            d6.setText(String.valueOf(def.format(d66/total)));
             rc.setText(String.valueOf(RematesCertos));
             rf.setText(String.valueOf(RematesFalhados));
             rmttt.setText(String.valueOf(RematesTotais));

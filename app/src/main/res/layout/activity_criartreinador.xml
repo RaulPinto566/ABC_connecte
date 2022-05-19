@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/nome"
+        android:id="@+id/nome22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -38,7 +38,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/numero"
+        android:id="@+id/numero22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -48,7 +48,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/idade"
+        android:id="@+id/idade22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -58,7 +58,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/genero"
+        android:id="@+id/genero22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -68,7 +68,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/pos"
+        android:id="@+id/pos22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -78,27 +78,27 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/pass"
+        android:id="@+id/pass22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="230dp"
         android:background="@drawable/bg_edittext"
         android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_marginTop="230dp"/>
+        android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/mail"
+        android:id="@+id/mail22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/bg_edittext"
         android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="140dp" />
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/user"
+        android:id="@+id/user22"
         android:layout_width="10000dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="300dp"
@@ -108,7 +108,7 @@
         android:inputType="textEmailAddress" />
 
     <Button
-        android:id="@+id/criar"
+        android:id="@+id/criar25"
         android:layout_width="167dp"
         android:layout_height="72dp"
         android:layout_marginHorizontal="1050dp"

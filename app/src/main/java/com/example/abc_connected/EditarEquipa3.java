@@ -73,17 +73,16 @@ public class EditarEquipa3 extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot1) {
                 for(DataSnapshot dataSnapshot1 : snapshot1.getChildren()) {
-                    System.out.println(hash);
                     has = (HashMap) dataSnapshot1.getValue();
                     ls = (ArrayList) has.get("Atletas");
-                    if (has.get("Nome_Equipa").toString().equals(nomequipa)) {
+                    if (has.get("Nome_Equipa").equals(nomequipa)) {
                         dat = (String)has.get("Key");
                         lst = (ArrayList)has.get("Atletas");
                         for(int j = 0;j<email.size();j++) {
                             soma=0;
                             for (int i = 0; i < (lst.size()); i++) {
-                                soma++;
-                                if (email.get(j).toString().equals(lst.get(i))) {
+                                if (email.get(j).equals(lst.get(i))) {
+                                    soma++;
                                     if(soma==1){
                                         adpt.add("Nome:" + nome.get(j) + "\n" + "Escalao:" + escalao.get(j));
                                     }

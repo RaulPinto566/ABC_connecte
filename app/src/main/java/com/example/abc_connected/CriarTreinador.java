@@ -45,7 +45,7 @@ public class CriarTreinador extends AppCompatActivity {
 
 
     private static final String TAG = "SignUpActivity";
-    public FirebaseAuth mAuth;
+    public FirebaseAuth mAuth2;
     Button criar;
     EditText user;
     EditText email;
@@ -62,16 +62,16 @@ public class CriarTreinador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criartreinador);
-
-        email = findViewById(R.id.mail);
-        pass = findViewById(R.id.pass);
-        criar = findViewById(R.id.criar);
-        user = findViewById(R.id.user);
-        nome = findViewById(R.id.nome);
-        idade = findViewById(R.id.idade);
-        genero = findViewById(R.id.genero);
-        posicao = findViewById(R.id.pos);
-        numero = findViewById(R.id.numero);
+        mAuth2 = FirebaseAuth.getInstance();
+        email = findViewById(R.id.mail22);
+        pass = findViewById(R.id.pass22);
+        criar = findViewById(R.id.criar25);
+        user = findViewById(R.id.user22);
+        nome = findViewById(R.id.nome22);
+        idade = findViewById(R.id.idade22);
+        genero = findViewById(R.id.genero22);
+        posicao = findViewById(R.id.pos22);
+        numero = findViewById(R.id.numero22);
         errorView = findViewById(R.id.signUpErrorView2);
 
 
@@ -100,13 +100,13 @@ public class CriarTreinador extends AppCompatActivity {
                     errorView.setText("Password cannot be empty");
                 }
                 else {
-                    mAuth.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString()).addOnCompleteListener(CriarTreinador.this, new OnCompleteListener<AuthResult>() {
+                    mAuth2.createUserWithEmailAndPassword(email.getText().toString(), pass.getText().toString()).addOnCompleteListener(CriarTreinador.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(TAG, "createUserWithEmail:success" + email.getText().toString());
-                                FirebaseUser user = mAuth.getCurrentUser();
+                                FirebaseUser user = mAuth2.getCurrentUser();
                                 try {
                                     if (user != null)
                                         user.sendEmailVerification()
